@@ -3,10 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"ApiUrl",
+		"ConsumerKey",
+		"ConsumerSecret" ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"oauthParams" ],
 	"name" : "SwtProjectXXDemo",
 	"pools" : [
 		 ],
