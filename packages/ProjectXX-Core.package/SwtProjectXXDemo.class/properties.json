@@ -12,7 +12,8 @@
 	"instvars" : [
 		"oauthParams",
 		"value",
-		"barFooValue" ],
+		"barFooValue",
+		"testValue" ],
 	"name" : "SwtProjectXXDemo",
 	"pools" : [
 		 ],
