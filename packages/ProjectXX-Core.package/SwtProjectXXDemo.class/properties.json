@@ -8,7 +8,9 @@
 		"ConsumerSecret" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"oauthParams" ],
+		"oauthParams",
+		"value",
+		"barFooValue" ],
 	"name" : "SwtProjectXXDemo",
 	"pools" : [
 		 ],
