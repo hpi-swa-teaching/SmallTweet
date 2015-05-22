@@ -1,3 +1,3 @@
 accessing
 barfoo
-	 ^ 4321
+	 ^ barFooValue
