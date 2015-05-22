@@ -1,5 +1,5 @@
 {
-	"category" : "ProjectXX-Core",
+	"category" : "Project08-Core",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -14,7 +14,7 @@
 		"value",
 		"barFooValue",
 		"testValue" ],
-	"name" : "SwtProjectXXDemo",
+	"name" : "SwtProject08Demo",
 	"pools" : [
 		 ],
 	"super" : "Object",

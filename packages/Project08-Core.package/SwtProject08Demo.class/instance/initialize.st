@@ -1,7 +1,5 @@
 initialize
-intialize
-
-	super initialize.
+initialize
 
 	self initializeOAuth.	
-	
+	super initialize.	
