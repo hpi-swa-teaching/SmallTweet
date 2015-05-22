@@ -3,6 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"AccessSecret",
+		"AccessToken",
 		"ApiUrl",
 		"ConsumerKey",
 		"ConsumerSecret" ],
