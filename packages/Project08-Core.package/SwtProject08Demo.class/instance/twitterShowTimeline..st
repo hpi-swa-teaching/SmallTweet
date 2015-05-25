@@ -5,7 +5,7 @@ twitterShowTimeline: aTwitterName
 
 	client := WebClient new.
 	
-	url := self class apiUrl, '/statuses/user_timeline.json?screen_name=',aTwitterName,'&count=10'.
+	url := self class apiUrl, '/statuses/user_timeline.json?screen_name=',aTwitterName,'&count=', self class numberOfTweets.
 	resp := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self oauthParams].
 	resp isSuccess ifFalse:[
 	

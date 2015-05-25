@@ -8,7 +8,9 @@
 		"consumerKey" : "to 5/22/2015 09:58",
 		"consumerKey:" : "to 5/18/2015 12:00",
 		"consumerSecret" : "to 5/18/2015 12:35",
-		"consumerSecret:" : "to 5/18/2015 12:00" },
+		"consumerSecret:" : "to 5/18/2015 12:00",
+		"numberOfTweets" : "MO 5/25/2015 18:17",
+		"numberOfTweets:" : "MO 5/25/2015 18:17" },
 	"instance" : {
 		"barfoo" : "mk 5/22/2015 09:41",
 		"barfoo:" : "mk 5/22/2015 09:41",
@@ -20,6 +22,6 @@
 		"replaceSpaces:" : "to 5/25/2015 02:16",
 		"test" : "mk 5/22/2015 11:39",
 		"test:" : "mk 5/22/2015 11:39",
-		"twitterShowTimeline" : "to 5/22/2015 21:38",
-		"twitterShowTimeline:" : "to 5/24/2015 14:33",
+		"twitterShowTimeline" : "MO 5/25/2015 16:09",
+		"twitterShowTimeline:" : "MO 5/25/2015 16:10",
 		"twitterTweet:" : "to 5/25/2015 02:04" } }
