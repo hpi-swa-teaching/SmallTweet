@@ -4,6 +4,7 @@ twitterTweet: aTweet
 	|client url resp extra|
 
 	client := WebClient new.
+	self replaceSpaces: aTweet.
 	
 	url := self class apiUrl, '/statuses/update.json'.
 	extra := Dictionary newFromPairs: {
