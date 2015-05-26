@@ -25,7 +25,12 @@
 		"test:" : "mk 5/22/2015 11:39",
 		"twitterGetAuthenticationPage" : "to 5/26/2015 14:19",
 		"twitterGetFollowers:" : "to 5/26/2015 12:09:20.092",
+<<<<<<< HEAD
 		"twitterLoginWithPin:" : "to 5/26/2015 14:19",
+=======
+		"twitterGetUser:" : "MO 5/26/2015 12:42",
+		"twitterLogin" : "to 5/26/2015 11:53",
+>>>>>>> origin/master
 		"twitterShowTimeline" : "MO 5/25/2015 16:09",
 		"twitterShowTimeline:" : "MO 5/25/2015 16:10",
 		"twitterTweet:" : "to 5/25/2015 02:04" } }
