@@ -1,0 +1,14 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "to 6/5/2015 00:00",
+	"instvars" : [
+		 ],
+	"name" : "WinShell",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

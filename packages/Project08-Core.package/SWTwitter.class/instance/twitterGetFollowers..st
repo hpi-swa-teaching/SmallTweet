@@ -1,4 +1,4 @@
-as yet unclassified
+twitterFunctions
 twitterGetFollowers: aTwitterName
 
 	|client url resp json jsonObj userCollection|

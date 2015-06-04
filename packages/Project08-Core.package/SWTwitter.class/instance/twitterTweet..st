@@ -1,4 +1,4 @@
-as yet unclassified
+twitterFunctions
 twitterTweet: aTweet
 
 	|client url resp extra|

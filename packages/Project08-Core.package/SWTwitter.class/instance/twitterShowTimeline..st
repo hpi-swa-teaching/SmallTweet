@@ -1,4 +1,4 @@
-as yet unclassified
+twitterFunctions
 twitterShowTimeline: aTwitterName
 
 	|client url resp json jsonObj |
