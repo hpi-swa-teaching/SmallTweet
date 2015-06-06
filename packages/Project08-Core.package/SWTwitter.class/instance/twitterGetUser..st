@@ -1,4 +1,4 @@
-as yet unclassified
+twitterFunctions
 twitterGetUser: aTwitterName
 "Delivers various information about a user"
 

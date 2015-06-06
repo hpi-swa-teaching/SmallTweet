@@ -1,4 +1,4 @@
-as yet unclassified
+twitterAuthentication
 twitterGetAuthenticationPage
 	| client url oauthToken |
 	client := WebClient new.
@@ -7,5 +7,6 @@ twitterGetAuthenticationPage
 				findTokens: '=')
 				at: 2.
 	self oauthParams add: 'oauth_token' -> oauthToken.
-	url := 'https://api.twitter.com/oauth/authenticate?oauth_token=' , oauthToken.
+	url := 'https://api.twitter.com/oauth/authenticate?oauth_token=' , oauthToken, '&force_login=true'.
+	WinShell new openLinkInBrowser: url.
 	^ url

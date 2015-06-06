@@ -1,4 +1,4 @@
-as yet unclassified
+twitterAuthentication
 requestOauthToken
 
 	|client url resp extra|

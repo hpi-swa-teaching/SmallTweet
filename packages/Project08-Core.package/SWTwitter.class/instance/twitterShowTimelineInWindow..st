@@ -1,4 +1,4 @@
-as yet unclassified
+twitterFunctions
 twitterShowTimelineInWindow: aTwitterName
       |jsonObj window text scrollPane pasteUpMorph|
 
@@ -14,4 +14,5 @@ twitterShowTimelineInWindow: aTwitterName
       pasteUpMorph addMorph: text.
       scrollPane scroller addMorph: pasteUpMorph. 
       window addMorph: scrollPane frame: (0@0 corner: 1@1) .
+	window setLabel: 'Twitter'.
 	window openInWorld.

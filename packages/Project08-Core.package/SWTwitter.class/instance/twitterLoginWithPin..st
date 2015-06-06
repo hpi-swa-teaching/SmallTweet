@@ -1,5 +1,6 @@
-as yet unclassified
+twitterAuthentication
 twitterLoginWithPin: aPin 
+
 	| client url resp extra oauthSecret oauthToken |
 	client := WebClient new.
 	extra := Dictionary newFromPairs: {'oauth_verifier'. aPin}.
