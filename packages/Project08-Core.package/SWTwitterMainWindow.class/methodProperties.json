@@ -1,6 +1,7 @@
 {
 	"class" : {
-		 },
+		"initialize" : "MO 6/7/2015 18:09",
+		"open" : "MO 6/7/2015 18:12" },
 	"instance" : {
 		"initialize" : "to 6/7/2015 14:33",
 		"initializePanel" : "to 6/7/2015 14:58",
