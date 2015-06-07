@@ -25,12 +25,45 @@ initializePanel
 	panel frameFractions: (0@0 corner: 1@1).
 	panel frameOffsets: (0@0 corner: 0@0).
 	panel balloonText: ('').
-	panel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
+	panel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.725)).
 	panel color: (Color gray).
 	panel borderWidth: (0).
 	panel borderStyle2: (#simple).
 	panel borderColor: (Color black).
 	panel setProperty: #objectName toValue: 'panel'.
+	sendButton := UiPushButton new.
+	sendButton changeTableLayout.
+	sendButton extent: (57@20).
+	sendButton position: (436@205).
+	sendButton hResizing: (#shrinkWrap).
+	sendButton vResizing: (#shrinkWrap).
+	sendButton minWidth: (2).
+	sendButton minHeight: (2).
+	sendButton cellInset: (4).
+	sendButton cellPositioning: (#center).
+	sendButton cellSpacing: (#none).
+	sendButton layoutInset: (2@0 corner: 2@0).
+	sendButton listCentering: (#topLeft).
+	sendButton listDirection: (#leftToRight).
+	sendButton listSpacing: (#none).
+	sendButton maxCellSize: (1073741823).
+	sendButton minCellSize: (0).
+	sendButton wrapCentering: (#topLeft).
+	sendButton wrapDirection: (#none).
+	sendButton frameFractions: (0@0 corner: 1@1).
+	sendButton frameOffsets: (0@0 corner: 0@0).
+	sendButton balloonText: ('').
+	sendButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
+	sendButton enabled: (true).
+	sendButton setProperty: #iconByDesigner toValue: 'MenuIcons smallOkIcon'.
+	sendButton icon: (MenuIcons smallOkIcon).
+	sendButton text: ('Send').
+	sendButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
+	sendButton checkable: (true).
+	sendButton checked: (false).
+	sendButton autoExclusive: (false).
+	sendButton setProperty: #objectName toValue: 'sendButton'.
+	panel addChild: sendButton.
 	textField := UiTextEdit new.
 	textField extent: (491@151).
 	textField position: (4@46).
@@ -52,14 +85,14 @@ initializePanel
 	textField frameFractions: (0@0 corner: 1@1).
 	textField frameOffsets: (0@0 corner: 0@0).
 	textField balloonText: (nil).
-	textField balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.741)).
+	textField balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
 	textField widgetResizable: (true).
 	textField horizontalScrollBarPolicy: (#alwaysOff).
 	textField verticalScrollBarPolicy: (#alwaysOn).
 	textField outerBorderWidth: (1).
 	textField scrollBarThickness: (9).
 	textField theText: ('').
-	textField readOnly: (false).
+	textField readOnly: (true).
 	textField autoConvert: (false).
 	textField autoAccept: (false).
 	textField acceptOnFocusLost: (false).
@@ -89,7 +122,7 @@ initializePanel
 	toolbar frameFractions: (0@0 corner: 1@1).
 	toolbar frameOffsets: (0@0 corner: 0@0).
 	toolbar balloonText: (nil).
-	toolbar balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.741)).
+	toolbar balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
 	toolbar color: (Color transparent).
 	toolbar borderWidth: (0).
 	toolbar borderStyle2: (#simple).
@@ -117,7 +150,7 @@ initializePanel
 	userSelectButton frameFractions: (0@0 corner: 1@1).
 	userSelectButton frameOffsets: (0@0 corner: 0@0).
 	userSelectButton balloonText: ('').
-	userSelectButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.737)).
+	userSelectButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
 	userSelectButton enabled: (true).
 	userSelectButton setProperty: #iconByDesigner toValue: 'nil'.
 	userSelectButton icon: (nil).
@@ -150,7 +183,7 @@ initializePanel
 	tweetButton frameFractions: (0@0 corner: 1@1).
 	tweetButton frameOffsets: (0@0 corner: 0@0).
 	tweetButton balloonText: (nil).
-	tweetButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.741)).
+	tweetButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
 	tweetButton enabled: (true).
 	tweetButton setProperty: #iconByDesigner toValue: 'nil'.
 	tweetButton icon: (nil).

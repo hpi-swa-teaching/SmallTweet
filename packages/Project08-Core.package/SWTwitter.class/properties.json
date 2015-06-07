@@ -9,12 +9,14 @@
 		"ConsumerKey",
 		"ConsumerSecret",
 		"NumberOfTweets",
-		"OauthParams" ],
+		"OauthParams",
+		"OauthParamsTest1" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"value",
 		"barFooValue",
-		"testValue" ],
+		"testValue",
+		"twitterWindow" ],
 	"name" : "SWTwitter",
 	"pools" : [
 		 ],
