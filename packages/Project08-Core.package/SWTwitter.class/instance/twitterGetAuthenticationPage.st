@@ -6,11 +6,11 @@ twitterGetAuthenticationPage
 				at: 1)
 				findTokens: '=')
 				at: 2.
-	self oauthParams add: 'oauth_token' -> oauthToken.
+	self class oauthParams add: 'oauth_token' -> oauthToken.
 	url := 'https://api.twitter.com/oauth/authenticate?oauth_token=' , oauthToken, '&force_login=true'.
       hostOS := Smalltalk platformName.
 	(hostOS = 'Mac OS')
           ifTrue: [MacShell new openLinkInBrowser: url].
-     (hostOS = 'Windows') 
+     (hostOS = 'Win32') 
           ifTrue: [WinShell new openLinkInBrowser: url].
 	^ url

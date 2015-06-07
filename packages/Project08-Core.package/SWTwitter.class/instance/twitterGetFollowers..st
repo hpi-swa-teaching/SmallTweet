@@ -6,7 +6,7 @@ twitterGetFollowers: aTwitterName
 	client := WebClient new.
 	
 	url := self class apiUrl, '/followers/list.json?cursor=-1&screen_name=',aTwitterName,'&skip_status=true&include_user_entities=false'.
-	resp := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self oauthParams].
+	resp := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self class oauthParams].
 	resp isSuccess ifFalse:[
 	
 		^'Something went wrong', resp content.

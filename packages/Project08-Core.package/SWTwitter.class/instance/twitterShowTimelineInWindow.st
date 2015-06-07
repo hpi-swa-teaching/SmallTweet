@@ -1,4 +1,4 @@
 twitterFunctions
 twitterShowTimelineInWindow
 
-    ^self twitterShowTimelineInWindow: 'SWTSpamaccount'
+    ^SWTwitterMainWindow new twitterShowTimelineInWindow

@@ -8,13 +8,15 @@
 		"ApiUrl",
 		"ConsumerKey",
 		"ConsumerSecret",
-		"NumberOfTweets" ],
+		"NumberOfTweets",
+		"OauthParams",
+		"OauthParamsTest1" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"oauthParams",
 		"value",
 		"barFooValue",
-		"testValue" ],
+		"testValue",
+		"twitterWindow" ],
 	"name" : "SWTwitter",
 	"pools" : [
 		 ],

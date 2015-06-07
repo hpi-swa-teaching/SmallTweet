@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"initialize" : "MO 6/7/2015 18:09",
+		"open" : "MO 6/7/2015 18:12" },
+	"instance" : {
+		"initialize" : "to 6/7/2015 19:43",
+		"initializePanel" : "to 6/7/2015 20:06",
+		"openTweetWindow" : "to 6/7/2015 19:53",
+		"twitterGetTimeline" : "to 6/7/2015 12:30",
+		"twitterGetTimeline:" : "to 6/7/2015 19:44",
+		"twitterShowTimelineInWindow" : "to 6/7/2015 15:09",
+		"twitterShowTimelineInWindow:" : "to 6/7/2015 15:08",
+		"twitterTweet" : "to 6/7/2015 20:06",
+		"twitterUi" : "to 6/7/2015 19:31" } }

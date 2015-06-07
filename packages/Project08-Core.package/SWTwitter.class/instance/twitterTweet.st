@@ -1,19 +1,20 @@
 twitterFunctions
-twitterTweet: aTweet
+twitterTweet
 
-	|client url resp extra|
+	|client url resp extra tweet|
 
 	client := WebClient new.
-	self replaceSpaces: aTweet.
+	tweet := self twitterUi textField theText asString.
+	self replaceSpaces: tweet.
 	
 	url := self class apiUrl, '/statuses/update.json'.
 	extra := Dictionary newFromPairs: {
-		'status'. aTweet.
+		'status'. tweet.
 	}.
 	resp := client httpPost: url 
 			content: (WebUtils encodeUrlEncodedForm: extra)
 			type: 'application/x-www-form-urlencoded'
-			do:[:req | WebUtils oAuthSign: req url: url extra: extra using: self class oauthParams].
+			do:[:req | WebUtils oAuthSign: req url: url extra: extra using: self class oauthParamsTest1].
 	resp isSuccess ifFalse:[
 	
 		^'Something went wrong', resp content.
