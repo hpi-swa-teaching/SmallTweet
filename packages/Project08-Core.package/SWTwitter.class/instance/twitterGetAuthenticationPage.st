@@ -11,6 +11,6 @@ twitterGetAuthenticationPage
       hostOS := Smalltalk platformName.
 	(hostOS = 'Mac OS')
           ifTrue: [MacShell new openLinkInBrowser: url].
-     (hostOS = 'Windows') 
+     (hostOS = 'Win32') 
           ifTrue: [WinShell new openLinkInBrowser: url].
 	^ url
