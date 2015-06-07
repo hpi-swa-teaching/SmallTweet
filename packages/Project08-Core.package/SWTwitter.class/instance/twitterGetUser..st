@@ -7,7 +7,7 @@ twitterGetUser: aTwitterName
 	client := WebClient new.
 	
 	url := self class apiUrl, '/users/show.json?screen_name=',aTwitterName,'&include_entities=false'.
-	resp := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self oauthParams].
+	resp := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self class oauthParams].
 	resp isSuccess ifFalse:[
 	
 		^'Failed to get user information', resp content.

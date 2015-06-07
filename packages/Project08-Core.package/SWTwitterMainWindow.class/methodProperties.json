@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "to 6/7/2015 14:33",
+		"initializePanel" : "to 6/7/2015 14:58",
+		"twitterGetTimeline" : "to 6/7/2015 12:30",
+		"twitterGetTimeline:" : "to 6/7/2015 15:09",
+		"twitterShowTimelineInWindow" : "to 6/7/2015 15:09",
+		"twitterShowTimelineInWindow:" : "to 6/7/2015 15:08" } }

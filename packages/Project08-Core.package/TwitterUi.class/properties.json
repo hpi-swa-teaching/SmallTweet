@@ -1,0 +1,17 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"textField",
+		"toolbar",
+		"userSelectButton",
+		"tweetButton" ],
+	"name" : "TwitterUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

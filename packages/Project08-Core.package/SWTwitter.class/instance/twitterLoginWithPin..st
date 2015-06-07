@@ -13,7 +13,7 @@ twitterLoginWithPin: aPin
 						oAuthSign: req
 						url: url
 						extra: extra
-						using: self oauthParams].
+						using: self class oauthParams].
 	resp isSuccess
 		ifFalse: [^ 'Something went wrong' , resp content].
 	oauthSecret := (((resp content findTokens: '&')

@@ -8,10 +8,10 @@
 		"ApiUrl",
 		"ConsumerKey",
 		"ConsumerSecret",
-		"NumberOfTweets" ],
+		"NumberOfTweets",
+		"OauthParams" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"oauthParams",
 		"value",
 		"barFooValue",
 		"testValue" ],
