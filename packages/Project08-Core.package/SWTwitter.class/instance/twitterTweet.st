@@ -1,7 +1,7 @@
 twitterFunctions
 twitterTweet
 
-	|client url resp extra tweet|
+	|client url response extra tweet|
 
 	client := WebClient new.
 	tweet := self twitterUi textField theText asString.
@@ -11,13 +11,13 @@ twitterTweet
 	extra := Dictionary newFromPairs: {
 		'status'. tweet.
 	}.
-	resp := client httpPost: url 
+	response := client httpPost: url 
 			content: (WebUtils encodeUrlEncodedForm: extra)
 			type: 'application/x-www-form-urlencoded'
 			do:[:req | WebUtils oAuthSign: req url: url extra: extra using: self class oauthParamsTest1].
-	resp isSuccess ifFalse:[
+	response isSuccess ifFalse:[
 	
-		^'Something went wrong', resp content.
+		^'Something went wrong', response content.
 	].
 	
 	Transcript show: 'Tweet successfull'. Transcript cr.

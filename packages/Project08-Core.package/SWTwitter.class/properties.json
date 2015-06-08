@@ -16,7 +16,8 @@
 		"value",
 		"barFooValue",
 		"testValue",
-		"twitterWindow" ],
+		"twitterWindow",
+		"response" ],
 	"name" : "SWTwitter",
 	"pools" : [
 		 ],
