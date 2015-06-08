@@ -2,20 +2,20 @@ twitterFunctions
 twitterGetUser: aTwitterName
 "Delivers various information about a user"
 
-	|client url response json jsonObj |
+	|client url resp json jsonObj |
 
 	client := WebClient new.
 	
 	url := self class apiUrl, '/users/show.json?screen_name=',aTwitterName,'&include_entities=false'.
-	response := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self class oauthParams].
-	response isSuccess ifFalse:[
+	resp := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self class oauthParams].
+	resp isSuccess ifFalse:[
 	
-		^'Failed to get user information', response content.
+		^'Failed to get user information', resp content.
 	].
 
 	json := Json new.
 	jsonObj := Array new.
-	json stream: (ReadStream on: (response content)).
+	json stream: (ReadStream on: (resp content)).
 	jsonObj := json readAny.
 
 	Transcript show: 'Account: '; show: aTwitterName; cr.

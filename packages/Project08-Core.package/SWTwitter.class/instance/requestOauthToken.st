@@ -1,7 +1,7 @@
 twitterAuthentication
 requestOauthToken
 
-	|client url response extra|
+	|client url resp extra|
 
 	client := WebClient new.
 	
@@ -9,13 +9,13 @@ requestOauthToken
 	extra := Dictionary newFromPairs: {
 		'oauth_callback'. 'oob'.
 	}.
-	response := client httpPost: url 
+	resp := client httpPost: url 
 			content: (WebUtils encodeUrlEncodedForm: extra)
 			type: 'application/x-www-form-urlencoded'
 			do:[:req | WebUtils oAuthSign: req url: url extra: extra using: self class oauthParams].
-	response isSuccess ifFalse:[
+	resp isSuccess ifFalse:[
 	
-		^'Something went wrong', response content.
+		^'Something went wrong', resp content.
 	].
 
-	^response getContent 
+	^resp getContent 

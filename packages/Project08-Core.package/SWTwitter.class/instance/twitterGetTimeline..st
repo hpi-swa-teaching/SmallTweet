@@ -1,20 +1,20 @@
 twitterFunctions
 twitterGetTimeline: aTwitterName
 
-	|client url response json jsonObj |
+	|client url resp json jsonObj |
 
 	client := WebClient new.
 	
 	url := self class apiUrl, '/statuses/user_timeline.json?screen_name=',aTwitterName,'&count=10'.
-	response := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self oauthParams].
-	response isSuccess ifFalse:[
+	resp := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self oauthParams].
+	resp isSuccess ifFalse:[
 	
-		^'Something went wrong', response content.
+		^'Something went wrong', resp content.
 	].
 
 	json := Json new.
 	jsonObj := Array new.
-	json stream: (ReadStream on: (response content)).
+	json stream: (ReadStream on: (resp content)).
 	jsonObj := json readAny.
 	^jsonObj
 	

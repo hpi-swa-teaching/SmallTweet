@@ -4,9 +4,9 @@ initializePanel
 	
 	twitterUi := TwitterUi new initializePanel.
 	twitterUi sendButton enabled: false.
-	twitterUi userSelectionBox addText: 'SWT-Spamaccount'.
+	twitterUi userSelectionBox addText: 'SWTSpamaccount'.
 	twitterUi userSelectionBox addText: 'Tymolc'.
-	self currentUser: 'SWT-Spamaccount'.
+	self currentUser: 'SWTSpamaccount'.
 	mainWindow addMorph: twitterUi panel.
 
 	self connect: (twitterUi tweetButton) signal: #clicked: toSelector: #openTweetWindow.

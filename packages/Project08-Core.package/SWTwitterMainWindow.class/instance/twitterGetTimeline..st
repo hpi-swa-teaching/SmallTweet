@@ -9,13 +9,8 @@ twitterGetTimeline: aTwitterName
 						oAuthSign: req
 						url: url
 						using: SWTwitter oauthParams].
-<<<<<<< HEAD
-	resp isSuccess
-		ifFalse: ['Something went wrong' , resp content].
-=======
 	response isSuccess
-		ifFalse: [^ 'Something went wrong' , response content].
->>>>>>> origin/master
+		ifFalse: [Transcript show: ('Something went wrong' , response content). ^self].
 	json := Json new.
 	jsonObj := Array new.
 	json

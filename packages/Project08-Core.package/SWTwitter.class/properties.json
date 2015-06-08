@@ -17,12 +17,8 @@
 		"barFooValue",
 		"testValue",
 		"twitterWindow",
-<<<<<<< HEAD
 		"accessSecret",
 		"accessToken" ],
-=======
-		"response" ],
->>>>>>> origin/master
 	"name" : "SWTwitter",
 	"pools" : [
 		 ],

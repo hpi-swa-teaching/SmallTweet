@@ -1,20 +1,20 @@
 twitterFunctions
 twitterGetFollowers: aTwitterName
 
-	|client url response json jsonObj userCollection|
+	|client url resp json jsonObj userCollection|
 
 	client := WebClient new.
 	
 	url := self class apiUrl, '/followers/list.json?cursor=-1&screen_name=',aTwitterName,'&skip_status=true&include_user_entities=false'.
-	response := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self class oauthParams].
-	response isSuccess ifFalse:[
+	resp := client httpGet: url do:[:req | WebUtils oAuthSign: req url: url using: self class oauthParams].
+	resp isSuccess ifFalse:[
 	
-		^'Something went wrong', response content.
+		^'Something went wrong', resp content.
 	].
 
 	json := Json new.
 	jsonObj := Array new.
-	json stream: (ReadStream on: (response content)).
+	json stream: (ReadStream on: (resp content)).
 	jsonObj := json readAny.
 
 	userCollection := jsonObj at: 'users'. 
