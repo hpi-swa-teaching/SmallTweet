@@ -1,19 +1,24 @@
 as yet unclassified
 twitterGetTimeline: aTwitterName 
-	| client url resp json jsonObj |
+	| client url response json jsonObj |
 	client := WebClient new.
 	url := SWTwitter apiUrl , '/statuses/user_timeline.json?screen_name=' , aTwitterName , '&count=10'.
-	resp := client
+	response := client
 				httpGet: url
 				do: [:req | WebUtils
 						oAuthSign: req
 						url: url
 						using: SWTwitter oauthParams].
+<<<<<<< HEAD
 	resp isSuccess
 		ifFalse: ['Something went wrong' , resp content].
+=======
+	response isSuccess
+		ifFalse: [^ 'Something went wrong' , response content].
+>>>>>>> origin/master
 	json := Json new.
 	jsonObj := Array new.
 	json
-		stream: (ReadStream on: resp content).
+		stream: (ReadStream on: response content).
 	jsonObj := json readAny.
 	^ jsonObj

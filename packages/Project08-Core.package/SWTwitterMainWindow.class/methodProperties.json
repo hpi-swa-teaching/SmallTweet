@@ -10,8 +10,15 @@
 		"initializePanel" : "to 6/8/2015 20:17",
 		"openTweetWindow" : "to 6/7/2015 19:53",
 		"twitterGetTimeline" : "to 6/7/2015 12:30",
+<<<<<<< HEAD
 		"twitterGetTimeline:" : "to 6/8/2015 20:26",
 		"twitterShowTimelineInWindow" : "to 6/8/2015 20:20",
 		"twitterShowTimelineInWindow:" : "to 6/8/2015 20:17",
 		"twitterTweet" : "to 6/8/2015 19:47",
+=======
+		"twitterGetTimeline:" : "mk 6/8/2015 19:34",
+		"twitterShowTimelineInWindow" : "to 6/7/2015 15:09",
+		"twitterShowTimelineInWindow:" : "to 6/7/2015 15:08",
+		"twitterTweet" : "to 6/7/2015 20:06",
+>>>>>>> origin/master
 		"twitterUi" : "to 6/7/2015 19:31" } }

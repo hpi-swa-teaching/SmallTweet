@@ -1,7 +1,11 @@
 twitterFunctions
 twitterTweet: aTwitterUser
 
+<<<<<<< HEAD
 	|client url response extra tweet personalOauthParams|
+=======
+	|client url response extra|
+>>>>>>> origin/master
 
 	client := WebClient new.
 	tweet := self twitterUi textField theText asString.
@@ -17,7 +21,11 @@ twitterTweet: aTwitterUser
 	response := client httpPost: url 
 			content: (WebUtils encodeUrlEncodedForm: extra)
 			type: 'application/x-www-form-urlencoded'
+<<<<<<< HEAD
 			do:[:req | WebUtils oAuthSign: req url: url extra: extra using: personalOauthParams].
+=======
+			do:[:req | WebUtils oAuthSign: req url: url extra: extra using: self class oauthParams].
+>>>>>>> origin/master
 	response isSuccess ifFalse:[
 	
 		^'Something went wrong', response content.
