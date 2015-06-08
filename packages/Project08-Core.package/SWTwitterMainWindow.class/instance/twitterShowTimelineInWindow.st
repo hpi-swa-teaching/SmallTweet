@@ -1,4 +1,4 @@
 as yet unclassified
 twitterShowTimelineInWindow
 
-	^ self twitterShowTimelineInWindow: 'SWTSpamaccount'
+	^ self twitterShowTimelineInWindow: currentUser asString

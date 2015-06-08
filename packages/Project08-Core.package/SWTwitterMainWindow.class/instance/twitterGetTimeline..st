@@ -10,7 +10,7 @@ twitterGetTimeline: aTwitterName
 						url: url
 						using: SWTwitter oauthParams].
 	resp isSuccess
-		ifFalse: [^ 'Something went wrong' , resp content].
+		ifFalse: ['Something went wrong' , resp content].
 	json := Json new.
 	jsonObj := Array new.
 	json

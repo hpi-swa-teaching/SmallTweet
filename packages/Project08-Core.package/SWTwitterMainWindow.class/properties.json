@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"mainWindow",
-		"twitterUi" ],
+		"twitterUi",
+		"currentUser" ],
 	"name" : "SWTwitterMainWindow",
 	"pools" : [
 		 ],

@@ -1,5 +1,5 @@
 accessing
-toolbar
+timelineButton
 	"No description given."
 	
-	^ toolbar
+	^ timelineButton

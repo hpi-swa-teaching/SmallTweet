@@ -6,11 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"uiContainer",
+		"userSelectionBox",
+		"tweetButton",
+		"timelineButton",
 		"sendButton",
-		"textField",
-		"toolbar",
-		"userSelectButton",
-		"tweetButton" ],
+		"textField" ],
 	"name" : "TwitterUi",
 	"pools" : [
 		 ],

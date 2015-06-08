@@ -16,7 +16,9 @@
 		"value",
 		"barFooValue",
 		"testValue",
-		"twitterWindow" ],
+		"twitterWindow",
+		"accessSecret",
+		"accessToken" ],
 	"name" : "SWTwitter",
 	"pools" : [
 		 ],

@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initializePanel" : "to 6/7/2015 19:55",
-		"sendButton" : "to 6/7/2015 19:55",
-		"textField" : "to 6/7/2015 19:55",
-		"toolbar" : "to 6/7/2015 19:55",
-		"tweetButton" : "to 6/7/2015 19:55",
-		"userSelectButton" : "to 6/7/2015 19:55" } }
+		"initializePanel" : "to 6/8/2015 20:14",
+		"sendButton" : "to 6/8/2015 20:14",
+		"textField" : "to 6/8/2015 20:14",
+		"timelineButton" : "to 6/8/2015 20:14",
+		"tweetButton" : "to 6/8/2015 20:14",
+		"uiContainer" : "to 6/8/2015 20:14",
+		"userSelectionBox" : "to 6/8/2015 20:14" } }

@@ -1,4 +1,4 @@
 twitterFunctions
 twitterShowTimelineInWindow
 
-    ^SWTwitterMainWindow new twitterShowTimelineInWindow
+    ^twitterWindow twitterShowTimelineInWindow

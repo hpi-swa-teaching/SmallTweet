@@ -5,10 +5,10 @@ initializePanel
 	|  |
 	
 	panel := UiContainer new.
-	panel extent: (500@300).
+	panel extent: (501@230).
 	panel position: (0@0).
-	panel hResizing: (#rigid).
-	panel vResizing: (#rigid).
+	panel hResizing: (#shrinkWrap).
+	panel vResizing: (#shrinkWrap).
 	panel minWidth: (2).
 	panel minHeight: (2).
 	panel cellInset: (4).
@@ -25,12 +25,132 @@ initializePanel
 	panel frameFractions: (0@0 corner: 1@1).
 	panel frameOffsets: (0@0 corner: 0@0).
 	panel balloonText: ('').
-	panel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.725)).
+	panel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	panel color: (Color gray).
 	panel borderWidth: (0).
 	panel borderStyle2: (#simple).
 	panel borderColor: (Color black).
 	panel setProperty: #objectName toValue: 'panel'.
+	uiContainer := UiContainer new.
+	uiContainer changeTableLayout.
+	uiContainer extent: (273@29).
+	uiContainer position: (7@6).
+	uiContainer hResizing: (#shrinkWrap).
+	uiContainer vResizing: (#shrinkWrap).
+	uiContainer minWidth: (2).
+	uiContainer minHeight: (2).
+	uiContainer cellInset: (4).
+	uiContainer cellPositioning: (#center).
+	uiContainer cellSpacing: (#none).
+	uiContainer layoutInset: (4).
+	uiContainer listCentering: (#topLeft).
+	uiContainer listDirection: (#leftToRight).
+	uiContainer listSpacing: (#none).
+	uiContainer maxCellSize: (1073741823).
+	uiContainer minCellSize: (0).
+	uiContainer wrapCentering: (#topLeft).
+	uiContainer wrapDirection: (#none).
+	uiContainer frameFractions: (0@0 corner: 1@1).
+	uiContainer frameOffsets: (0@0 corner: 0@0).
+	uiContainer balloonText: ('').
+	uiContainer balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
+	uiContainer color: (Color transparent).
+	uiContainer borderWidth: (0).
+	uiContainer borderStyle2: (#simple).
+	uiContainer borderColor: (Color black).
+	uiContainer setProperty: #objectName toValue: 'uiContainer'.
+	userSelectionBox := UiComboBox new.
+	userSelectionBox extent: (150@20).
+	userSelectionBox position: (11@10).
+	userSelectionBox hResizing: (#rigid).
+	userSelectionBox vResizing: (#rigid).
+	userSelectionBox minWidth: (2).
+	userSelectionBox minHeight: (2).
+	userSelectionBox cellInset: (0).
+	userSelectionBox cellPositioning: (#center).
+	userSelectionBox cellSpacing: (#none).
+	userSelectionBox layoutInset: (0).
+	userSelectionBox listCentering: (#topLeft).
+	userSelectionBox listDirection: (#topToBottom).
+	userSelectionBox listSpacing: (#none).
+	userSelectionBox maxCellSize: (1073741823).
+	userSelectionBox minCellSize: (0).
+	userSelectionBox wrapCentering: (#topLeft).
+	userSelectionBox wrapDirection: (#none).
+	userSelectionBox frameFractions: (0@0 corner: 1@1).
+	userSelectionBox frameOffsets: (0@0 corner: 0@0).
+	userSelectionBox balloonText: ('').
+	userSelectionBox balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
+	userSelectionBox readOnly: (true).
+	userSelectionBox setProperty: #objectName toValue: 'userSelectionBox'.
+	uiContainer addChild: userSelectionBox.
+	tweetButton := UiPushButton new.
+	tweetButton changeTableLayout.
+	tweetButton extent: (45@20).
+	tweetButton position: (167@10).
+	tweetButton hResizing: (#shrinkWrap).
+	tweetButton vResizing: (#shrinkWrap).
+	tweetButton minWidth: (2).
+	tweetButton minHeight: (2).
+	tweetButton cellInset: (4).
+	tweetButton cellPositioning: (#center).
+	tweetButton cellSpacing: (#none).
+	tweetButton layoutInset: (2@0 corner: 2@0).
+	tweetButton listCentering: (#topLeft).
+	tweetButton listDirection: (#leftToRight).
+	tweetButton listSpacing: (#none).
+	tweetButton maxCellSize: (1073741823).
+	tweetButton minCellSize: (0).
+	tweetButton wrapCentering: (#topLeft).
+	tweetButton wrapDirection: (#none).
+	tweetButton frameFractions: (0@0 corner: 1@1).
+	tweetButton frameOffsets: (0@0 corner: 0@0).
+	tweetButton balloonText: (nil).
+	tweetButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
+	tweetButton enabled: (true).
+	tweetButton setProperty: #iconByDesigner toValue: 'nil'.
+	tweetButton icon: (nil).
+	tweetButton text: ('Tweet').
+	tweetButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
+	tweetButton checkable: (true).
+	tweetButton checked: (false).
+	tweetButton autoExclusive: (true).
+	tweetButton setProperty: #objectName toValue: 'tweetButton'.
+	uiContainer addChild: tweetButton.
+	timelineButton := UiPushButton new.
+	timelineButton changeTableLayout.
+	timelineButton extent: (57@20).
+	timelineButton position: (218@10).
+	timelineButton hResizing: (#shrinkWrap).
+	timelineButton vResizing: (#shrinkWrap).
+	timelineButton minWidth: (2).
+	timelineButton minHeight: (2).
+	timelineButton cellInset: (4).
+	timelineButton cellPositioning: (#center).
+	timelineButton cellSpacing: (#none).
+	timelineButton layoutInset: (2@0 corner: 2@0).
+	timelineButton listCentering: (#topLeft).
+	timelineButton listDirection: (#leftToRight).
+	timelineButton listSpacing: (#none).
+	timelineButton maxCellSize: (1073741823).
+	timelineButton minCellSize: (0).
+	timelineButton wrapCentering: (#topLeft).
+	timelineButton wrapDirection: (#none).
+	timelineButton frameFractions: (0@0 corner: 1@1).
+	timelineButton frameOffsets: (0@0 corner: 0@0).
+	timelineButton balloonText: ('').
+	timelineButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.737)).
+	timelineButton enabled: (true).
+	timelineButton setProperty: #iconByDesigner toValue: 'nil'.
+	timelineButton icon: (nil).
+	timelineButton text: ('Timeline').
+	timelineButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
+	timelineButton checkable: (false).
+	timelineButton checked: (false).
+	timelineButton autoExclusive: (false).
+	timelineButton setProperty: #objectName toValue: 'timelineButton'.
+	uiContainer addChild: timelineButton.
+	panel addChild: uiContainer.
 	sendButton := UiPushButton new.
 	sendButton changeTableLayout.
 	sendButton extent: (57@20).
@@ -53,7 +173,7 @@ initializePanel
 	sendButton frameFractions: (0@0 corner: 1@1).
 	sendButton frameOffsets: (0@0 corner: 0@0).
 	sendButton balloonText: ('').
-	sendButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
+	sendButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	sendButton enabled: (true).
 	sendButton setProperty: #iconByDesigner toValue: 'MenuIcons smallOkIcon'.
 	sendButton icon: (MenuIcons smallOkIcon).
@@ -65,7 +185,7 @@ initializePanel
 	sendButton setProperty: #objectName toValue: 'sendButton'.
 	panel addChild: sendButton.
 	textField := UiTextEdit new.
-	textField extent: (491@151).
+	textField extent: (492@151).
 	textField position: (4@46).
 	textField hResizing: (#spaceFill).
 	textField vResizing: (#spaceFill).
@@ -85,7 +205,7 @@ initializePanel
 	textField frameFractions: (0@0 corner: 1@1).
 	textField frameOffsets: (0@0 corner: 0@0).
 	textField balloonText: (nil).
-	textField balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
+	textField balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	textField widgetResizable: (true).
 	textField horizontalScrollBarPolicy: (#alwaysOff).
 	textField verticalScrollBarPolicy: (#alwaysOn).
@@ -100,99 +220,4 @@ initializePanel
 	textField scrollingLimit: (10).
 	textField setProperty: #objectName toValue: 'textField'.
 	panel addChild: textField.
-	toolbar := UiButtonGroup new.
-	toolbar changeTableLayout.
-	toolbar extent: (498@34).
-	toolbar position: (2@5).
-	toolbar hResizing: (#rigid).
-	toolbar vResizing: (#rigid).
-	toolbar minWidth: (2).
-	toolbar minHeight: (2).
-	toolbar cellInset: (4).
-	toolbar cellPositioning: (#center).
-	toolbar cellSpacing: (#none).
-	toolbar layoutInset: (4).
-	toolbar listCentering: (#topLeft).
-	toolbar listDirection: (#leftToRight).
-	toolbar listSpacing: (#none).
-	toolbar maxCellSize: (1073741823).
-	toolbar minCellSize: (0).
-	toolbar wrapCentering: (#topLeft).
-	toolbar wrapDirection: (#none).
-	toolbar frameFractions: (0@0 corner: 1@1).
-	toolbar frameOffsets: (0@0 corner: 0@0).
-	toolbar balloonText: (nil).
-	toolbar balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
-	toolbar color: (Color transparent).
-	toolbar borderWidth: (0).
-	toolbar borderStyle2: (#simple).
-	toolbar borderColor: (Color black).
-	toolbar setProperty: #objectName toValue: 'toolbar'.
-	userSelectButton := UiPushButton new.
-	userSelectButton changeTableLayout.
-	userSelectButton extent: (96@20).
-	userSelectButton position: (6@9).
-	userSelectButton hResizing: (#shrinkWrap).
-	userSelectButton vResizing: (#shrinkWrap).
-	userSelectButton minWidth: (2).
-	userSelectButton minHeight: (2).
-	userSelectButton cellInset: (4).
-	userSelectButton cellPositioning: (#center).
-	userSelectButton cellSpacing: (#none).
-	userSelectButton layoutInset: (2@0 corner: 2@0).
-	userSelectButton listCentering: (#topLeft).
-	userSelectButton listDirection: (#leftToRight).
-	userSelectButton listSpacing: (#none).
-	userSelectButton maxCellSize: (1073741823).
-	userSelectButton minCellSize: (0).
-	userSelectButton wrapCentering: (#topLeft).
-	userSelectButton wrapDirection: (#none).
-	userSelectButton frameFractions: (0@0 corner: 1@1).
-	userSelectButton frameOffsets: (0@0 corner: 0@0).
-	userSelectButton balloonText: ('').
-	userSelectButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
-	userSelectButton enabled: (true).
-	userSelectButton setProperty: #iconByDesigner toValue: 'nil'.
-	userSelectButton icon: (nil).
-	userSelectButton text: ('User Selection').
-	userSelectButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
-	userSelectButton checkable: (true).
-	userSelectButton checked: (false).
-	userSelectButton autoExclusive: (true).
-	userSelectButton setProperty: #objectName toValue: 'userSelectButton'.
-	toolbar addChild: userSelectButton.
-	tweetButton := UiPushButton new.
-	tweetButton changeTableLayout.
-	tweetButton extent: (45@20).
-	tweetButton position: (108@9).
-	tweetButton hResizing: (#shrinkWrap).
-	tweetButton vResizing: (#shrinkWrap).
-	tweetButton minWidth: (2).
-	tweetButton minHeight: (2).
-	tweetButton cellInset: (4).
-	tweetButton cellPositioning: (#center).
-	tweetButton cellSpacing: (#none).
-	tweetButton layoutInset: (2@0 corner: 2@0).
-	tweetButton listCentering: (#topLeft).
-	tweetButton listDirection: (#leftToRight).
-	tweetButton listSpacing: (#none).
-	tweetButton maxCellSize: (1073741823).
-	tweetButton minCellSize: (0).
-	tweetButton wrapCentering: (#topLeft).
-	tweetButton wrapDirection: (#none).
-	tweetButton frameFractions: (0@0 corner: 1@1).
-	tweetButton frameOffsets: (0@0 corner: 0@0).
-	tweetButton balloonText: (nil).
-	tweetButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
-	tweetButton enabled: (true).
-	tweetButton setProperty: #iconByDesigner toValue: 'nil'.
-	tweetButton icon: (nil).
-	tweetButton text: ('Tweet').
-	tweetButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
-	tweetButton checkable: (true).
-	tweetButton checked: (false).
-	tweetButton autoExclusive: (true).
-	tweetButton setProperty: #objectName toValue: 'tweetButton'.
-	toolbar addChild: tweetButton.
-	panel addChild: toolbar.
 	panel setProperty: #uiClassName toValue: 'Twitter'.
