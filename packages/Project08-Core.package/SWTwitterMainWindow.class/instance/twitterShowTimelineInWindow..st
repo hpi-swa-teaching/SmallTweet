@@ -1,6 +1,8 @@
 as yet unclassified
 twitterShowTimelineInWindow: aTwitterName 
 	| jsonObj |
+
+	twitterUi textField clear.	
 	jsonObj := self twitterGetTimeline: aTwitterName.
 	jsonObj
 		do: [:j | twitterUi textField theText: twitterUi textField theText

@@ -5,9 +5,7 @@ twitterTweet: aTwitterUser
 
 	client := WebClient new.
 	tweet := self twitterUi textField theText asString.
-	personalOauthParams := self class oauthParamsTest1 value.
-	personalOauthParams at: 'oauth_token' put: (self accessToken at: aTwitterUser asString).
-	personalOauthParams at: 'oauth_token_secret' put: (self accessSecret at: aTwitterUser asString).
+	personalOauthParams := self getPersonalOAuthParametersFor: aTwitterUser.
 	self replaceSpaces: tweet.
 	
 	url := self class apiUrl, '/statuses/update.json'.
