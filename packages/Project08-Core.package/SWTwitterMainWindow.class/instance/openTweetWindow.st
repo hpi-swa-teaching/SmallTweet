@@ -1,4 +1,4 @@
-as yet unclassified
+uiFunctions
 openTweetWindow
 
 	twitterUi textField theText: ''.

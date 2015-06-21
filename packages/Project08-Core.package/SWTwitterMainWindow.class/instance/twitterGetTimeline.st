@@ -1,4 +1,4 @@
-as yet unclassified
+twitterFunctions
 twitterGetTimeline
 
     ^self twitterGetTimeline: 'SWTSpamaccount'

@@ -26,14 +26,14 @@ initializePanel
 	panel frameOffsets: (0@0 corner: 0@0).
 	panel balloonText: ('').
 	panel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
-	panel color: (Color gray).
+	panel color: (Color transparent).
 	panel borderWidth: (0).
 	panel borderStyle2: (#simple).
 	panel borderColor: (Color black).
 	panel setProperty: #objectName toValue: 'panel'.
 	uiContainer := UiContainer new.
 	uiContainer changeTableLayout.
-	uiContainer extent: (273@29).
+	uiContainer extent: (369@29).
 	uiContainer position: (7@6).
 	uiContainer hResizing: (#shrinkWrap).
 	uiContainer vResizing: (#shrinkWrap).
@@ -53,7 +53,7 @@ initializePanel
 	uiContainer frameFractions: (0@0 corner: 1@1).
 	uiContainer frameOffsets: (0@0 corner: 0@0).
 	uiContainer balloonText: ('').
-	uiContainer balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
+	uiContainer balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.725)).
 	uiContainer color: (Color transparent).
 	uiContainer borderWidth: (0).
 	uiContainer borderStyle2: (#simple).
@@ -80,7 +80,7 @@ initializePanel
 	userSelectionBox frameFractions: (0@0 corner: 1@1).
 	userSelectionBox frameOffsets: (0@0 corner: 0@0).
 	userSelectionBox balloonText: ('').
-	userSelectionBox balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
+	userSelectionBox balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	userSelectionBox readOnly: (true).
 	userSelectionBox setProperty: #objectName toValue: 'userSelectionBox'.
 	uiContainer addChild: userSelectionBox.
@@ -139,7 +139,7 @@ initializePanel
 	timelineButton frameFractions: (0@0 corner: 1@1).
 	timelineButton frameOffsets: (0@0 corner: 0@0).
 	timelineButton balloonText: ('').
-	timelineButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.737)).
+	timelineButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
 	timelineButton enabled: (true).
 	timelineButton setProperty: #iconByDesigner toValue: 'nil'.
 	timelineButton icon: (nil).
@@ -150,6 +150,39 @@ initializePanel
 	timelineButton autoExclusive: (false).
 	timelineButton setProperty: #objectName toValue: 'timelineButton'.
 	uiContainer addChild: timelineButton.
+	settingsButton := UiPushButton new.
+	settingsButton changeTableLayout.
+	settingsButton extent: (90@20).
+	settingsButton position: (281@10).
+	settingsButton hResizing: (#shrinkWrap).
+	settingsButton vResizing: (#shrinkWrap).
+	settingsButton minWidth: (2).
+	settingsButton minHeight: (2).
+	settingsButton cellInset: (4).
+	settingsButton cellPositioning: (#center).
+	settingsButton cellSpacing: (#none).
+	settingsButton layoutInset: (2@0 corner: 2@0).
+	settingsButton listCentering: (#topLeft).
+	settingsButton listDirection: (#leftToRight).
+	settingsButton listSpacing: (#none).
+	settingsButton maxCellSize: (1073741823).
+	settingsButton minCellSize: (0).
+	settingsButton wrapCentering: (#topLeft).
+	settingsButton wrapDirection: (#none).
+	settingsButton frameFractions: (0@0 corner: 1@1).
+	settingsButton frameOffsets: (0@0 corner: 0@0).
+	settingsButton balloonText: ('').
+	settingsButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.741)).
+	settingsButton enabled: (true).
+	settingsButton setProperty: #iconByDesigner toValue: 'nil'.
+	settingsButton icon: (nil).
+	settingsButton text: ('User Settings').
+	settingsButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
+	settingsButton checkable: (false).
+	settingsButton checked: (false).
+	settingsButton autoExclusive: (false).
+	settingsButton setProperty: #objectName toValue: 'settingsButton'.
+	uiContainer addChild: settingsButton.
 	panel addChild: uiContainer.
 	sendButton := UiPushButton new.
 	sendButton changeTableLayout.

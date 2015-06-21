@@ -12,7 +12,7 @@ requestOauthToken
 	resp := client httpPost: url 
 			content: (WebUtils encodeUrlEncodedForm: extra)
 			type: 'application/x-www-form-urlencoded'
-			do:[:req | WebUtils oAuthSign: req url: url extra: extra using: self class oauthParams].
+			do:[:req | WebUtils oAuthSign: req url: url extra: extra using: self class oauthParamsTest1].
 	resp isSuccess ifFalse:[
 	
 		^'Something went wrong', resp content.

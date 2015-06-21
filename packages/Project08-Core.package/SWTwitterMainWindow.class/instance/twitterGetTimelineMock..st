@@ -1,4 +1,4 @@
-as yet unclassified
+twitterFunctions
 twitterGetTimelineMock: aTwitterName 
 	| client url response json jsonObj personalOauthParams |
 	client := WebClient new.

@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initializePanel" : "to 6/8/2015 20:14",
-		"sendButton" : "to 6/8/2015 20:14",
-		"textField" : "to 6/8/2015 20:14",
-		"timelineButton" : "to 6/8/2015 20:14",
-		"tweetButton" : "to 6/8/2015 20:14",
-		"uiContainer" : "to 6/8/2015 20:14",
-		"userSelectionBox" : "to 6/8/2015 20:14" } }
+		"initializePanel" : "to 6/21/2015 11:37",
+		"sendButton" : "to 6/21/2015 11:37",
+		"settingsButton" : "to 6/21/2015 11:37",
+		"textField" : "to 6/21/2015 11:37",
+		"timelineButton" : "to 6/21/2015 11:37",
+		"tweetButton" : "to 6/21/2015 11:37",
+		"uiContainer" : "to 6/21/2015 11:37",
+		"userSelectionBox" : "to 6/21/2015 11:37" } }

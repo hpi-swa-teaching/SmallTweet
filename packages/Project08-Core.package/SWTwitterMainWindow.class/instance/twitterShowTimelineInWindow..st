@@ -1,4 +1,4 @@
-as yet unclassified
+twitterFunctions
 twitterShowTimelineInWindow: aTwitterName 
 	| jsonObj |
 

@@ -1,7 +1,7 @@
 twitterAuthentication
 twitterLoginWithPin: aPin 
 
-	| client url resp extra oauthSecret oauthToken |
+	| client url resp extra oauthSecret oauthToken userName |
 	client := WebClient new.
 	extra := Dictionary newFromPairs: {'oauth_verifier'. aPin}.
 	url := 'https://api.twitter.com/oauth/access_token?oauth_verifier=' , aPin.
@@ -15,15 +15,16 @@ twitterLoginWithPin: aPin
 						extra: extra
 						using: self class oauthParams].
 	resp isSuccess
-		ifFalse: [^ 'Something went wrong' , resp content].
+		ifFalse: [Transcript show: 'Something went wrong' , resp content. ^self].
 	oauthSecret := (((resp content findTokens: '&')
 				at: 2)
 				findTokens: '=')
 				at: 2.
-	self class oauthParams add: 'oauth_token_secret' -> oauthSecret.
 	oauthToken := (((resp content findTokens: '&')
 				at: 1)
 				findTokens: '=')
 				at: 2.
-	self class oauthParams at: 'oauth_token' put: oauthToken.
-	^ resp content
+	userName := self twitterGetUserNameWithToken: oauthToken Secret: oauthSecret. 
+	self accessToken: oauthToken for: userName.
+	self accessSecret: oauthSecret for: userName.
+	^ userName

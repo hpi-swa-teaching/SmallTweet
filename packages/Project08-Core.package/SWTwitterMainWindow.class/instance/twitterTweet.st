@@ -1,4 +1,4 @@
-as yet unclassified
+twitterFunctions
 twitterTweet
 
 	super twitterTweet: (self currentUser asString)

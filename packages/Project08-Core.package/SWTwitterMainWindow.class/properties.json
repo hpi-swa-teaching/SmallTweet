@@ -3,12 +3,15 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"SettingsInitialized" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"mainWindow",
+		"settingsWindow",
+		"tweetWindow",
 		"twitterUi",
-		"currentUser" ],
+		"currentUser",
+		"settingsUi" ],
 	"name" : "SWTwitterMainWindow",
 	"pools" : [
 		 ],
