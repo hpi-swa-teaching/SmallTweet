@@ -1,4 +1,0 @@
-twitterFunctions
-twitterShowTimelineInWindow
-
-    ^twitterWindow twitterShowTimelineInWindow
