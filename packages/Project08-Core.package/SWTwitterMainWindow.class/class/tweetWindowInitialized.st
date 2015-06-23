@@ -1,0 +1,3 @@
+accessing
+tweetWindowInitialized
+	^ TweetWindowInitialized

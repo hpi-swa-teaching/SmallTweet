@@ -5,7 +5,7 @@ initializePanel
 	|  |
 	
 	panel := UiContainer new.
-	panel extent: (501@230).
+	panel extent: (501@202).
 	panel position: (0@0).
 	panel hResizing: (#shrinkWrap).
 	panel vResizing: (#shrinkWrap).
@@ -53,7 +53,7 @@ initializePanel
 	uiContainer frameFractions: (0@0 corner: 1@1).
 	uiContainer frameOffsets: (0@0 corner: 0@0).
 	uiContainer balloonText: ('').
-	uiContainer balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.725)).
+	uiContainer balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	uiContainer color: (Color transparent).
 	uiContainer borderWidth: (0).
 	uiContainer borderStyle2: (#simple).
@@ -139,7 +139,7 @@ initializePanel
 	timelineButton frameFractions: (0@0 corner: 1@1).
 	timelineButton frameOffsets: (0@0 corner: 0@0).
 	timelineButton balloonText: ('').
-	timelineButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
+	timelineButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.725)).
 	timelineButton enabled: (true).
 	timelineButton setProperty: #iconByDesigner toValue: 'nil'.
 	timelineButton icon: (nil).
@@ -172,7 +172,7 @@ initializePanel
 	settingsButton frameFractions: (0@0 corner: 1@1).
 	settingsButton frameOffsets: (0@0 corner: 0@0).
 	settingsButton balloonText: ('').
-	settingsButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.741)).
+	settingsButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.737)).
 	settingsButton enabled: (true).
 	settingsButton setProperty: #iconByDesigner toValue: 'nil'.
 	settingsButton icon: (nil).
@@ -184,39 +184,6 @@ initializePanel
 	settingsButton setProperty: #objectName toValue: 'settingsButton'.
 	uiContainer addChild: settingsButton.
 	panel addChild: uiContainer.
-	sendButton := UiPushButton new.
-	sendButton changeTableLayout.
-	sendButton extent: (57@20).
-	sendButton position: (436@205).
-	sendButton hResizing: (#shrinkWrap).
-	sendButton vResizing: (#shrinkWrap).
-	sendButton minWidth: (2).
-	sendButton minHeight: (2).
-	sendButton cellInset: (4).
-	sendButton cellPositioning: (#center).
-	sendButton cellSpacing: (#none).
-	sendButton layoutInset: (2@0 corner: 2@0).
-	sendButton listCentering: (#topLeft).
-	sendButton listDirection: (#leftToRight).
-	sendButton listSpacing: (#none).
-	sendButton maxCellSize: (1073741823).
-	sendButton minCellSize: (0).
-	sendButton wrapCentering: (#topLeft).
-	sendButton wrapDirection: (#none).
-	sendButton frameFractions: (0@0 corner: 1@1).
-	sendButton frameOffsets: (0@0 corner: 0@0).
-	sendButton balloonText: ('').
-	sendButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
-	sendButton enabled: (true).
-	sendButton setProperty: #iconByDesigner toValue: 'MenuIcons smallOkIcon'.
-	sendButton icon: (MenuIcons smallOkIcon).
-	sendButton text: ('Send').
-	sendButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
-	sendButton checkable: (true).
-	sendButton checked: (false).
-	sendButton autoExclusive: (false).
-	sendButton setProperty: #objectName toValue: 'sendButton'.
-	panel addChild: sendButton.
 	textField := UiTextEdit new.
 	textField extent: (492@151).
 	textField position: (4@46).

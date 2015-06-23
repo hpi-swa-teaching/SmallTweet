@@ -1,5 +1,5 @@
 accessing
-sendButton
+tweetButton
 	"No description given."
 	
-	^ sendButton
+	^ tweetButton

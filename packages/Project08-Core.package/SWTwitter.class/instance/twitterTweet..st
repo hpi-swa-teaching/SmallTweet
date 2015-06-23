@@ -4,7 +4,7 @@ twitterTweet: aTwitterUser
 	|client url response extra tweet personalOauthParams|
 
 	client := WebClient new.
-	tweet := self twitterUi textField theText asString.
+	tweet := self extractTweet.
 	personalOauthParams := self getPersonalOAuthParametersFor: aTwitterUser.
 	self replaceSpaces: tweet.
 	
