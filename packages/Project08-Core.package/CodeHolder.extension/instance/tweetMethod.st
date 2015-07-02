@@ -1,3 +1,5 @@
 *Project08-Core
 tweetMethod
-    Transcript show: 'Test'
+    (Smalltalk includesKey: #currentTwitter)
+        ifFalse: [SWTwitterMainWindow new].
+    currentTwitter openTweetWindowWith: self contents.

@@ -11,3 +11,4 @@ initialize
 	self currentUser: 'Please Login First'.
 	mainWindow openInWorld.
 	mainWindow extent: twitterUi panel extent + self class windowOffset.
+      Smalltalk at: #currentTwitter put: self.
