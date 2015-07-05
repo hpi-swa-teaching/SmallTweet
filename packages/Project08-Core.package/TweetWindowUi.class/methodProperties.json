@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"footer" : "to 6/23/2015 20:45",
-		"header" : "to 6/23/2015 20:45",
-		"initializePanel" : "to 6/23/2015 20:45",
-		"tweetButton" : "to 6/23/2015 20:45",
-		"tweetTextfield" : "to 6/23/2015 20:45",
-		"usernameLabel" : "to 6/23/2015 20:45" } }
+		"footer" : "to 7/2/2015 19:30",
+		"header" : "to 7/2/2015 19:30",
+		"initializePanel" : "to 7/2/2015 19:30",
+		"tweetAsPictureButton" : "to 7/2/2015 19:30",
+		"tweetButton" : "to 7/2/2015 19:30",
+		"tweetTextfield" : "to 7/2/2015 19:30",
+		"usernameLabel" : "to 7/2/2015 19:30" } }

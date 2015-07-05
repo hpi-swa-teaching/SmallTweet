@@ -26,7 +26,7 @@ initializePanel
 	panel frameFractions: (0@0 corner: 1@1).
 	panel frameOffsets: (0@0 corner: 0@0).
 	panel balloonText: (nil).
-	panel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.737)).
+	panel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
 	panel color: (Color transparent).
 	panel borderWidth: (0).
 	panel borderStyle2: (#simple).
@@ -54,7 +54,7 @@ initializePanel
 	header frameFractions: (0@0 corner: 1@1).
 	header frameOffsets: (0@0 corner: 0@0).
 	header balloonText: (nil).
-	header balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.737)).
+	header balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
 	header color: (Color transparent).
 	header borderWidth: (0).
 	header borderStyle2: (#simple).
@@ -82,7 +82,7 @@ initializePanel
 	unnamedMorph1 frameFractions: (0@0 corner: 1@1).
 	unnamedMorph1 frameOffsets: (0@0 corner: 0@0).
 	unnamedMorph1 balloonText: ('').
-	unnamedMorph1 balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
+	unnamedMorph1 balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
 	unnamedMorph1 text: ('From:').
 	unnamedMorph1 setProperty: #formByDesigner toValue: 'nil'.
 	unnamedMorph1 form: (nil).
@@ -109,7 +109,7 @@ initializePanel
 	usernameLabel frameFractions: (0@0 corner: 1@1).
 	usernameLabel frameOffsets: (0@0 corner: 0@0).
 	usernameLabel balloonText: ('').
-	usernameLabel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.725)).
+	usernameLabel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	usernameLabel text: ('Please Login First').
 	usernameLabel setProperty: #formByDesigner toValue: 'nil'.
 	usernameLabel form: (nil).
@@ -137,7 +137,7 @@ initializePanel
 	tweetTextfield frameFractions: (0@0 corner: 1@1).
 	tweetTextfield frameOffsets: (0@0 corner: 0@0).
 	tweetTextfield balloonText: ('').
-	tweetTextfield balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
+	tweetTextfield balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
 	tweetTextfield widgetResizable: (true).
 	tweetTextfield horizontalScrollBarPolicy: (#alwaysOff).
 	tweetTextfield verticalScrollBarPolicy: (#asNeeded).
@@ -174,16 +174,49 @@ initializePanel
 	footer frameFractions: (0@0 corner: 1@1).
 	footer frameOffsets: (0@0 corner: 0@0).
 	footer balloonText: ('').
-	footer balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
+	footer balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
 	footer color: (Color transparent).
 	footer borderWidth: (0).
 	footer borderStyle2: (#simple).
 	footer borderColor: (Color black).
 	footer setProperty: #objectName toValue: 'footer'.
+	tweetAsPictureButton := UiPushButton new.
+	tweetAsPictureButton changeTableLayout.
+	tweetAsPictureButton extent: (129@20).
+	tweetAsPictureButton position: (255@259).
+	tweetAsPictureButton hResizing: (#shrinkWrap).
+	tweetAsPictureButton vResizing: (#shrinkWrap).
+	tweetAsPictureButton minWidth: (2).
+	tweetAsPictureButton minHeight: (2).
+	tweetAsPictureButton cellInset: (4).
+	tweetAsPictureButton cellPositioning: (#center).
+	tweetAsPictureButton cellSpacing: (#none).
+	tweetAsPictureButton layoutInset: (2@0 corner: 2@0).
+	tweetAsPictureButton listCentering: (#topLeft).
+	tweetAsPictureButton listDirection: (#leftToRight).
+	tweetAsPictureButton listSpacing: (#none).
+	tweetAsPictureButton maxCellSize: (1073741823).
+	tweetAsPictureButton minCellSize: (0).
+	tweetAsPictureButton wrapCentering: (#topLeft).
+	tweetAsPictureButton wrapDirection: (#none).
+	tweetAsPictureButton frameFractions: (0@0 corner: 1@1).
+	tweetAsPictureButton frameOffsets: (0@0 corner: 0@0).
+	tweetAsPictureButton balloonText: (nil).
+	tweetAsPictureButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.749)).
+	tweetAsPictureButton enabled: (false).
+	tweetAsPictureButton setProperty: #iconByDesigner toValue: 'UiFugueIcons imageExportIcon'.
+	tweetAsPictureButton icon: (UiFugueIcons imageExportIcon).
+	tweetAsPictureButton text: ('Tweet as Picture').
+	tweetAsPictureButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
+	tweetAsPictureButton checkable: (false).
+	tweetAsPictureButton checked: (false).
+	tweetAsPictureButton autoExclusive: (false).
+	tweetAsPictureButton setProperty: #objectName toValue: 'tweetAsPictureButton'.
+	footer addChild: tweetAsPictureButton.
 	tweetButton := UiPushButton new.
 	tweetButton changeTableLayout.
 	tweetButton extent: (65@20).
-	tweetButton position: (319@259).
+	tweetButton position: (184@259).
 	tweetButton hResizing: (#shrinkWrap).
 	tweetButton vResizing: (#shrinkWrap).
 	tweetButton minWidth: (2).
@@ -202,7 +235,7 @@ initializePanel
 	tweetButton frameFractions: (0@0 corner: 1@1).
 	tweetButton frameOffsets: (0@0 corner: 0@0).
 	tweetButton balloonText: ('').
-	tweetButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
+	tweetButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
 	tweetButton enabled: (false).
 	tweetButton setProperty: #iconByDesigner toValue: 'MenuIcons smallOkIcon'.
 	tweetButton icon: (MenuIcons smallOkIcon).

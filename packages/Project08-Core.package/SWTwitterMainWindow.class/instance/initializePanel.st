@@ -8,4 +8,5 @@ initializePanel
 	self connect: (twitterUi timelineButton) signal: #clicked: toSelector: #twitterShowTimelineInWindow.
 	self connect: (twitterUi userSelectionBox list) signal: #clicked: toSelector: #changeCurrentUser.
 	self connect: (twitterUi settingsButton) signal: #clicked: toSelector: #openSettingsWindow.
+	self connect: (twitterUi twitterCursorButton) signal: #clicked: toSelector: #useTwitterCursor.
 	mainWindow label: 'Twitter'.

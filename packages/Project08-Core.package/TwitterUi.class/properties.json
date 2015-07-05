@@ -11,6 +11,7 @@
 		"tweetButton",
 		"timelineButton",
 		"settingsButton",
+		"twitterCursorButton",
 		"textField" ],
 	"name" : "TwitterUi",
 	"pools" : [

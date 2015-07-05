@@ -18,7 +18,7 @@ twitterTweet: aTwitterUser
 			do:[:req | WebUtils oAuthSign: req url: url extra: extra using: personalOauthParams].
 	response isSuccess ifFalse:[
 	
-		^'Something went wrong', response content.
+		Transcript show: ('Something went wrong', response content).
 	].
 	
 	Transcript show: 'Tweet successfull'. Transcript cr.

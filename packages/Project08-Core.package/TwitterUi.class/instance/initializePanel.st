@@ -33,7 +33,7 @@ initializePanel
 	panel setProperty: #objectName toValue: 'panel'.
 	uiContainer := UiContainer new.
 	uiContainer changeTableLayout.
-	uiContainer extent: (369@29).
+	uiContainer extent: (490@29).
 	uiContainer position: (7@6).
 	uiContainer hResizing: (#shrinkWrap).
 	uiContainer vResizing: (#shrinkWrap).
@@ -139,7 +139,7 @@ initializePanel
 	timelineButton frameFractions: (0@0 corner: 1@1).
 	timelineButton frameOffsets: (0@0 corner: 0@0).
 	timelineButton balloonText: ('').
-	timelineButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.725)).
+	timelineButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	timelineButton enabled: (true).
 	timelineButton setProperty: #iconByDesigner toValue: 'nil'.
 	timelineButton icon: (nil).
@@ -172,7 +172,7 @@ initializePanel
 	settingsButton frameFractions: (0@0 corner: 1@1).
 	settingsButton frameOffsets: (0@0 corner: 0@0).
 	settingsButton balloonText: ('').
-	settingsButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.737)).
+	settingsButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
 	settingsButton enabled: (true).
 	settingsButton setProperty: #iconByDesigner toValue: 'nil'.
 	settingsButton icon: (nil).
@@ -183,6 +183,39 @@ initializePanel
 	settingsButton autoExclusive: (false).
 	settingsButton setProperty: #objectName toValue: 'settingsButton'.
 	uiContainer addChild: settingsButton.
+	twitterCursorButton := UiPushButton new.
+	twitterCursorButton changeTableLayout.
+	twitterCursorButton extent: (115@20).
+	twitterCursorButton position: (377@10).
+	twitterCursorButton hResizing: (#shrinkWrap).
+	twitterCursorButton vResizing: (#shrinkWrap).
+	twitterCursorButton minWidth: (2).
+	twitterCursorButton minHeight: (2).
+	twitterCursorButton cellInset: (4).
+	twitterCursorButton cellPositioning: (#center).
+	twitterCursorButton cellSpacing: (#none).
+	twitterCursorButton layoutInset: (2@0 corner: 2@0).
+	twitterCursorButton listCentering: (#topLeft).
+	twitterCursorButton listDirection: (#leftToRight).
+	twitterCursorButton listSpacing: (#none).
+	twitterCursorButton maxCellSize: (1073741823).
+	twitterCursorButton minCellSize: (0).
+	twitterCursorButton wrapCentering: (#topLeft).
+	twitterCursorButton wrapDirection: (#none).
+	twitterCursorButton frameFractions: (0@0 corner: 1@1).
+	twitterCursorButton frameOffsets: (0@0 corner: 0@0).
+	twitterCursorButton balloonText: ('').
+	twitterCursorButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.745)).
+	twitterCursorButton enabled: (true).
+	twitterCursorButton setProperty: #iconByDesigner toValue: 'UiSilkIcons cursorIcon'.
+	twitterCursorButton icon: (UiSilkIcons cursorIcon).
+	twitterCursorButton text: ('Twitter Cursor').
+	twitterCursorButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
+	twitterCursorButton checkable: (false).
+	twitterCursorButton checked: (false).
+	twitterCursorButton autoExclusive: (false).
+	twitterCursorButton setProperty: #objectName toValue: 'twitterCursorButton'.
+	uiContainer addChild: twitterCursorButton.
 	panel addChild: uiContainer.
 	textField := UiTextEdit new.
 	textField extent: (492@151).

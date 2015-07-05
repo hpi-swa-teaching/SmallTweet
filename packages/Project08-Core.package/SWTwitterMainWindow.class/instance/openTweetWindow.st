@@ -3,6 +3,7 @@ openTweetWindow
 
 	(self class tweetWindowInitialized < 1) ifTrue: [
 		self connect: (tweetWindowUi tweetButton) signal: #clicked: toSelector: #twitterTweet. 
+		self connect: (tweetWindowUi tweetAsPictureButton) signal: #clicked: toSelector: #twitterTweetAsPicture.
 		tweetWindowUi usernameLabel theText: self currentUser.
 		tweetWindow addMorph: tweetWindowUi panel.
 		tweetWindow openInWorld.
