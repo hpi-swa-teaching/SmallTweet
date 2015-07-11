@@ -31,12 +31,12 @@
 		"tweetWindowUi:" : "to 6/23/2015 20:18",
 		"twitterGetAuthenticationPage" : "to 6/21/2015 13:18",
 		"twitterGetTimeline" : "to 6/7/2015 12:30",
-		"twitterGetTimeline:" : "to 6/9/2015 13:39",
-		"twitterGetTimelineMock:" : "to 6/11/2015 14:04",
+		"twitterGetTimeline:" : "to 7/9/2015 21:16",
+		"twitterGetTimelineMock:" : "to 7/9/2015 21:16",
 		"twitterShowTimelineInWindow" : "to 6/8/2015 20:20",
 		"twitterShowTimelineInWindow:" : "to 6/23/2015 20:52",
 		"twitterTweet" : "to 6/8/2015 20:42",
-		"twitterTweetAsPicture" : "to 7/2/2015 19:46",
+		"twitterTweetAsPicture" : "to 7/11/2015 20:27",
 		"twitterUi" : "to 6/7/2015 19:31",
 		"twitterUi:" : "to 6/21/2015 14:07",
-		"useTwitterCursor" : "to 7/5/2015 18:45" } }
+		"useTwitterCursor" : "to 7/9/2015 21:01" } }

@@ -1,27 +1,34 @@
 twitterFunctions
 twitterUploadMorphAsPicture: aMorph for: aTwitterUser
 
-	|client url response extra morphAsPicture morphAsBinaryString personalOauthParams|
+	|client url request morphAsPicture morphAsBase64 personalOauthParams postData boundary|
 
 	client := WebClient new.
-	morphAsBinaryString := String new.
+	morphAsBase64 := String new.
 	aMorph exportAsPNGNamed: 'upload.png'.
-	morphAsPicture := ((Form fromFileNamed: 'upload.png') bits compressToByteArray).
-	morphAsPicture do: [:index | morphAsBinaryString := morphAsBinaryString, index asString].
+	morphAsPicture := (ImageReadWriter on: (FileStream readOnlyFileNamed: 'upload.png')).
+	morphAsBase64 := (Base64MimeConverter mimeEncode: morphAsPicture) contents.
+
 	personalOauthParams := self getPersonalOAuthParametersFor: aTwitterUser.
 
 	url := 'https://upload.twitter.com/1.1/media/upload.json'.
-	extra := Dictionary newFromPairs: {
-		'media'. morphAsBinaryString.
-	}.
-	response := client httpPost: url 
-			content: (WebUtils encodeUrlEncodedForm: extra)
-			type: 'multipart/form-data'
-			do:[:req | WebUtils oAuthSign: req url: url extra: extra using: personalOauthParams].
-	response isSuccess ifFalse:[
-	
-		Transcript show: ('Something went wrong', response content).
+	boundary := '---------------SWTHPI2015-------------------'.
+
+	postData := '--', boundary, String crlf,
+				'Content-Disposition:form-data; name="media_data"; filename="upload.png"', String crlf,
+				'Content-Type: image/png', String crlf, 
+				'Content-Transfer-Encoding: base64', String crlf, String crlf,  
+				morphAsBase64, String crlf,
+				'--', boundary,'--', String crlf.
+
+	request := client httpPost: url 
+			content: postData
+			type: 'multipart/form-data; boundary=', boundary
+			do:[:req | WebUtils oAuthSign: req  url: url using: personalOauthParams.].
+
+	request isSuccess ifFalse:[
+		Transcript show: ('Something went wrong', request content).
 		^self
 	].
 	
-	Transcript show: 'Tweet successfull'. Transcript cr.
+	^(Json new stream: (ReadStream on: request content)) readAny at: 'media_id_string'

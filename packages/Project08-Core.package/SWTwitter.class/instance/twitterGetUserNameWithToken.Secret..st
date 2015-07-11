@@ -1,7 +1,7 @@
 twitterFunctions
 twitterGetUserNameWithToken: anOauthToken Secret: anOauthSecret
 	
-	|json jsonObj client url response oauthParams|
+	| client url response oauthParams|
 
 	client := WebClient new.
 	oauthParams := self class oauthParamsTest1 value.
@@ -13,8 +13,4 @@ twitterGetUserNameWithToken: anOauthToken Secret: anOauthSecret
 	response isSuccess
 		ifFalse: [Transcript show: ('Something went wrong' , response content). ^self].
 
-	json := Json new.
-	json stream: (ReadStream on: (response content)).
-	jsonObj := json readAny.
-
-	^jsonObj at: 'screen_name'
+	^(Json new stream: (ReadStream on: response content)) readAny at: 'screen_name'.

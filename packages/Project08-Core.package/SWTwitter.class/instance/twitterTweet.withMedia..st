@@ -1,5 +1,5 @@
 twitterFunctions
-twitterTweet: aTwitterUser
+twitterTweet: aTwitterUser withMedia: aMediaId
 
 	|client url response extra tweet personalOauthParams|
 
@@ -11,7 +11,8 @@ twitterTweet: aTwitterUser
 	
 	url := self class apiUrl, '/statuses/update.json'.
 	extra := Dictionary newFromPairs: {
-		'status'. tweet.
+		'status'. 'Tweeting #Squeak methods with two redButtonClicks. #SWTwitter'.
+		'media_ids'. aMediaId.
 	}.
 	response := client httpPost: url 
 			content: (WebUtils encodeUrlEncodedForm: extra)
