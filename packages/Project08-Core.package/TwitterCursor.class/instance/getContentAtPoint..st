@@ -2,5 +2,5 @@ as yet unclassified
 getContentAtPoint: aPoint 
 
 	World submorphs
-		do: [:submorph | (self isPoint: aPoint withinBounds: submorph bounds)
+		do: [:submorph | (submorph containsPoint: aPoint)
 				ifTrue: [^submorph]]

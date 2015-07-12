@@ -9,6 +9,7 @@
 		"header",
 		"usernameLabel",
 		"tweetTextfield",
+		"thumbnail",
 		"footer",
 		"tweetAsPictureButton",
 		"tweetButton" ],

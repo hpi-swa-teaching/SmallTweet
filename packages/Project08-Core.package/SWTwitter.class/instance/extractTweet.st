@@ -1,4 +1,4 @@
-as yet unclassified
+UiFunctions
 extractTweet
 
 	^self subclassResponsibility 

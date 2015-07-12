@@ -2,10 +2,6 @@ initialize
 initializeOAuth
 
 	self class oauthParams: (Dictionary newFromPairs: {
-		"Accress Token and Secret
-		'oauth_token'. self class accessToken.
-		'oauth_token_secret'. self class accessSecret."
-		
 		"Consumer Key and Secret"
 		'oauth_consumer_key'.	self class consumerKey.
 		'oauth_consumer_secret'. 	self class consumerSecret.

@@ -16,14 +16,10 @@ twitterLoginWithPin: aPin
 						using: self class oauthParams].
 	resp isSuccess
 		ifFalse: [Transcript show: 'Something went wrong' , resp content. ^self].
-	oauthSecret := (((resp content findTokens: '&')
-				at: 2)
-				findTokens: '=')
-				at: 2.
-	oauthToken := (((resp content findTokens: '&')
-				at: 1)
-				findTokens: '=')
-				at: 2.
+
+	oauthSecret := (((resp content findTokens: '&') at: 2) findTokens: '=') at: 2.
+	oauthToken := (((resp content findTokens: '&')	at: 1) findTokens: '=') at: 2.
+
 	userName := self twitterGetUserNameWithToken: oauthToken Secret: oauthSecret. 
 	self accessToken: oauthToken for: userName.
 	self accessSecret: oauthSecret for: userName.

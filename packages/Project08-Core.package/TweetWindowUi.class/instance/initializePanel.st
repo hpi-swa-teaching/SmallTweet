@@ -2,13 +2,13 @@ ui - private
 initializePanel
 	"This code is auto-generated. DO NOT modify it because another generation step will overwrite all changes."
 	
-	| unnamedMorph1 |
+	| unnamedMorph1 unnamedMorph2 |
 	
 	panel := UiContainer new.
 	panel changeTableLayout.
-	panel extent: (393@288).
+	panel extent: (393@400).
 	panel position: (0@0).
-	panel hResizing: (#shrinkWrap).
+	panel hResizing: (#rigid).
 	panel vResizing: (#shrinkWrap).
 	panel minWidth: (2).
 	panel minHeight: (2).
@@ -25,8 +25,8 @@ initializePanel
 	panel wrapDirection: (#none).
 	panel frameFractions: (0@0 corner: 1@1).
 	panel frameOffsets: (0@0 corner: 0@0).
-	panel balloonText: (nil).
-	panel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
+	panel balloonText: ('').
+	panel balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	panel color: (Color transparent).
 	panel borderWidth: (0).
 	panel borderStyle2: (#simple).
@@ -54,7 +54,7 @@ initializePanel
 	header frameFractions: (0@0 corner: 1@1).
 	header frameOffsets: (0@0 corner: 0@0).
 	header balloonText: (nil).
-	header balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.733)).
+	header balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	header color: (Color transparent).
 	header borderWidth: (0).
 	header borderStyle2: (#simple).
@@ -82,7 +82,7 @@ initializePanel
 	unnamedMorph1 frameFractions: (0@0 corner: 1@1).
 	unnamedMorph1 frameOffsets: (0@0 corner: 0@0).
 	unnamedMorph1 balloonText: ('').
-	unnamedMorph1 balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
+	unnamedMorph1 balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	unnamedMorph1 text: ('From:').
 	unnamedMorph1 setProperty: #formByDesigner toValue: 'nil'.
 	unnamedMorph1 form: (nil).
@@ -116,10 +116,37 @@ initializePanel
 	usernameLabel setProperty: #objectName toValue: 'usernameLabel'.
 	header addChild: usernameLabel.
 	panel addChild: header.
+	unnamedMorph2 := UiContainer new.
+	unnamedMorph2 changeTableLayout.
+	unnamedMorph2 extent: (385@328).
+	unnamedMorph2 position: (4@34).
+	unnamedMorph2 hResizing: (#rigid).
+	unnamedMorph2 vResizing: (#shrinkWrap).
+	unnamedMorph2 minWidth: (2).
+	unnamedMorph2 minHeight: (2).
+	unnamedMorph2 cellInset: (4).
+	unnamedMorph2 cellPositioning: (#topLeft).
+	unnamedMorph2 cellSpacing: (#none).
+	unnamedMorph2 layoutInset: (4).
+	unnamedMorph2 listCentering: (#topLeft).
+	unnamedMorph2 listDirection: (#topToBottom).
+	unnamedMorph2 listSpacing: (#none).
+	unnamedMorph2 maxCellSize: (1073741823).
+	unnamedMorph2 minCellSize: (0).
+	unnamedMorph2 wrapCentering: (#topLeft).
+	unnamedMorph2 wrapDirection: (#none).
+	unnamedMorph2 frameFractions: (0@0 corner: 1@1).
+	unnamedMorph2 frameOffsets: (0@0 corner: 0@0).
+	unnamedMorph2 balloonText: (nil).
+	unnamedMorph2 balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
+	unnamedMorph2 color: (Color transparent).
+	unnamedMorph2 borderWidth: (0).
+	unnamedMorph2 borderStyle2: (#simple).
+	unnamedMorph2 borderColor: (Color black).
 	tweetTextfield := UiTextEdit new.
-	tweetTextfield extent: (383@214).
-	tweetTextfield position: (4@34).
-	tweetTextfield hResizing: (#spaceFill).
+	tweetTextfield extent: (377@214).
+	tweetTextfield position: (8@38).
+	tweetTextfield hResizing: (#rigid).
 	tweetTextfield vResizing: (#rigid).
 	tweetTextfield minWidth: (2).
 	tweetTextfield minHeight: (2).
@@ -137,7 +164,7 @@ initializePanel
 	tweetTextfield frameFractions: (0@0 corner: 1@1).
 	tweetTextfield frameOffsets: (0@0 corner: 0@0).
 	tweetTextfield balloonText: ('').
-	tweetTextfield balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
+	tweetTextfield balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	tweetTextfield widgetResizable: (true).
 	tweetTextfield horizontalScrollBarPolicy: (#alwaysOff).
 	tweetTextfield verticalScrollBarPolicy: (#asNeeded).
@@ -151,11 +178,36 @@ initializePanel
 	tweetTextfield scrollingMode: (#none).
 	tweetTextfield scrollingLimit: (10).
 	tweetTextfield setProperty: #objectName toValue: 'tweetTextfield'.
-	panel addChild: tweetTextfield.
+	unnamedMorph2 addChild: tweetTextfield.
+	thumbnail := SketchMorph new.
+	thumbnail extent: (200@100).
+	thumbnail position: (8@258).
+	thumbnail hResizing: (#rigid).
+	thumbnail vResizing: (#rigid).
+	thumbnail minWidth: (2).
+	thumbnail minHeight: (2).
+	thumbnail cellInset: (0).
+	thumbnail cellPositioning: (#center).
+	thumbnail cellSpacing: (#none).
+	thumbnail layoutInset: (0).
+	thumbnail listCentering: (#topLeft).
+	thumbnail listDirection: (#topToBottom).
+	thumbnail listSpacing: (#none).
+	thumbnail maxCellSize: (1073741823).
+	thumbnail minCellSize: (0).
+	thumbnail wrapCentering: (#topLeft).
+	thumbnail wrapDirection: (#none).
+	thumbnail frameFractions: (0@0 corner: 1@1).
+	thumbnail frameOffsets: (0@0 corner: 0@0).
+	thumbnail balloonText: ('').
+	thumbnail balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
+	thumbnail setProperty: #objectName toValue: 'thumbnail'.
+	unnamedMorph2 addChild: thumbnail.
+	panel addChild: unnamedMorph2.
 	footer := UiContainer new.
 	footer changeTableLayout.
 	footer extent: (385@30).
-	footer position: (4@254).
+	footer position: (4@366).
 	footer hResizing: (#spaceFill).
 	footer vResizing: (#shrinkWrap).
 	footer minWidth: (2).
@@ -174,7 +226,7 @@ initializePanel
 	footer frameFractions: (0@0 corner: 1@1).
 	footer frameOffsets: (0@0 corner: 0@0).
 	footer balloonText: ('').
-	footer balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
+	footer balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	footer color: (Color transparent).
 	footer borderWidth: (0).
 	footer borderStyle2: (#simple).
@@ -183,7 +235,7 @@ initializePanel
 	tweetAsPictureButton := UiPushButton new.
 	tweetAsPictureButton changeTableLayout.
 	tweetAsPictureButton extent: (129@20).
-	tweetAsPictureButton position: (255@259).
+	tweetAsPictureButton position: (255@371).
 	tweetAsPictureButton hResizing: (#shrinkWrap).
 	tweetAsPictureButton vResizing: (#shrinkWrap).
 	tweetAsPictureButton minWidth: (2).
@@ -202,7 +254,7 @@ initializePanel
 	tweetAsPictureButton frameFractions: (0@0 corner: 1@1).
 	tweetAsPictureButton frameOffsets: (0@0 corner: 0@0).
 	tweetAsPictureButton balloonText: (nil).
-	tweetAsPictureButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.749)).
+	tweetAsPictureButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	tweetAsPictureButton enabled: (false).
 	tweetAsPictureButton setProperty: #iconByDesigner toValue: 'UiFugueIcons imageExportIcon'.
 	tweetAsPictureButton icon: (UiFugueIcons imageExportIcon).
@@ -216,7 +268,7 @@ initializePanel
 	tweetButton := UiPushButton new.
 	tweetButton changeTableLayout.
 	tweetButton extent: (65@20).
-	tweetButton position: (184@259).
+	tweetButton position: (184@371).
 	tweetButton hResizing: (#shrinkWrap).
 	tweetButton vResizing: (#shrinkWrap).
 	tweetButton minWidth: (2).
@@ -235,7 +287,7 @@ initializePanel
 	tweetButton frameFractions: (0@0 corner: 1@1).
 	tweetButton frameOffsets: (0@0 corner: 0@0).
 	tweetButton balloonText: ('').
-	tweetButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.729)).
+	tweetButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
 	tweetButton enabled: (false).
 	tweetButton setProperty: #iconByDesigner toValue: 'MenuIcons smallOkIcon'.
 	tweetButton icon: (MenuIcons smallOkIcon).

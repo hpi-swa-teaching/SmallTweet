@@ -1,10 +1,9 @@
 twitterFunctions
-twitterUploadMorphAsPicture: aMorph for: aTwitterUser
+twitterUploadMorphAsPictureFor: aTwitterUser
 
 	|client url request morphAsPicture morphAsBase64 personalOauthParams postData boundary|
 
 	client := WebClient new.
-	aMorph exportAsPNGNamed: 'upload.png'.
 	morphAsPicture := (ImageReadWriter on: (FileStream readOnlyFileNamed: 'upload.png')).
 	morphAsBase64 := (Base64MimeConverter mimeEncode: morphAsPicture) contents.
 

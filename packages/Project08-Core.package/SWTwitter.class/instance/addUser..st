@@ -1,4 +1,4 @@
-as yet unclassified
+twitterAuthentication
 addUser: aTwitterPin
 
 	^self twitterLoginWithPin: aTwitterPin.

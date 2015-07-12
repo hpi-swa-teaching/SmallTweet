@@ -1,10 +1,10 @@
 twitterFunctions
-twitterTweet: aTwitterUser withMedia: aMediaId
+twitterTweet: aTwitterUser withMedia: aMediaId withText: aText
 
 	|client url response extra tweet personalOauthParams|
 
 	client := WebClient new.
-	tweet := self extractTweet.
+	tweet := aText.
 
 	personalOauthParams := self getPersonalOAuthParametersFor: aTwitterUser.
 	

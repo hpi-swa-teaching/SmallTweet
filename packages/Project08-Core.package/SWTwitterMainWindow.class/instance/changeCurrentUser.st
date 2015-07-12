@@ -1,4 +1,5 @@
-as yet unclassified
+userManagement
 changeCurrentUser
 
-	self currentUser: (self twitterUi userSelectionBox currentText asString)
+	self currentUser: (self twitterUi userSelectionBox currentText asString).
+	self twitterShowTimelineInWindow.

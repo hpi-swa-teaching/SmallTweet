@@ -1,4 +1,4 @@
-as yet unclassified
+userManagement
 removeUser
 	|user|
 	
@@ -7,3 +7,4 @@ removeUser
 	settingsUi userList removeRowAt: settingsUi userList currentRow.
 	twitterUi userSelectionBox clear.
 	settingsUi userList do: [:userEntry | twitterUi userSelectionBox addText: (userEntry at: 'text')].
+	self changeCurrentUser.

@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"footer" : "to 7/2/2015 19:30",
-		"header" : "to 7/2/2015 19:30",
-		"initializePanel" : "to 7/2/2015 19:30",
-		"tweetAsPictureButton" : "to 7/2/2015 19:30",
-		"tweetButton" : "to 7/2/2015 19:30",
-		"tweetTextfield" : "to 7/2/2015 19:30",
-		"usernameLabel" : "to 7/2/2015 19:30" } }
+		"footer" : "to 7/12/2015 16:13",
+		"header" : "to 7/12/2015 16:13",
+		"initializePanel" : "to 7/12/2015 16:13",
+		"thumbnail" : "to 7/12/2015 16:13",
+		"tweetAsPictureButton" : "to 7/12/2015 16:13",
+		"tweetButton" : "to 7/12/2015 16:13",
+		"tweetTextfield" : "to 7/12/2015 16:13",
+		"usernameLabel" : "to 7/12/2015 16:13" } }
