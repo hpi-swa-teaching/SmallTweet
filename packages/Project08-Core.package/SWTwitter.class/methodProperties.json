@@ -12,7 +12,9 @@
 		"numberOfTweets:" : "MO 5/25/2015 18:17",
 		"oauthParams" : "ak 6/7/2015 19:04:37.042",
 		"oauthParams:" : "ak 6/7/2015 19:04:37.042",
-		"openCommand" : "MO 6/21/2015 21:17" },
+		"openCommand" : "MO 6/21/2015 21:17",
+		"testToken" : "to 7/15/2015 13:59",
+		"testTokenSecret" : "to 7/15/2015 13:59" },
 	"instance" : {
 		"accessSecret" : "to 6/21/2015 13:45",
 		"accessSecret:for:" : "to 7/12/2015 13:07",
