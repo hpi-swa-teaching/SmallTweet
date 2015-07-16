@@ -4,24 +4,18 @@ baseline: spec
     spec
         for: #'common'
         do: [ 
+		spec configuration: 'FFI' with: [ spec repository: 		'http://www.squeaksource.com/MetacelloRepository'].
+		spec package: 'Applescript-Core' with: [ spec repository: 		'http://www.squeaksource.com/Applescript'].
+		spec configuration: 'ExternalWebBrowser' with: [ spec repository: 		'http://www.squeaksource.com/MetacelloRepository'].
             spec baseline: 'Widgets' with: [
                 spec
                     repository: 'github://marceltaeumel/widgets:master/repository';
                     loads: #(full)].
-            spec
-                package: 'FFI-Pools' with: 
-                    [ spec
-                            repository: 'http://source.squeak.org/FFI/';
-                        yourself ];
-                package: 'FFI-Kernel' with: 
-                    [ spec
-                            repository: 'http://source.squeak.org/FFI/';
-                        yourself ];
-                package: 'Project08-Core' with: [
+              spec package: 'Project08-Core' with: [
                     spec requires: #('libraries')];
                 package: 'Project08-Tests' with: [ spec requires: #('default') ].
             spec
                 group: 'default' with: #('Project08-Core');
-                group: 'libraries' with: #('Widgets' 'FFI-Pools' 'FFI-Kernel');
+                group: 'libraries' with: #('Widgets' 'FFI' 'Applescript-Core' 'ExternalWebBrowser');
                 group: 'Tests' with: #('Project08-Tests');
                 group: 'TravisCI' with: #('Tests') ]
