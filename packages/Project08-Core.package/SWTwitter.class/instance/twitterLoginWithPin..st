@@ -1,11 +1,11 @@
 twitterAuthentication
 twitterLoginWithPin: aPin 
 
-	| client url resp extra |
+	| client url response extra |
 	client := WebClient new.
 	extra := Dictionary newFromPairs: {'oauth_verifier'. aPin}.
 	url := 'https://api.twitter.com/oauth/access_token?oauth_verifier=' , aPin.
-	resp := client
+	response := client
 				httpPost: url
 				content: (WebUtils encodeUrlEncodedForm: extra)
 				type: 'application/x-www-form-urlencoded'
@@ -13,8 +13,8 @@ twitterLoginWithPin: aPin
 						oAuthSign: req
 						url: url
 						extra: extra
-						using: self class oauthParams].
-	resp isSuccess
-		ifFalse: [Transcript show: 'Something went wrong' , resp content. ^self].
+						using: self class oauthParameters].
+	response isSuccess
+		ifFalse: [Transcript show: 'Something went wrong' , response content. ^self].
 
-	^ self readUsernameFromWebResponse: resp
+	^ self readUsernameFromWebResponse: response

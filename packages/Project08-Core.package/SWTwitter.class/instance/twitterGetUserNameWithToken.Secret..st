@@ -4,7 +4,7 @@ twitterGetUserNameWithToken: anOauthToken Secret: anOauthSecret
 	| client url response oauthParams |
 	client := self initializeClient.
 
-	oauthParams := self class oauthParams value.
+	oauthParams := self class oauthParameters value.
 	oauthParams 	at: 'oauth_token' put: anOauthToken;
 		 			at: 'oauth_token_secret' put: anOauthSecret.
 

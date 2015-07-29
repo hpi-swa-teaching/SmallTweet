@@ -10,7 +10,7 @@
 		"ConsumerSecret",
 		"FlagForTest",
 		"NumberOfTweets",
-		"OauthParams",
+		"OauthParameters",
 		"OauthParamsTest1" ],
 	"commentStamp" : "",
 	"instvars" : [
