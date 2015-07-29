@@ -3,7 +3,7 @@ twitterTweet: aTwitterUser withMedia: aMediaId withText: aText
 
 	|client url response extra tweet personalOauthParams|
 
-	client := WebClient new.
+	client := self initializeClient.
 	tweet := aText.
 
 	personalOauthParams := self getPersonalOAuthParametersFor: aTwitterUser.

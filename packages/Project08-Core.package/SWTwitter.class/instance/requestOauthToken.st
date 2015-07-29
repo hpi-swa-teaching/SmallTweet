@@ -3,7 +3,7 @@ requestOauthToken
 
 	|client url resp extra|
 
-	client := WebClient new.
+	client := self initializeClient.
 	
 	url := 'https://api.twitter.com/oauth/request_token'.
 	extra := Dictionary newFromPairs: {
@@ -18,4 +18,4 @@ requestOauthToken
 		^'Something went wrong', resp content.
 	].
 
-	^resp getContent 
+	^resp content 

@@ -8,6 +8,7 @@
 		"ApiUrl",
 		"ConsumerKey",
 		"ConsumerSecret",
+		"FlagForTest",
 		"NumberOfTweets",
 		"OauthParams",
 		"OauthParamsTest1" ],
@@ -18,7 +19,8 @@
 		"testValue",
 		"twitterWindow",
 		"accessSecret",
-		"accessToken" ],
+		"accessToken",
+		"initializeClient" ],
 	"name" : "SWTwitter",
 	"pools" : [
 		 ],

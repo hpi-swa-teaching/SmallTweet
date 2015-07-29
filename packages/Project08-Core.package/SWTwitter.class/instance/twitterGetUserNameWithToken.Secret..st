@@ -2,7 +2,7 @@ twitterFunctions
 twitterGetUserNameWithToken: anOauthToken Secret: anOauthSecret 
 
 	| client url response oauthParams |
-	client := WebClient new.
+	client := self initializeClient.
 
 	oauthParams := self class oauthParams value.
 	oauthParams 	at: 'oauth_token' put: anOauthToken;

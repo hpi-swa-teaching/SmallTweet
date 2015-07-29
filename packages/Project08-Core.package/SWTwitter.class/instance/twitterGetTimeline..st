@@ -1,7 +1,7 @@
 twitterFunctions
 twitterGetTimeline: aTwitterName 
 	| client url response personalOauthParams |
-	client := WebClient new.
+	client := self initializeClient.
 	personalOauthParams := self getPersonalOAuthParametersFor: aTwitterName.
 	url := SWTwitter apiUrl , '/statuses/user_timeline.json?screen_name=' , aTwitterName , '&count=10'.
 	response := client
@@ -11,6 +11,7 @@ twitterGetTimeline: aTwitterName
 						url: url
 						using: personalOauthParams].
 	response isSuccess
-		ifFalse: [Transcript show: ('Something went wrong' , response content). ^self].
-
-	^(Json new stream: (ReadStream on: response content)) readAny.
+		ifFalse: [Transcript show: 'Something went wrong' , response content.
+			^ self].
+	^ (Json new
+		stream: (ReadStream on: response content)) readAny
