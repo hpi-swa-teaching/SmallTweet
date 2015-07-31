@@ -1,0 +1,24 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"AccessSecret",
+		"AccessToken",
+		"ApiUrl",
+		"ConsumerKey",
+		"ConsumerSecret",
+		"FlagForTest",
+		"NumberOfTweets",
+		"OauthParams",
+		"OauthParamsTest1" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"twitterWindow",
+		"accessSecret",
+		"accessToken" ],
+	"name" : "STwitter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

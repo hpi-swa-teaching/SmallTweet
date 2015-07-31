@@ -1,0 +1,20 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"uiContainer",
+		"userSelectionBox",
+		"tweetButton",
+		"timelineButton",
+		"settingsButton",
+		"twitterCursorButton",
+		"textField" ],
+	"name" : "STwitterUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

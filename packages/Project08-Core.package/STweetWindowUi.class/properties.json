@@ -1,0 +1,20 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"header",
+		"usernameLabel",
+		"tweetTextfield",
+		"thumbnail",
+		"footer",
+		"tweetAsPictureButton",
+		"tweetButton" ],
+	"name" : "STweetWindowUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

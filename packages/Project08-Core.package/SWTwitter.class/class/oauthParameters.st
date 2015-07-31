@@ -1,3 +1,0 @@
-accessing
-oauthParameters
-	^ OauthParameters

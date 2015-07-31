@@ -1,0 +1,21 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"SettingsInitialized",
+		"TweetWindowInitialized" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"settingsWindow",
+		"tweetWindow",
+		"tweetWindowUi",
+		"twitterUi",
+		"currentUser",
+		"settingsUi",
+		"thumbnailImage" ],
+	"name" : "STwitterMainWindow",
+	"pools" : [
+		 ],
+	"super" : "STwitter",
+	"type" : "normal" }

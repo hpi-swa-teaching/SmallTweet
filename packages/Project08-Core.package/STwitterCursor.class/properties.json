@@ -1,0 +1,14 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"BirdCursor" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "STwitterCursor",
+	"pools" : [
+		 ],
+	"super" : "CursorWithMask",
+	"type" : "normal" }
