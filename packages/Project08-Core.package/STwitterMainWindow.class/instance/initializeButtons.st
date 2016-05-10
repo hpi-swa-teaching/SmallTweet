@@ -6,9 +6,13 @@ initializeButtons
 		signal: #clicked:
 		toSelector: #openTweetWindow;
 		
-		connect: twitterUi timelineButton
+		connect: twitterUi userTimelineButton
 		signal: #clicked:
-		toSelector: #twitterShowTimelineInWindow;
+		toSelector: #twitterShowUserTimelineInWindow;
+		
+		connect: twitterUi newsTimelineButton
+		signal: #clicked:
+		toSelector: #twitterShowNewsTimelineInWindow;
 		
 		connect: twitterUi userSelectionBox list
 		signal: #clicked:

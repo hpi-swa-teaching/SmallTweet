@@ -117,39 +117,72 @@ initializePanel
 	tweetButton autoExclusive: (true).
 	tweetButton setProperty: #objectName toValue: 'tweetButton'.
 	uiContainer addChild: tweetButton.
-	timelineButton := UiPushButton new.
-	timelineButton changeTableLayout.
-	timelineButton extent: (57@20).
-	timelineButton position: (218@10).
-	timelineButton hResizing: (#shrinkWrap).
-	timelineButton vResizing: (#shrinkWrap).
-	timelineButton minWidth: (2).
-	timelineButton minHeight: (2).
-	timelineButton cellInset: (4).
-	timelineButton cellPositioning: (#center).
-	timelineButton cellSpacing: (#none).
-	timelineButton layoutInset: (2@0 corner: 2@0).
-	timelineButton listCentering: (#topLeft).
-	timelineButton listDirection: (#leftToRight).
-	timelineButton listSpacing: (#none).
-	timelineButton maxCellSize: (1073741823).
-	timelineButton minCellSize: (0).
-	timelineButton wrapCentering: (#topLeft).
-	timelineButton wrapDirection: (#none).
-	timelineButton frameFractions: (0@0 corner: 1@1).
-	timelineButton frameOffsets: (0@0 corner: 0@0).
-	timelineButton balloonText: ('').
-	timelineButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
-	timelineButton enabled: (true).
-	timelineButton setProperty: #iconByDesigner toValue: 'nil'.
-	timelineButton icon: (nil).
-	timelineButton text: ('Timeline').
-	timelineButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
-	timelineButton checkable: (false).
-	timelineButton checked: (false).
-	timelineButton autoExclusive: (false).
-	timelineButton setProperty: #objectName toValue: 'timelineButton'.
-	uiContainer addChild: timelineButton.
+	self userTimelineButton: UiPushButton new.
+	self userTimelineButton changeTableLayout.
+	self userTimelineButton extent: (57@10).
+	self userTimelineButton position: (218@10).
+	self userTimelineButton hResizing: (#shrinkWrap).
+	self userTimelineButton vResizing: (#shrinkWrap).
+	self userTimelineButton minWidth: (2).
+	self userTimelineButton minHeight: (2).
+	self userTimelineButton cellInset: (4).
+	self userTimelineButton cellPositioning: (#center).
+	self userTimelineButton cellSpacing: (#none).
+	self userTimelineButton layoutInset: (2@0 corner: 2@0).
+	self userTimelineButton listCentering: (#topLeft).
+	self userTimelineButton listDirection: (#leftToRight).
+	self userTimelineButton listSpacing: (#none).
+	self userTimelineButton maxCellSize: (1073741823).
+	self userTimelineButton minCellSize: (0).
+	self userTimelineButton wrapCentering: (#topLeft).
+	self userTimelineButton wrapDirection: (#none).
+	self userTimelineButton frameFractions: (0@0 corner: 1@1).
+	self userTimelineButton frameOffsets: (0@0 corner: 0@0).
+	self userTimelineButton balloonText: ('').
+	self userTimelineButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
+	self userTimelineButton enabled: (true).
+	self userTimelineButton setProperty: #iconByDesigner toValue: 'nil'.
+	self userTimelineButton icon: (nil).
+	self userTimelineButton text: ('my Timeline').
+	self userTimelineButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
+	self userTimelineButton checkable: (false).
+	self userTimelineButton checked: (false).
+	self userTimelineButton autoExclusive: (false).
+	self userTimelineButton setProperty: #objectName toValue: 'timelineButton'.
+	uiContainer addChild: self userTimelineButton.
+	self newsTimelineButton: UiPushButton new.
+	self newsTimelineButton changeTableLayout.
+	self newsTimelineButton extent: (57@10).
+	self newsTimelineButton position: (218@20).
+	self newsTimelineButton hResizing: (#shrinkWrap).
+	self newsTimelineButton vResizing: (#shrinkWrap).
+	self newsTimelineButton minWidth: (2).
+	self newsTimelineButton minHeight: (2).
+	self newsTimelineButton cellInset: (4).
+	self newsTimelineButton cellPositioning: (#center).
+	self newsTimelineButton cellSpacing: (#none).
+	self newsTimelineButton layoutInset: (2@0 corner: 2@0).
+	self newsTimelineButton listCentering: (#topLeft).
+	self newsTimelineButton listDirection: (#leftToRight).
+	self newsTimelineButton listSpacing: (#none).
+	self newsTimelineButton maxCellSize: (1073741823).
+	self newsTimelineButton minCellSize: (0).
+	self newsTimelineButton wrapCentering: (#topLeft).
+	self newsTimelineButton wrapDirection: (#none).
+	self newsTimelineButton frameFractions: (0@0 corner: 1@1).
+	self newsTimelineButton frameOffsets: (0@0 corner: 0@0).
+	self newsTimelineButton balloonText: ('').
+	self newsTimelineButton balloonColor: ((TranslucentColor r: 0.92 g: 0.92 b: 0.706 alpha: 0.722)).
+	self newsTimelineButton enabled: (true).
+	self newsTimelineButton setProperty: #iconByDesigner toValue: 'nil'.
+	self newsTimelineButton icon: (nil).
+	self newsTimelineButton text: ('Timeline').
+	self newsTimelineButton color: ((Color r: 0.8 g: 0.8 b: 0.8)).
+	self newsTimelineButton checkable: (false).
+	self newsTimelineButton checked: (false).
+	self newsTimelineButton autoExclusive: (false).
+	self newsTimelineButton setProperty: #objectName toValue: 'timelineButton'.
+	uiContainer addChild: self newsTimelineButton.
 	settingsButton := UiPushButton new.
 	settingsButton changeTableLayout.
 	settingsButton extent: (90@20).
