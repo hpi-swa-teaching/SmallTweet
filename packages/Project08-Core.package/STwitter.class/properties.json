@@ -5,11 +5,8 @@
 	"classvars" : [
 		"AccessSecret",
 		"AccessToken",
-		"ApiUrl",
-		"ConsumerKey",
 		"ConsumerSecret",
 		"FlagForTest",
-		"NumberOfTweets",
 		"OauthParams",
 		"OauthParamsTest1" ],
 	"commentStamp" : "",
