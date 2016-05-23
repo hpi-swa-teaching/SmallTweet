@@ -9,7 +9,8 @@
 		"id",
 		"name",
 		"profileImageUrl",
-		"screenName" ],
+		"screenName",
+		"description" ],
 	"name" : "STUser",
 	"pools" : [
 		 ],

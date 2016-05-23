@@ -13,7 +13,8 @@
 	"instvars" : [
 		"twitterWindow",
 		"accessSecret",
-		"accessToken" ],
+		"accessToken",
+		"userProfiles" ],
 	"name" : "STwitter",
 	"pools" : [
 		 ],

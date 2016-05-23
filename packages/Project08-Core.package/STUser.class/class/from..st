@@ -5,4 +5,5 @@ from: aJsonObject
 	name: (aJsonObject at: 'name');
 	screenName: (aJsonObject at: 'screen_name');
 	profileImageUrl: (aJsonObject at: 'profile_image_url');
+	description: (aJsonObject at: 'description');
 	yourself.

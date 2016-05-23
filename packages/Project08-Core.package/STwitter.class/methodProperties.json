@@ -24,9 +24,11 @@
 		"extractTweet" : "to 6/23/2015 20:26",
 		"getPersonalOAuthParametersFor:" : "to 7/12/2015 13:08",
 		"getRequestFor:on:" : "to 7/30/2015 23:59",
-		"initialize" : "mk 7/29/2015 14:49",
+		"getUserProfilesFromTimeline:" : "nb 5/24/2016 00:21",
+		"initialize" : "nb 5/23/2016 23:39",
 		"initializeClient" : "mk 7/29/2015 13:43",
 		"initializeOAuth" : "to 7/12/2015 13:07",
+		"initializeUserFromJson:" : "nb 5/23/2016 23:39",
 		"multipartHeaderFor:" : "to 7/30/2015 23:54",
 		"multipartHeaderForForm:User:" : "to 7/31/2015 02:14",
 		"open" : "to 7/31/2015 00:39",
@@ -46,4 +48,6 @@
 		"twitterUploadMorph:AsPictureFor:" : "to 7/31/2015 01:23",
 		"twitterUploadMorphAsPictureFor:" : "to 7/31/2015 00:13",
 		"twitterWindow" : "ak 6/7/2015 19:04:37.042",
-		"twitterWindow:" : "ak 6/7/2015 19:04:37.042" } }
+		"twitterWindow:" : "ak 6/7/2015 19:04:37.042",
+		"userProfiles" : "nb 5/23/2016 23:20",
+		"userProfiles:" : "nb 5/23/2016 23:29" } }
