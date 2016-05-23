@@ -10,4 +10,4 @@ twitterShowTimelineInWindow: type for: aTwitterName
 	jsonObj := self twitterGetTimeline: type for: aTwitterName.
 	jsonObj
 		do: [:j | twitterUi textField theText: twitterUi textField theText,
-					(self tweetLinkUrls: (j at: 'text') ) asHtmlText , String cr , String cr. ].
+						(j at: 'text') , String cr , String cr. ].
