@@ -1,0 +1,17 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JU 5/23/2016 12:07",
+	"instvars" : [
+		"id",
+		"name",
+		"profileImageUrl",
+		"screenName" ],
+	"name" : "STUser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

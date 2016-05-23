@@ -1,0 +1,18 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JU 5/23/2016 12:08",
+	"instvars" : [
+		"id",
+		"createdAt",
+		"text",
+		"user",
+		"entities" ],
+	"name" : "STTweet",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
