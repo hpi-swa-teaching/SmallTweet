@@ -11,9 +11,10 @@ loginWithPin: aPinString
 						oAuthSign: req
 						url: url
 						extra: parameters
-						using: self oAuthParams].
+						using: self consumerParams].
 	response isSuccess 
 		ifTrue: [	self accessToken: ((((response content findTokens: '&') at: 1) findTokens: '=') at: 2).
+				self accessTokenSecret: ((((response content findTokens: '&') at: 2) findTokens: '=') at: 2).
 				^ ((((response content findTokens: '&') at: 3) findTokens: '=') at: 2).] 
 		ifFalse: [ ^ 0 ]
 

@@ -7,7 +7,7 @@ requestOAuthToken
 	response := webClient httpPost: url 
 			content: (WebUtils encodeUrlEncodedForm: parameters)
 			type: 'application/x-www-form-urlencoded'
-			do:[:req | WebUtils oAuthSign: req url: url extra: parameters using: self oAuthParams].
+			do:[:req | WebUtils oAuthSign: req url: url extra: parameters using: self consumerParams].
 	response isSuccess 
 		ifTrue: [^ (((response content findTokens: '&') at: 1) findTokens: '=') at: 2] 
 		ifFalse: [^ '']

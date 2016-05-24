@@ -1,5 +1,5 @@
 helpers
-oAuthParams
+consumerParams
 	^ Dictionary newFromPairs: {
 		'oauth_consumer_key'. self consumerKey.
 		'oauth_consumer_secret'. self consumerSecret.

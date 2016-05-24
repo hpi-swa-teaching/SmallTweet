@@ -1,7 +1,7 @@
 as yet unclassified
-testOAuthParams
+testConsumerParams
 	| params |
-	params := twitterApi oAuthParams.
+	params := twitterApi consumerParams .
 	
 	self assert: (params at: 'oauth_consumer_key') equals: twitterApi consumerKey.
 	self assert: (params at: 'oauth_consumer_secret') equals: twitterApi consumerSecret.
