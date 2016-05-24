@@ -1,7 +1,7 @@
 as yet unclassified
 testUserTimeline
 	| tweets |
-	twitterApi webClient mock: '/1.1/statuses/user_timeline.json' with: JsonFixture userTimeline.
+	twitterApi webClient mock: '/1.1/statuses/user_timeline.json' with: Fixture userTimelineJsonReponse.
 	tweets := twitterApi userTimeline.
 	
 	self assert: (tweets at: 1) id equals: 240859602684612608.

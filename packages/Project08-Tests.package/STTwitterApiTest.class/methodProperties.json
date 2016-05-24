@@ -2,10 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "NR 5/24/2016 15:04",
+		"setUp" : "NR 5/24/2016 20:32",
 		"testAccessToken" : "NR 5/24/2016 11:40",
 		"testApiUrl" : "NR 5/24/2016 15:56",
+		"testAuthenticationUrlWithAnOAuthTokenString" : "NR 5/24/2016 21:19",
 		"testConsumerKeyConsumerSecret" : "NR 5/24/2016 11:42",
-		"testDeserializeAStringIntoCollectionOfAClass" : "NR 5/24/2016 16:36",
-		"testDeserializeAStringIntoObjectOfAClass" : "NR 5/24/2016 17:32",
-		"testUserTimeline" : "NR 5/24/2016 17:54" } }
+		"testDeserializeAStringIntoCollectionOfAClass" : "NR 5/24/2016 20:53",
+		"testDeserializeAStringIntoObjectOfAClass" : "NR 5/24/2016 20:54",
+		"testLoginWithPin" : "NR 5/24/2016 21:34",
+		"testOAuthParams" : "NR 5/24/2016 20:32",
+		"testRequestOAuthToken" : "NR 5/24/2016 20:50",
+		"testUserTimeline" : "NR 5/24/2016 20:54" } }

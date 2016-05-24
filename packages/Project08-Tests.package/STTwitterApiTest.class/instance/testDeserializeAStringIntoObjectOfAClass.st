@@ -1,7 +1,7 @@
 as yet unclassified
 testDeserializeAStringIntoObjectOfAClass
 	| objectJson object |
-	objectJson := JsonFixture notFoundError.
+	objectJson := Fixture notFoundJsonResponse.
 	object := twitterApi deserialize: objectJson intoObjectOf: STError.
 	
 	self assert: (((object errors) at: 1) at: 'code') equals: 34.

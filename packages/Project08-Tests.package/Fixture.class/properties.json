@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "JsonFixture",
+	"name" : "Fixture",
 	"pools" : [
 		 ],
 	"super" : "Object",

@@ -6,6 +6,7 @@
 	"instance" : {
 		"accessToken" : "NR 5/24/2016 11:28",
 		"accessToken:" : "NR 5/24/2016 11:28",
+		"authenticationUrlWith:" : "NR 5/24/2016 21:17",
 		"consumerKey" : "NR 5/24/2016 11:36",
 		"consumerKey:" : "NR 5/24/2016 11:36",
 		"consumerSecret" : "NR 5/24/2016 11:35",
@@ -13,6 +14,9 @@
 		"deserialize:intoCollectionOf:" : "NR 5/24/2016 16:30",
 		"deserialize:intoObjectOf:" : "NR 5/24/2016 17:27",
 		"initialize" : "NR 5/24/2016 14:07",
-		"userTimeline" : "NR 5/24/2016 17:44",
+		"loginWithPin:" : "NR 5/24/2016 21:29",
+		"oAuthParams" : "NR 5/24/2016 20:29",
+		"requestOAuthToken" : "NR 5/24/2016 21:12",
+		"userTimeline" : "NR 5/24/2016 21:12",
 		"webClient" : "NR 5/24/2016 13:07",
 		"webClient:" : "NR 5/24/2016 13:07" } }
