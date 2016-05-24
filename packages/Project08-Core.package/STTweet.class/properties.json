@@ -14,5 +14,5 @@
 	"name" : "STTweet",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "STTwitterModel",
 	"type" : "normal" }

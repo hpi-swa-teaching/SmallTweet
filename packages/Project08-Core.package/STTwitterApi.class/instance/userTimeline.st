@@ -1,7 +1,8 @@
 endpoints
 userTimeline
-	| endpoint response tweets |
+	| endpoint response |
 	endpoint := STTwitterApi apiUrl, '/1.1/statuses/user_timeline.json'.
 	response := self webClient httpGet: endpoint.
-	tweets := self deserialize: (response content) intoCollectionOf: STTweet.
-	^ tweets
+	response isSuccess 
+		ifTrue: [^ self deserialize: (response content) intoCollectionOf: STTweet] 
+		ifFalse: [^ self deserialize: (response content) intoCollectionOf: STError].

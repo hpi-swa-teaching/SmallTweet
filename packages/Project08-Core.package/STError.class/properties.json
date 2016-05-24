@@ -4,14 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JU 5/23/2016 12:07",
+	"commentStamp" : "",
 	"instvars" : [
-		"id",
-		"name",
-		"profileImageUrl",
-		"screenName",
-		"description" ],
-	"name" : "STUser",
+		"errors" ],
+	"name" : "STError",
 	"pools" : [
 		 ],
 	"super" : "STTwitterModel",
