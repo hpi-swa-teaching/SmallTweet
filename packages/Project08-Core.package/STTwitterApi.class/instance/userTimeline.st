@@ -5,4 +5,4 @@ userTimeline
 	response := self webClient httpGet: endpoint.
 	response isSuccess 
 		ifTrue: [^ self deserialize: (response content) intoCollectionOf: STTweet] 
-		ifFalse: [^ self deserialize: (response content) intoCollectionOf: STError].
+		ifFalse: [^ self deserialize: (response content) intoObjectOf: STError].
