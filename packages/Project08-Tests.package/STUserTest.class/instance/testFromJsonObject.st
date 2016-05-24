@@ -1,8 +1,7 @@
 as yet unclassified
 testFromJsonObject
-	| userJson jsonObject user |
+	| jsonObject user |
 	
-	userJson := '{"id": 1, "name": "Name", "screen_name": "@name", "profile_image_url": "url_to_imge"}'.
 	jsonObject := (Json new stream: (ReadStream on:  userJson)) readAny.
 	user := STUser from: jsonObject.
 	

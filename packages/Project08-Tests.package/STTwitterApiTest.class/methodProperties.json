@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "NR 5/24/2016 15:04",
+		"testAccessToken" : "NR 5/24/2016 11:40",
+		"testApiUrl" : "NR 5/24/2016 15:56",
+		"testConsumerKeyConsumerSecret" : "NR 5/24/2016 11:42",
+		"testDeserializeAStringIntoCollectionOfAClass" : "NR 5/24/2016 16:14",
+		"testUserTimeline" : "NR 5/24/2016 15:56" } }

@@ -6,9 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"userJson",
-		"user" ],
-	"name" : "STUserTest",
+		"twitterApi" ],
+	"name" : "STTwitterApiTest",
 	"pools" : [
 		 ],
 	"super" : "TestCase",

@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"userJson",
-		"user" ],
-	"name" : "STUserTest",
+		 ],
+	"name" : "JsonFixtures",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "Object",
 	"type" : "normal" }

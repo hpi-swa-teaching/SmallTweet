@@ -1,15 +1,14 @@
 {
-	"category" : "Project08-Tests",
+	"category" : "Project08-Core",
 	"classinstvars" : [
-		 ],
+		"default" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"userJson",
-		"user" ],
-	"name" : "STUserTest",
+		 ],
+	"name" : "STSettingsStore",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "Dictionary",
 	"type" : "normal" }

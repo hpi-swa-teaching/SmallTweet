@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"userJson",
-		"user" ],
-	"name" : "STUserTest",
+		"contentMap" ],
+	"name" : "WebClientMock",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "WebClient",
 	"type" : "normal" }
