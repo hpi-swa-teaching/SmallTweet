@@ -2,5 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "NR 5/24/2016 16:38",
-		"sendRequest:contentBlock:" : "NR 5/24/2016 16:40" } }
+		"mock:with:" : "NR 5/24/2016 17:59",
+		"sendRequest:contentBlock:" : "NR 5/24/2016 17:59" } }
