@@ -12,6 +12,10 @@ loginWithPin: aPinString
 						url: url
 						extra: parameters
 						using: self oAuthParams].
-	self accessToken: ((((response content findTokens: '&') at: 1) findTokens: '=') at: 2).
+	response isSuccess 
+		ifTrue: [	self accessToken: ((((response content findTokens: '&') at: 1) findTokens: '=') at: 2).
+				^ ((((response content findTokens: '&') at: 3) findTokens: '=') at: 2).] 
+		ifFalse: [ ^ 0 ]
+
 	
 	

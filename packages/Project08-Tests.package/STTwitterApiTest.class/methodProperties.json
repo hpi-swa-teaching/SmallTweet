@@ -9,7 +9,7 @@
 		"testConsumerKeyConsumerSecret" : "NR 5/24/2016 11:42",
 		"testDeserializeAStringIntoCollectionOfAClass" : "NR 5/24/2016 21:39",
 		"testDeserializeAStringIntoObjectOfAClass" : "NR 5/24/2016 20:54",
-		"testLoginWithPin" : "NR 5/24/2016 21:34",
+		"testLoginWithPin" : "NR 5/24/2016 22:35",
 		"testOAuthParams" : "NR 5/24/2016 20:32",
 		"testRequestOAuthToken" : "NR 5/24/2016 21:39",
 		"testUserTimeline" : "NR 5/24/2016 21:39" } }

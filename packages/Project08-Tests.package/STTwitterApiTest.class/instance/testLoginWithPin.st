@@ -1,8 +1,9 @@
 as yet unclassified
 testLoginWithPin
-	| pin |
+	| pin userId |
 	pin := '123456'.
 	twitterApi webClient mock:  '/oauth/access_token?oauth_verifier=', pin with: Fixture accessTokenResponse.
-	twitterApi loginWithPin: pin.
+	userId := twitterApi loginWithPin: pin.
 	
 	self assert: (twitterApi accessToken) equals: '6253282-eWudHldSbIaelX7swmsiHImEL4KinwaGloHANdrY'.
+	self assert: userId equals: '6253282'.
