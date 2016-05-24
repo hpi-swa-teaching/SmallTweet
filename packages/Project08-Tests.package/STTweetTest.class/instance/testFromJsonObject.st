@@ -12,5 +12,5 @@ testFromJsonObject
 	self assert: (tweet entities) equals: (jsonObject at: 'entities').
 	self assert: (tweet user id) equals: ((jsonObject at: 'user') at: 'id').
 	self assert: (tweet user name) equals: ((jsonObject at: 'user') at: 'name').
-	self assert: (tweet user screenName) equals: ((jsonObject at: 'user') at: 'scren_name').
+	self assert: (tweet user screenName) equals: ((jsonObject at: 'user') at: 'screen_name').
 	self assert: (tweet user profileImageUrl) equals: ((jsonObject at: 'user') at: 'profile_image_url').
