@@ -23,7 +23,7 @@ descriptionField
 	width: 300;
 	height: 200;
 	contents: 'Description: ' , user description.
-
+"
 (user profileImageUrl includesSubString: '.jpg') ifTrue: [
 	picField := ImageMorph new.
 	window addMorph: picField.
@@ -32,6 +32,10 @@ descriptionField
 			on: Error
 			do: [].
 	].
+"
+	picField := STMedia getImageFrom: user profileImageUrl.
+	window addMorph: picField.
+	picField position: 10@10.
 
 
 window openInWorld 
