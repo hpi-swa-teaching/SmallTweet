@@ -1,5 +1,5 @@
 as yet unclassified
-userTimelineJsonReponse
+userTimelineJsonResponse
 	^ '[
   {
     "coordinates": null,
