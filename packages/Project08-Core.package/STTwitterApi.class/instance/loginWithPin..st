@@ -13,9 +13,12 @@ loginWithPin: aPinString
 						extra: parameters
 						using: self consumerParams].
 	response isSuccess 
-		ifTrue: [	self accessToken: ((((response content findTokens: '&') at: 1) findTokens: '=') at: 2).
-				self accessTokenSecret: ((((response content findTokens: '&') at: 2) findTokens: '=') at: 2).
-				^ ((((response content findTokens: '&') at: 3) findTokens: '=') at: 2).] 
+		ifTrue:
+			[ | form |
+			form := WebUtils decodeUrlEncodedForm: (response content).
+			self accessToken: (form at: 'oauth_token').
+			self accessTokenSecret: (form at: 'oauth_token_secret').
+			^ form at: 'user_id'] 
 		ifFalse: [ ^ 0 ]
 
 	
