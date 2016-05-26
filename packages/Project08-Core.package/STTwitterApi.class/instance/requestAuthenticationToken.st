@@ -1,5 +1,5 @@
 authentication
-requestOAuthToken
+requestAuthenticationToken
 	| url parameters response |
 	
 	url := STTwitterApi apiUrl, '/oauth/request_token'.

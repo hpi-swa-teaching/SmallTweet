@@ -1,5 +1,5 @@
 as yet unclassified
-testAuthenticationUrlWithAnOAuthTokenString
+testAuthenticationUrl
 	| url token |
 	token := 'a token'.
 	twitterApi accessToken: token.

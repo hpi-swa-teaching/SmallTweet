@@ -11,7 +11,7 @@ loginWithPin: aPinString
 						oAuthSign: req
 						url: url
 						extra: parameters
-						using: self consumerParams].
+						using: self accessTokenParams].
 	response isSuccess 
 		ifTrue:
 			[ | form |
