@@ -18,8 +18,9 @@ loginWithPin: aPinString
 			form := WebUtils decodeUrlEncodedForm: (response content).
 			self accessToken: (form at: 'oauth_token').
 			self accessTokenSecret: (form at: 'oauth_token_secret').
-			^ form at: 'user_id'] 
-		ifFalse: [ ^ 0 ]
+			self userId: (form at: 'user_id').
+			self screenName: (form at: 'screen_name')].
+	^ response isSuccess
 
 	
 	

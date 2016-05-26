@@ -10,7 +10,9 @@
 		"consumerSecret",
 		"accessToken",
 		"accessTokenSecret",
-		"webClient" ],
+		"webClient",
+		"userId",
+		"screenName" ],
 	"name" : "STTwitterApi",
 	"pools" : [
 		 ],

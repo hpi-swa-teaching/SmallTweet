@@ -9,5 +9,9 @@ requestOAuthToken
 			type: 'application/x-www-form-urlencoded'
 			do:[:req | WebUtils oAuthSign: req url: url extra: parameters using: self consumerParams].
 	response isSuccess 
-		ifTrue: [^ (WebUtils decodeUrlEncodedForm: (response content)) at: 'oauth_token'] 
-		ifFalse: [^ '']
+		ifTrue:
+			[ | form |
+			form := WebUtils decodeUrlEncodedForm: (response content).
+			self accessToken: (form at: 'oauth_token').
+			self accessTokenSecret: (form at: 'oauth_token_secret')].
+	^ response isSuccess
