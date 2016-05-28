@@ -11,4 +11,4 @@ twitterShowTimelineInWindow: type for: aTwitterName
 	self getUserProfilesFromTimeline: jsonObj.
 	jsonObj
 		do: [:j | twitterUi textField theText: twitterUi textField theText,
-						(j at: 'text') , String cr , String cr. ].
+						(self tweetLinkUrls: (j at: 'text')) asHtmlText  , String cr , String cr]
