@@ -1,14 +1,16 @@
 as yet unclassified
 initialize
 	super initialize.
-	self setLabel: 'SmallTweet'.
 	
+	loadedViews := Dictionary new.
 	menuMorph := STwitterUIMenu new.
-	viewMorph := STwitterUIHomeTimeline new.
+	viewMorph := Morph new.
 	scrollMorph := ScrollPane new.
 
-	self addMenuMorph.
-	self addScrollMorph.
-	self addViewMorph.
+	self setLabel: 'SmallTweet';
+		paneColor: Color veryVeryLightGray;
+		addMenuMorph;
+		addScrollMorph;
+		addViewMorph;
+		loadHomeTimelineView.
 	
-	self paneColor: Color veryVeryLightGray.

@@ -5,8 +5,8 @@ render
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
-		layoutInset:10; 
-		cellInset:10;
+		layoutInset: 10; 
+		cellInset: 10;
 		wrapCentering: #left;
 		color: Color white.
 

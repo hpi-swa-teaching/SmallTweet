@@ -1,3 +1,6 @@
 as yet unclassified
 loadProfileView
-	self updateViewMorph: STwitterUIProfile new.
+	(loadedViews includesKey: #profileView) ifFalse: [
+		loadedViews at: #profileView put: STwitterUIProfile new.
+	].
+	self updateViewMorph:(loadedViews at: #profileView).

@@ -2,8 +2,9 @@ as yet unclassified
 addViewMorph
 	scrollMorph scroller
 		addMorph: (viewMorph).
-		
-	scrollMorph
+	
+	scrollMorph 
 		resizeScrollBars;
 		resizeScroller;
-		hideOrShowScrollBars.
+		setScrollDeltas
+	

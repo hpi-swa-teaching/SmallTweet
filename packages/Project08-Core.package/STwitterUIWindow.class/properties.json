@@ -8,7 +8,8 @@
 	"instvars" : [
 		"menuMorph",
 		"viewMorph",
-		"scrollMorph" ],
+		"scrollMorph",
+		"loadedViews" ],
 	"name" : "STwitterUIWindow",
 	"pools" : [
 		 ],

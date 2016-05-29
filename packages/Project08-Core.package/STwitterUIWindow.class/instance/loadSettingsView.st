@@ -1,3 +1,6 @@
 as yet unclassified
 loadSettingsView
-	self updateViewMorph: STwitterUISettings new.
+	(loadedViews includesKey: #settingsView) ifFalse: [
+		loadedViews at: #settingsView put: STwitterUISettings new.
+	].
+	self updateViewMorph:(loadedViews at: #settingsView).

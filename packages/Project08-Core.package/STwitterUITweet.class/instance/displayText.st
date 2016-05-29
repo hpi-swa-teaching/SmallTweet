@@ -1,11 +1,18 @@
 as yet unclassified
 displayText
 	 "TODO: Real tweet"
-	| tweetUserName tweetText |
-	tweetUserName := 'Nico Knoll'.
+	| tweetUserName tweetUserRealName tweetText tweetInformation |
+	tweetUserRealName := 'Nico Knoll'.
+	tweetUserName := '@derStadtpirat'.
 	tweetText := 'Animi tempora diamlorem adipisci nibh qui magni, occaecat ad, aliquid! Quas mi beatae aenean. Sodales. Feugiat, veniam ultricies sociis est condimentum feugiat iaculis parturient, earum nobis, libero molestie hic. Occaecat.'.
+	tweetInformation := '13. Mai 2016'.
 	
-	text := TextMorph new contentsWrapped: ('<b>', tweetUserName, '</b><br>', tweetText) asHtmlText.
+	text := TextMorph new contentsWrapped: (
+		'<b>', tweetUserRealName, '</b>  <font color="#555555">', tweetUserName, '</font><br>',  
+		tweetText, '<br>',
+		'<i><font color="#555555">', tweetInformation, '</font></i>'
+	) asHtmlText.
+	
 	text 
 		wrapFlag: true;
 	 	lock;
