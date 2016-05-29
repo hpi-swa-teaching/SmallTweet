@@ -33,7 +33,7 @@ descriptionField
 			do: [].
 	].
 "
-	picField := STMedia getImageFrom: user profileImageUrl.
+	picField := STMedia imageMorphFrom: user profileImageUrl.
 	window addMorph: picField.
 	picField position: 10@10.
 
