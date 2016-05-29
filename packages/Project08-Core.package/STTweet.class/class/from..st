@@ -6,4 +6,5 @@ from: aJsonObject
 	createdAt: (aJsonObject at: 'created_at');
 	user: (STUser from: (aJsonObject at: 'user'));
 	entities: (aJsonObject at: 'entities');
+	urlsFrom: ((aJsonObject at: 'entities') at:'urls');
 	yourself.
