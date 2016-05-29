@@ -1,0 +1,14 @@
+{
+	"category" : "Project08-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "STMediaTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
