@@ -1,10 +1,9 @@
 as yet unclassified
 testFromJsonObject
-	| tweetJson jsonTimeline jsonObject tweet |
+	| jsonTimeline jsonObject tweet |
 	
-	tweetJson := '{"id": 27634, "created_at": "timestamp", "text": "a text", "entities": {}, "user": {"id": 1, "name": "Name", "screen_name": "@name", "profile_image_url": "url_to_imge"}}'.
 	jsonTimeline := (Json new stream: (ReadStream on: Fixture userTimelineJsonResponse )) readAny.
-	jsonObject := jsonTimeline at:1.
+	jsonObject := jsonTimeline at: 1.
 	tweet := STTweet from: jsonObject.
 
 	self assert: (tweet id) equals: (jsonObject at: 'id').
@@ -15,3 +14,6 @@ testFromJsonObject
 	self assert: (tweet user name) equals: ((jsonObject at: 'user') at: 'name').
 	self assert: (tweet user screenName) equals: ((jsonObject at: 'user') at: 'screen_name').
 	self assert: (tweet user profileImageUrl) equals: ((jsonObject at: 'user') at: 'profile_image_url').
+	self assert: ((tweet urls at: 1) expandedUrl) equals: ((((jsonObject at: 'entities') at: 'urls') at: 1) at: 'expanded_url').
+	self assert: ((tweet urls at: 1) displayUrl) equals: ((((jsonObject at: 'entities') at: 'urls') at: 1) at: 'display_url').
+	self assert: ((tweet urls at: 1) shortUrl) equals: ((((jsonObject at: 'entities') at: 'urls') at: 1) at: 'url').

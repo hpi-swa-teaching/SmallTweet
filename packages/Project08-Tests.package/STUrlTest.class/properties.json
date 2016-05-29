@@ -1,0 +1,14 @@
+{
+	"category" : "Project08-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "STUrlTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
