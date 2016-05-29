@@ -1,0 +1,16 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tweet",
+		"text",
+		"image" ],
+	"name" : "STwitterUITweet",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }
