@@ -4,11 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "NK 5/30/2016 23:23",
+	"commentStamp" : "NK 5/30/2016 23:28",
 	"instvars" : [
-		 ],
-	"name" : "STwitterProfileWindow",
+		"active",
+		"id" ],
+	"name" : "STUIMenuButton",
 	"pools" : [
 		 ],
-	"super" : "UserInterface",
+	"super" : "IconicButton",
 	"type" : "normal" }

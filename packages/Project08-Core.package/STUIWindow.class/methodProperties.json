@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addMenuMorph" : "NK 5/30/2016 23:24",
+		"addScrollMorph" : "NK 5/29/2016 23:57",
+		"addViewMorph" : "NK 5/30/2016 00:50",
+		"initialize" : "NK 5/30/2016 23:25",
+		"loadHomeTimelineView" : "NK 5/30/2016 23:26",
+		"loadProfileView" : "NK 5/30/2016 23:26",
+		"loadSettingsView" : "NK 5/30/2016 23:26",
+		"loadView:as:activate:" : "NK 5/30/2016 17:37",
+		"loadedViews" : "NK 5/30/2016 19:24",
+		"menuMorph" : "NK 5/30/2016 19:24",
+		"openWindow" : "NK 5/28/2016 16:35",
+		"scrollMorph" : "NK 5/30/2016 19:24",
+		"updateViewMorph:" : "NK 5/30/2016 17:34",
+		"viewMorph" : "NK 5/30/2016 19:24" } }

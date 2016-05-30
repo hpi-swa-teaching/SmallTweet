@@ -4,11 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "NK 5/30/2016 23:23",
+	"commentStamp" : "NK 5/30/2016 23:28",
 	"instvars" : [
-		 ],
-	"name" : "STwitterProfileWindow",
+		"tweet",
+		"text",
+		"image" ],
+	"name" : "STUITweet",
 	"pools" : [
 		 ],
-	"super" : "UserInterface",
+	"super" : "Morph",
 	"type" : "normal" }

@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "NK 5/30/2016 23:23",
+	"commentStamp" : "NK 5/30/2016 23:29",
 	"instvars" : [
 		 ],
-	"name" : "STwitterProfileWindow",
+	"name" : "STUIUserTimeline",
 	"pools" : [
 		 ],
-	"super" : "UserInterface",
+	"super" : "STUITweetList",
 	"type" : "normal" }
