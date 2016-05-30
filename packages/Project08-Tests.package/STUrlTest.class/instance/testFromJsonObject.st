@@ -1,9 +1,10 @@
 as yet unclassified
 testFromJsonObject
-	| jsonTimeline jsonObject url |
+	| jsonObject jsonUrls url |
 	
-	jsonTimeline := (Json new stream: (ReadStream on: Fixture userTimelineJsonResponse )) readAny.
-	jsonObject := (((jsonTimeline at: 1) at: 'entities') at: 'url') at: 1.
+	jsonUrls := (Json new stream: (ReadStream on: Fixture urlsJson )) readAny.
+	jsonUrls do: [:j|
+		jsonObject := j].
 	url := STUrl from: jsonObject.
 	
 	self assert: (url expandedUrl) equals: (jsonObject at: 'expanded_url').

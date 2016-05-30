@@ -1,5 +1,6 @@
 accessing
 expandUrl
+"Replaces the sort version of the url in the text with the expanded version"
 |start end expandedText|
 	self urls do:[:url|
 		start := self text findString: (url shortUrl).
