@@ -1,0 +1,14 @@
+{
+	"category" : "Project08-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "STwitterUIWindowTest",
+	"pools" : [
+		 ],
+	"super" : "MTFTestCase",
+	"type" : "normal" }
