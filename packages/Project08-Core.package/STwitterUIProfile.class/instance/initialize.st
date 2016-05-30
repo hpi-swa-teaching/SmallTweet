@@ -3,5 +3,5 @@ initialize
 	super initialize.
 	
 	self addUserInfo.
-	self addMorphBack: STwitterUIList new.
+	self addMorphBack: STwitterUIUserTimeline new.
 	

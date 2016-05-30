@@ -2,12 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addMenuMorph" : "NK 5/29/2016 23:57",
+		"addMenuMorph" : "NK 5/30/2016 17:57",
 		"addScrollMorph" : "NK 5/29/2016 23:57",
 		"addViewMorph" : "NK 5/30/2016 00:50",
-		"initialize" : "NK 5/30/2016 01:25",
-		"loadHomeTimelineView" : "NK 5/30/2016 01:08",
-		"loadProfileView" : "NK 5/30/2016 01:07",
-		"loadSettingsView" : "NK 5/30/2016 01:08",
+		"initialize" : "NK 5/30/2016 17:40",
+		"loadHomeTimelineView" : "NK 5/30/2016 17:38",
+		"loadMentionsView" : "NK 5/30/2016 18:09",
+		"loadMessagesView" : "NK 5/30/2016 18:09",
+		"loadProfileView" : "NK 5/30/2016 17:39",
+		"loadSettingsView" : "NK 5/30/2016 17:39",
+		"loadView:as:activate:" : "NK 5/30/2016 17:37",
 		"openWindow" : "NK 5/28/2016 16:35",
-		"updateViewMorph:" : "NK 5/30/2016 01:17" } }
+		"updateViewMorph:" : "NK 5/30/2016 17:34" } }

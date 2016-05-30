@@ -1,11 +1,11 @@
 as yet unclassified
-addButton: aLabel for: anAction on: aTarget with: anImage
+addButton: anId for: anAction on: aTarget with: anImage
 	| button |
-	button := Dictionary new.
+	button := STwitterUIMenuButton new.
 	button 
-		at: #label put: aLabel;
-		at: #action put: anAction;
-		at: #target put: aTarget;
-		at: #image put: anImage.
+		target: aTarget;
+		id: anId;
+		labelGraphic: anImage;
+		actionSelector: anAction.
 	
 	buttons add: button.
