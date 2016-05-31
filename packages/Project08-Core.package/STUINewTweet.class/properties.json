@@ -1,0 +1,14 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "STUINewTweet",
+	"pools" : [
+		 ],
+	"super" : "STUIView",
+	"type" : "normal" }

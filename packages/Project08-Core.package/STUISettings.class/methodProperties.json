@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "NK 5/28/2016 16:44" } }
+		"addUserSection" : "NK 5/31/2016 08:45",
+		"addUserSectionButtons" : "NK 5/31/2016 08:48",
+		"addUserSectionList" : "NK 5/31/2016 08:47",
+		"initialize" : "NK 5/31/2016 08:44" } }

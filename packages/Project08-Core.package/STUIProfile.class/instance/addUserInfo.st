@@ -16,7 +16,7 @@ addUserInfo
 		borderWidth: 0.
 	
 	"TODO: add real user data"
-	userName := '@derStadtpirat'.
+	userName := '@nico_knoll'.
 	userRealName := 'Nico Knoll'.
 	userDescription := 'You want your website to become awesome? Call Barney. Or hire me. In love with @processwire CMS. Working at @4scotty..'.
 	userNumTweets := 4575.
