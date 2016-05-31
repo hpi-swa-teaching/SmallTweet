@@ -1,3 +1,3 @@
 accessing
 user
-	^ user
+	^ user ifNil: [ STUser new]
