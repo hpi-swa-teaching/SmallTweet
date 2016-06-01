@@ -1,0 +1,14 @@
+{
+	"category" : "Project08-Core",
+	"classinstvars" : [
+		"default" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "STImageStore",
+	"pools" : [
+		 ],
+	"super" : "Dictionary",
+	"type" : "normal" }
