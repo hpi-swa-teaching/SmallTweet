@@ -1,7 +1,7 @@
 as yet unclassified
 getImageFrom: anUrl
 |doc form image len suffix|
-
+	anUrl ifNil: [^nil].
 	doc := HTTPSocket httpGet: anUrl.
 	doc binary; reset.
 	
