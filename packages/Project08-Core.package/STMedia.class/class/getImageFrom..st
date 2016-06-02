@@ -1,10 +1,10 @@
 as yet unclassified
 getImageFrom: anUrl
-|doc form image len suffix cache|
+|doc form image len suffix cachedForm|
 	anUrl ifNil: [^nil].
 	
-	cache := STImageStore default getFormFrom: anUrl.
-	cache ifNotNil: [^ (ImageMorph new) setNewImageFrom: cache].
+	cachedForm := STImageStore default imageFormFrom: anUrl.
+	cachedForm ifNotNil: [^ (ImageMorph new) setNewImageFrom: cachedForm].
 	
 	doc := HTTPSocket httpGet: anUrl.
 	doc binary; reset.
