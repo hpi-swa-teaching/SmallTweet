@@ -6,4 +6,7 @@ from: aJsonObject
 	screenName: (aJsonObject at: 'screen_name');
 	profileImageUrl: (aJsonObject at: 'profile_image_url');
 	description: (aJsonObject at: 'description');
+	numTweets: (aJsonObject at: 'statuses_count');
+	numFollowing: (aJsonObject at: 'friends_count');
+	numFollowers: (aJsonObject at: 'followers_count');
 	yourself.

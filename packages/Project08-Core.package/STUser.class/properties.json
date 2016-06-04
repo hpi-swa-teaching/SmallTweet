@@ -10,7 +10,10 @@
 		"name",
 		"profileImageUrl",
 		"screenName",
-		"description" ],
+		"description",
+		"numFollowers",
+		"numFollowing",
+		"numTweets" ],
 	"name" : "STUser",
 	"pools" : [
 		 ],

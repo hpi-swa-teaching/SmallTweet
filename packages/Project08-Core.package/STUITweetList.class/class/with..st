@@ -1,6 +1,5 @@
 as yet unclassified
-with: aTwitterApi
+with: anOrderedCollectionOfTweets
 	^ (self new)
-		twitterApi: aTwitterApi;
-		tweets: aTwitterApi homeTimeline;
+		tweets: anOrderedCollectionOfTweets;
 		render

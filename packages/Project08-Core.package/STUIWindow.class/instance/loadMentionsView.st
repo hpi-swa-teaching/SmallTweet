@@ -1,6 +1,6 @@
 as yet unclassified
 loadMentionsView
 	self 
-		loadView: STUIMentions 
+		loadView: STUIMentions new
 		as: #mentionsView 
 		activate: #mentionsButton.
