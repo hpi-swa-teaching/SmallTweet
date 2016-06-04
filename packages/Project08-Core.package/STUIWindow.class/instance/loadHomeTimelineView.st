@@ -1,6 +1,6 @@
 as yet unclassified
 loadHomeTimelineView
 	self 
-		loadView: STUIHomeTimeline 
+		loadView: (STUIHomeTimeline with: twitterApi)
 		as: #homeTimelineView 
 		activate: #homeTimelineButton.

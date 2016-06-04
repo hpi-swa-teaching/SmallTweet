@@ -1,6 +1,6 @@
 as yet unclassified
 loadSettingsView
 	self 
-		loadView: STUISettings 
+		loadView: (STUISettings with: twitterApi)
 		as: #settingsView 
 		activate: #settingsButton.

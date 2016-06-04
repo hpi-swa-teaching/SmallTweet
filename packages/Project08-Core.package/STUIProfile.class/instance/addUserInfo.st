@@ -1,6 +1,6 @@
 as yet unclassified
 addUserInfo 
-	| userInfo text userName userRealName userDescription userNumTweets userNumFollowing userNumFollowers |
+	| user userInfo text userNumTweets userNumFollowing userNumFollowers |
 	
 	userInfo := RectangleMorph new.
 	userInfo
@@ -16,19 +16,19 @@ addUserInfo
 		borderWidth: 0.
 	
 	"TODO: add real user data"
-	userName := '@nico_knoll'.
-	userRealName := 'Nico Knoll'.
-	userDescription := 'You want your website to become awesome? Call Barney. Or hire me. In love with @processwire CMS. Working at @4scotty..'.
+	user := STUser new.
+	user screenName: '@nico_knoll'.
+	user name: 'Nico Knoll'.
+	user description: 'You want your website to become awesome? Call Barney. Or hire me. In love with @processwire CMS. Working at @4scotty..'.
 	userNumTweets := 4575.
 	userNumFollowing := 153.
 	userNumFollowers := 104285.
-	
 	text := TextMorph new.
 	text 
 		contentsWrapped: (
-			'<b><font size="20">', userRealName, '</font></b><br>',
-			'<font color="#cccccc">', userName, '</font><br><br>',
-			userDescription, '<br><br>',
+			'<b><font size="20">', user screenName, '</font></b><br>',
+			'<font color="#cccccc">', user name, '</font><br><br>',
+			user description, '<br><br>',
 			'<b>', userNumTweets, '</b> Tweets - <b>',  userNumFollowing, '</b> Following - <b>', userNumFollowers, '</b> Followers') asHtmlText;
 		wrapFlag: true;
 		width: 400;

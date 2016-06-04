@@ -1,8 +1,10 @@
 {
 	"class" : {
-		 },
+		"with:" : "JS 6/4/2016 15:17" },
 	"instance" : {
-		"initialize" : "NK 5/29/2016 23:37",
+		"initialize" : "JS 6/4/2016 15:17",
 		"render" : "NK 5/30/2016 23:24",
 		"tweets" : "NK 5/29/2016 23:37",
-		"tweets:" : "NK 5/29/2016 23:37" } }
+		"tweets:" : "NK 5/29/2016 23:37",
+		"twitterApi" : "JS 6/1/2016 19:24",
+		"twitterApi:" : "JS 6/1/2016 19:21" } }
