@@ -11,4 +11,9 @@ initialize
 		addMenuMorph;
 		addScrollMorph;
 		loadHomeTimelineView.
+		
+	
+	self twitterApi: (STTwitterApi 
+						consumerKey: 'D9Tx60HiGBVrBjsQUZ5KR4ZYs'  
+						consumerSecret: 'SmRTpc7YVxForTi89wA0pMVFFEzoYcC4Th6OERAKhWZFZGsAzc').
 	

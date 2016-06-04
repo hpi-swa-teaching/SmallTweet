@@ -2,7 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addUserSection" : "NK 5/31/2016 08:45",
+		"addLoginSection" : "NR 6/4/2016 14:15",
+		"addPinResultSection" : "NR 6/4/2016 14:18",
+		"addPinSection" : "NR 6/4/2016 14:19",
+		"addRequestPinSection" : "NR 6/4/2016 14:46",
 		"addUserSectionButtons" : "NK 5/31/2016 08:48",
 		"addUserSectionList" : "NK 5/31/2016 08:47",
-		"initialize" : "NK 5/31/2016 08:44" } }
+		"initialize" : "NR 6/4/2016 14:48",
+		"openAuthenticationUrl" : "NR 6/4/2016 14:43",
+		"twitterApi" : "NR 6/4/2016 14:48",
+		"twitterApi:" : "NR 6/4/2016 14:48",
+		"verifyPin" : "NR 6/4/2016 14:43" } }

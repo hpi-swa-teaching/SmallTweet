@@ -9,7 +9,8 @@
 		"menuMorph",
 		"viewMorph",
 		"scrollMorph",
-		"loadedViews" ],
+		"loadedViews",
+		"twitterApi" ],
 	"name" : "STUIWindow",
 	"pools" : [
 		 ],
