@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addMenuMorph" : "NK 5/31/2016 11:25",
+		"addMenuMorph" : "NK 6/4/2016 18:56",
 		"addScrollMorph" : "NK 5/29/2016 23:57",
 		"addViewMorph" : "NK 5/30/2016 00:50",
 		"initialize" : "JS 6/4/2016 15:09",
@@ -10,6 +10,7 @@
 		"loadMentionsView" : "NK 6/4/2016 18:25",
 		"loadNewTweetView" : "NK 6/4/2016 18:25",
 		"loadProfileView" : "NK 6/4/2016 18:25",
+		"loadScreenshotView" : "NK 6/4/2016 18:34",
 		"loadSettingsView" : "JS 6/4/2016 15:15",
 		"loadView:as:activate:" : "JS 6/4/2016 14:35",
 		"loadedViews" : "NK 5/30/2016 19:24",

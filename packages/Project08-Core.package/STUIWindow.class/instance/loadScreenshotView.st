@@ -1,0 +1,3 @@
+as yet unclassified
+loadScreenshotView
+	STScreenshot useTwitterCursor.
