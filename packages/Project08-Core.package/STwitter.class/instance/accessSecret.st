@@ -1,3 +1,0 @@
-accessing
-accessSecret
-	^ accessSecret

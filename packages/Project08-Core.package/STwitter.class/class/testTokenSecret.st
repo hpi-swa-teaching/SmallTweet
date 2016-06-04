@@ -1,4 +1,0 @@
-accessing
-testTokenSecret
-
-	^'AnKN1MKH2W1FnFK4UuvTCk36cGFtr136UiBonTKrBesZz'

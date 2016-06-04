@@ -2,7 +2,7 @@ as yet unclassified
 imageMorphFrom: anUrl
 |doc form image cachedForm|
 
-	cachedForm := STImageStore default imageFormFrom: anUrl.
+	cachedForm := STImageCache default imageFormFrom: anUrl.
 	cachedForm ifNotNil: [^ (ImageMorph new) setNewImageFrom: cachedForm].
 
 	doc := HTTPSocket httpGet: anUrl.
@@ -10,7 +10,7 @@ imageMorphFrom: anUrl
 	
 	form := ImageReadWriter formFromStream: doc.
 	
-	STImageStore default cache: form from: anUrl. 
+	STImageCache default cache: form from: anUrl. 
 		
 	image := ImageMorph new.
 	image setNewImageFrom: form.

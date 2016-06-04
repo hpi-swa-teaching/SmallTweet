@@ -1,4 +1,0 @@
-UiFunctions
-extractTweet
-
-	^self subclassResponsibility 

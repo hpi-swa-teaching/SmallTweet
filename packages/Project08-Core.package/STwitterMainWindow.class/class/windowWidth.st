@@ -1,4 +1,0 @@
-accessing
-windowWidth
-
-	^377

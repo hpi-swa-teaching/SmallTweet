@@ -1,4 +1,0 @@
-uiFunctions
-openImageTweetWindow
-
-	self openImageTweetWindowWith: ''

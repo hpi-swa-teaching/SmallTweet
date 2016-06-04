@@ -1,7 +1,7 @@
 endpoints
-userTimeline
+homeTimeline
 	| url response |
-	url := STTwitterApi apiUrl, '/1.1/statuses/user_timeline.json'.
+	url := STTwitterApi apiUrl, '/1.1/statuses/home_timeline.json'.
 	response := self webClient 
 					httpGet: url
 					do: [:req | WebUtils

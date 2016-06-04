@@ -3,7 +3,7 @@ getImageFrom: anUrl
 |doc form image len suffix cachedForm|
 	anUrl ifNil: [^nil].
 	
-	cachedForm := STImageStore default imageFormFrom: anUrl.
+	cachedForm := STImageCache default imageFormFrom: anUrl.
 	cachedForm ifNotNil: [^ (ImageMorph new) setNewImageFrom: cachedForm].
 	
 	doc := HTTPSocket httpGet: anUrl.
@@ -17,7 +17,7 @@ getImageFrom: anUrl
 	suffix = 'png' ifTrue:
 		[form := PNGReadWriter formFromStream: doc.].
 	
-	STImageStore default cache: form from: anUrl. 
+	STImageCache default cache: form from: anUrl. 
 	
 	image := ImageMorph new.
 	image setNewImageFrom: form.

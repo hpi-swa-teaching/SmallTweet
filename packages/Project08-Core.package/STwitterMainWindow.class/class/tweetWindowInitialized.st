@@ -1,3 +1,0 @@
-accessing
-tweetWindowInitialized
-	^ TweetWindowInitialized
