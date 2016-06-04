@@ -1,10 +1,12 @@
 {
 	"class" : {
 		"accessTokenResponse" : "NR 5/24/2016 21:30",
+		"currentUserJsonResponse" : "NR 6/4/2016 17:40",
 		"homeTimelineJsonResponse" : "NR 6/4/2016 12:29",
 		"notFoundJsonResponse" : "NR 5/24/2016 20:53",
 		"oAuthTokenResponse" : "NR 5/24/2016 21:39",
 		"urlsJson" : "JU 5/30/2016 11:05",
-		"userTimelineJsonResponse" : "NR 5/24/2016 21:39" },
+		"userTimelineJsonResponse" : "NR 5/24/2016 21:39",
+		"userWithScreenNameJsonResponse" : "NR 6/4/2016 17:48" },
 	"instance" : {
 		 } }
