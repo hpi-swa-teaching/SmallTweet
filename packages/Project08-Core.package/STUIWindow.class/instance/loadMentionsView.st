@@ -1,6 +1,6 @@
 as yet unclassified
 loadMentionsView
 	self 
-		loadView: STUIMentions new
+		loadView: (STUIMentions with: twitterApi mentionsTimeline)
 		as: #mentionsView 
 		activate: #mentionsButton.
