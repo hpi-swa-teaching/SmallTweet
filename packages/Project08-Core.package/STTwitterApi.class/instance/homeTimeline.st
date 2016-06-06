@@ -1,8 +1,6 @@
 endpoints
 homeTimeline
 	| url response |
-	self isUserLoggedin ifFalse: [^ STError from: 'Not loggedin.'].
-	
 	url := STTwitterApi apiUrl, '/1.1/statuses/home_timeline.json'.
 	response := self webClient 
 					httpGet: url
@@ -11,5 +9,5 @@ homeTimeline
 						url: url
 						using: self accessTokenParams].
 	response isSuccess 
-		ifTrue: [^ self deserialize: (response content) intoCollectionOf: STTweet] 
-		ifFalse: [^ self deserialize: (response content) intoObjectOf: STError].
+		ifTrue: [^ STResult value: (self deserialize: (response content) intoCollectionOf: STTweet)] 
+		ifFalse: [^ STResult error: (self deserialize: (response content) intoObjectOf: STError)].

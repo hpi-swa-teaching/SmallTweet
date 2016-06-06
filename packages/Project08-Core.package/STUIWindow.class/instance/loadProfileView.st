@@ -1,10 +1,18 @@
 as yet unclassified
 loadProfileView
-	self twitterApi isUserLoggedin ifFalse: [
-		self inform: 'Please login first.'. 
-		^ false].
+	| userTimeline currentUser|
+	self twitterApi hasUser 
+		ifFalse: [ self inform: 'Please login first.'. 
+				^ false].
+	
+	userTimeline := twitterApi userTimeline.
+	currentUser := twitterApi currentUser.
+	
+	(userTimeline isError) | (currentUser isError)
+		ifTrue: [ self inform: 'An Error occurred.'. 
+			     ^ false].
 	
 	self 
-		loadView: (STUIProfile with: twitterApi userTimeline from: twitterApi currentUser)
+		loadView: (STUIProfile with: userTimeline value from: currentUser value)
 		as: #profileView 
 		activate: #profileButton.

@@ -1,4 +1,4 @@
-helpers
-isUserLoggedin
+initialize
+hasUser
 	userId ifNotNil: [^ true].
 	^ false

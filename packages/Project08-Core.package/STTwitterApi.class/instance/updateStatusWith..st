@@ -2,8 +2,6 @@ endpoints
 updateStatusWith: aTextString
 	"Also known as tweeting"
 	| url response content |
-	self isUserLoggedin ifFalse: [^ STError from: 'Not loggedin.'].
-	
 	url := STTwitterApi apiUrl, '/1.1/statuses/update.json'.
 	content :=  Dictionary newFromPairs: {'status'. aTextString}.
 	response := self webClient 
@@ -16,5 +14,5 @@ updateStatusWith: aTextString
 						extra: content
 						using: self accessTokenParams].
 	response isSuccess 
-		ifTrue: [^ self deserialize: (response content) intoCollectionOf: STTweet] 
-		ifFalse: [^ self deserialize: (response content) intoObjectOf: STError].
+		ifTrue: [^ STResult value: (self deserialize: (response content) intoCollectionOf: STTweet)] 
+		ifFalse: [^ STResult error: (self deserialize: (response content) intoObjectOf: STError)].

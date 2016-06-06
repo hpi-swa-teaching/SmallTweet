@@ -1,10 +1,5 @@
 as yet unclassified
-from: aJsonObjectOrString
-	| error |
-	aJsonObjectOrString isString ifTrue: [
-		error := aJsonObjectOrString] ifFalse: [
-		error := (aJsonObjectOrString at: 'errors') ].
-		
+from: aJsonObject		
 	^ (self new)
-		errors: error;
+		errors: (aJsonObject at: 'errors');
 		yourself 

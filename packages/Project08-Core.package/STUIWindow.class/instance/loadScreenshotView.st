@@ -1,6 +1,6 @@
 as yet unclassified
 loadScreenshotView
-	self twitterApi isUserLoggedin ifFalse: [
+	self twitterApi hasUser ifFalse: [
 		self inform: 'Please login first.'. 
 		^ false].
 	

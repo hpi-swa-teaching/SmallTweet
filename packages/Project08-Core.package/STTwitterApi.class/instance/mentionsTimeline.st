@@ -1,8 +1,6 @@
 endpoints
 mentionsTimeline
-	| url response |
-	self isUserLoggedin ifFalse: [^ STError from: 'Not loggedin.'].
-	
+	| url response |	
 	url := STTwitterApi apiUrl, '/1.1/statuses/mentions_timeline.json'.
 	response := self webClient 
 					httpGet: url
@@ -11,5 +9,5 @@ mentionsTimeline
 						url: url
 						using: self accessTokenParams].
 	response isSuccess 
-		ifTrue: [^ self deserialize: (response content) intoCollectionOf: STTweet] 
-		ifFalse: [^ self deserialize: (response content) intoObjectOf: STError].
+		ifTrue: [^ STResult value: (self deserialize: (response content) intoCollectionOf: STTweet)] 
+		ifFalse: [^ STResult error: (self deserialize: (response content) intoObjectOf: STError)].

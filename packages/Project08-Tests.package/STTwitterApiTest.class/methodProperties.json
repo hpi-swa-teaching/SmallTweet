@@ -9,13 +9,13 @@
 		"testConsumerKeyConsumerSecret" : "NR 5/24/2016 11:42",
 		"testConsumerKeyConsumerSecretAccessTokenAccessTokenSecret" : "NR 6/4/2016 12:13",
 		"testConsumerParams" : "NR 5/24/2016 22:46",
-		"testCurrentUser" : "NR 6/4/2016 17:37",
+		"testCurrentUser" : "NR 6/6/2016 12:00",
 		"testDeserializeAStringIntoCollectionOfAClass" : "NR 5/24/2016 21:39",
 		"testDeserializeAStringIntoObjectOfAClass" : "NR 5/24/2016 20:54",
-		"testHomeTimeline" : "NR 6/4/2016 12:32",
+		"testHomeTimeline" : "NR 6/6/2016 12:00",
 		"testLoginFlow" : "NR 5/26/2016 14:27",
 		"testLoginWithPin" : "NR 5/26/2016 13:11",
-		"testMentionsTimeline" : "NR 6/5/2016 23:33",
+		"testMentionsTimeline" : "NR 6/6/2016 12:01",
 		"testRequestAuthenticationToken" : "NR 5/26/2016 14:17",
-		"testUserTimeline" : "NR 5/24/2016 21:39",
-		"testUserWithScreenName" : "NR 6/4/2016 17:52" } }
+		"testUserTimeline" : "NR 6/6/2016 12:00",
+		"testUserWithScreenName" : "NR 6/6/2016 12:00" } }

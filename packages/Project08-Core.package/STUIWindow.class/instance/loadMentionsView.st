@@ -1,10 +1,16 @@
 as yet unclassified
 loadMentionsView
-	self twitterApi isUserLoggedin ifFalse: [
-		self inform: 'Please login first.'. 
-		^ false].
+	| mentionsTimeline |
+	self twitterApi hasUser 
+		ifFalse: [self inform: 'Please login first.'. 
+				^ false].
+			
+	mentionsTimeline := twitterApi mentionsTimeline.
+	mentionsTimeline isError  
+		ifTrue: [self inform: 'An error occurred'. 
+				^ false].
 	
 	self 
-		loadView: (STUIMentions with: twitterApi mentionsTimeline)
+		loadView: (STUIMentions with: mentionsTimeline value)
 		as: #mentionsView 
 		activate: #mentionsButton.

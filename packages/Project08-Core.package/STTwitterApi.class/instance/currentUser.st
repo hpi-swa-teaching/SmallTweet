@@ -1,8 +1,6 @@
 endpoints
 currentUser
 	| url response |
-	self isUserLoggedin ifFalse: [^ STError from: 'Not loggedin.'].
-	
 	url := STTwitterApi apiUrl, '/1.1/account/verify_credentials.json'.
 	response := self webClient 
 					httpGet: url
@@ -11,5 +9,5 @@ currentUser
 						url: url
 						using: self accessTokenParams].
 	response isSuccess 
-		ifTrue: [^ self deserialize: (response content) intoObjectOf: STUser] 
-		ifFalse: [^ self deserialize: (response content) intoObjectOf: STError].
+		ifTrue: [^STResult value: (self deserialize: (response content) intoObjectOf: STUser)] 
+		ifFalse: [^STResult error: (self deserialize: (response content) intoObjectOf: STError)].
