@@ -17,5 +17,6 @@
 		"testLoginWithPin" : "NR 5/26/2016 13:11",
 		"testMentionsTimeline" : "NR 6/6/2016 12:01",
 		"testRequestAuthenticationToken" : "NR 5/26/2016 14:17",
+		"testUpdateStatusWithText" : "NR 6/6/2016 17:30",
 		"testUserTimeline" : "NR 6/6/2016 12:00",
 		"testUserWithScreenName" : "NR 6/6/2016 12:00" } }

@@ -5,6 +5,6 @@ loadNewTweetView
 		^ false].
 	
 	self 
-		loadView: STUINewTweet new
+		loadView: (STUINewTweet with: twitterApi)
 		as: #newTweetView 
 		activate: #newTweetButton.

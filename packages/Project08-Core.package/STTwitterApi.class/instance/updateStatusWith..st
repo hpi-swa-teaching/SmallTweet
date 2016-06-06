@@ -14,5 +14,5 @@ updateStatusWith: aTextString
 						extra: content
 						using: self accessTokenParams].
 	response isSuccess 
-		ifTrue: [^ STResult value: (self deserialize: (response content) intoCollectionOf: STTweet)] 
+		ifTrue: [^ STResult value: (self deserialize: (response content) intoObjectOf: STTweet)] 
 		ifFalse: [^ STResult error: (self deserialize: (response content) intoObjectOf: STError)].

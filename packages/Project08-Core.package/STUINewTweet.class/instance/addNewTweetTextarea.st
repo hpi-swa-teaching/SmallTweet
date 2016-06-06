@@ -1,6 +1,6 @@
 as yet unclassified
 addNewTweetTextarea
-	| textarea textareaWrapper |
+	| textareaWrapper |
 	
 	textareaWrapper := RectangleMorph new borderWidth: 1.
 	textareaWrapper 
@@ -14,12 +14,12 @@ addNewTweetTextarea
 		borderColor: Color gray;
 		borderWidth: 1.
 	
-	textarea := TextMorph new.
-	textarea 
+	tweetTextArea := TextMorph new.
+	tweetTextArea 
 		hResizing: #spaceFill;
 		borderColor: Color gray;
 		borderColor: 1.
-	textareaWrapper addMorphBack: textarea.
+	textareaWrapper addMorphBack: tweetTextArea.
 	
 	self addMorphBack: textareaWrapper.
 	
