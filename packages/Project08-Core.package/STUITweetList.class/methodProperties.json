@@ -1,9 +1,9 @@
 {
 	"class" : {
-		"with:" : "NK 6/4/2016 18:24" },
+		"with:" : "NK 6/6/2016 08:58" },
 	"instance" : {
 		"initialize" : "JS 6/4/2016 15:17",
-		"render" : "NK 5/30/2016 23:24",
+		"render" : "NK 6/6/2016 08:31",
 		"tweets" : "NK 5/29/2016 23:37",
 		"tweets:" : "NK 5/29/2016 23:37",
 		"twitterApi" : "JS 6/1/2016 19:24",

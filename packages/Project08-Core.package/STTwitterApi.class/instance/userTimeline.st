@@ -1,6 +1,8 @@
 endpoints
 userTimeline
 	| url response |
+	self isUserLoggedin ifFalse: [^ STError from: 'Not loggedin.'].
+	
 	url := STTwitterApi apiUrl, '/1.1/statuses/user_timeline.json'.
 	response := self webClient 
 					httpGet: url

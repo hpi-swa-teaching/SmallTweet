@@ -2,6 +2,8 @@ endpoints
 updateStatusWith: aTextString
 	"Also known as tweeting"
 	| url response content |
+	self isUserLoggedin ifFalse: [^ STError from: 'Not loggedin.'].
+	
 	url := STTwitterApi apiUrl, '/1.1/statuses/update.json'.
 	content :=  Dictionary newFromPairs: {'status'. aTextString}.
 	response := self webClient 

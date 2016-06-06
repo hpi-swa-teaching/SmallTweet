@@ -1,6 +1,8 @@
 endpoints
 userWithScreenName: aScreenNameString
 	| url response |
+	self isUserLoggedin ifFalse: [^ STError from: 'Not loggedin.'].
+	
 	url := STTwitterApi apiUrl, '/1.1/users/show.json?screen_name=', aScreenNameString.
 	response := self webClient 
 					httpGet: url
