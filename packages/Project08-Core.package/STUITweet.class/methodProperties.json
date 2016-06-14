@@ -2,13 +2,18 @@
 	"class" : {
 		"for:" : "NK 5/29/2016 23:32" },
 	"instance" : {
-		"displayImage" : "JS 6/4/2016 14:48",
-		"displayText" : "NK 6/5/2016 22:32",
+		"actionsMorph" : "NK 6/14/2016 19:05",
+		"avatar" : "NK 6/14/2016 18:43",
+		"avatarMorph" : "NK 6/14/2016 18:43",
+		"content" : "NK 6/14/2016 17:42",
+		"contentMorph" : "NK 6/14/2016 18:49",
 		"image" : "NK 5/29/2016 23:18",
+		"imageMorph" : "NK 6/14/2016 18:48",
 		"initialize" : "NK 5/29/2016 23:32",
 		"linkUrls:" : "NK 6/5/2016 23:38",
-		"ownerChanged" : "NK 5/30/2016 00:37",
-		"render" : "NK 5/30/2016 00:37",
+		"ownerChanged" : "NK 6/14/2016 18:30",
+		"render" : "NK 6/14/2016 18:49",
 		"text" : "NK 5/29/2016 23:18",
+		"textMorph" : "NK 6/14/2016 18:29",
 		"tweet" : "NK 5/28/2016 18:46",
 		"tweet:" : "NK 5/29/2016 23:32" } }

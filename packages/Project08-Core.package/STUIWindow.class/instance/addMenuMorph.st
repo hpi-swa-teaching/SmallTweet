@@ -4,7 +4,7 @@ addMenuMorph
 		addMorph: menuMorph
 		fullFrame: (LayoutFrame
 				fractions: (0 @ 0 corner: 0 @ 1)
-				offsets: (0 @ 0 corner: 100 @ 0 negated)).
+				offsets: (0 @ 0 corner: 70 @ 0 negated)).
 	menuMorph color: Color transparent.
 
 	menuMorph addButton: #newTweetButton for: #loadNewTweetView on: self with:  STUIIcons newTweet.

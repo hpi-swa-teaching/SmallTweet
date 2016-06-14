@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addMenuMorph" : "NK 6/4/2016 18:56",
-		"addScrollMorph" : "NK 5/29/2016 23:57",
+		"addMenuMorph" : "NK 6/14/2016 17:47",
+		"addScrollMorph" : "NK 6/14/2016 17:48",
 		"addViewMorph" : "NK 5/30/2016 00:50",
 		"initialize" : "JS 6/4/2016 15:09",
 		"loadHomeTimelineView" : "NR 6/6/2016 12:11",

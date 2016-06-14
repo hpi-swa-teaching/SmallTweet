@@ -1,3 +1,4 @@
 as yet unclassified
 ownerChanged
-	self text width: self owner width - 120.
+	self content width: self owner width - 120.
+	self text width: self content width.

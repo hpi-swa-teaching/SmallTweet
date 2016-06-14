@@ -1,10 +1,9 @@
 as yet unclassified
-displayImage
+avatarMorph
 	image := STMedia getImageFrom: self tweet user profileImageUrl.
 	image ifNotNil: [
 	image
-		width: 100;
-		height: 100;
 		vResizing: #spaceFill;
-		hResizing: #shrinkWrap.
-	self addMorphBack: image]
+		hResizing: #shrinkWrap;
+		setNewImageFrom: (image form scaledToSize: 48).
+	^ image]
