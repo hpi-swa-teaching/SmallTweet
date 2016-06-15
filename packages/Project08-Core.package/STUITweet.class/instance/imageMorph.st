@@ -1,6 +1,6 @@
 as yet unclassified
 imageMorph
-	image := ImageMorph new.
+	image := STMedia getImageFrom: ((self tweet media at: 1 ifAbsent: [ ^ nil ]) mediaUrl).
 	image
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;

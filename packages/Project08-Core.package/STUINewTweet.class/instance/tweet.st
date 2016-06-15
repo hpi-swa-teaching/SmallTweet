@@ -2,5 +2,5 @@ as yet unclassified
 tweet
 	| text |
 	text := tweetTextArea contents asString.
-	twitterApi updateStatusWith: text.
+	twitterApi updateStatusWithText: text.
 	tweetTextArea contents: ''.

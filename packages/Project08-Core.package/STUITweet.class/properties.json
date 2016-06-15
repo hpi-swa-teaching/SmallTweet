@@ -11,7 +11,9 @@
 		"image",
 		"content",
 		"text",
-		"actions" ],
+		"actions",
+		"heartButton",
+		"retweetButton" ],
 	"name" : "STUITweet",
 	"pools" : [
 		 ],

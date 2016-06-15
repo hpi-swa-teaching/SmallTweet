@@ -4,7 +4,7 @@ testUpdateStatusWithText
 	twitterApi webClient mock: '/1.1/statuses/update.json' with: Fixture updateStatusWithTextResponse.
 	text := 'Testing SmallTweet'.
 	
-	result := twitterApi updateStatusWith: text .
+	result := twitterApi updateStatusWithText: text .
 	self assert: result isSuccess.
 	
 	tweet := result value.

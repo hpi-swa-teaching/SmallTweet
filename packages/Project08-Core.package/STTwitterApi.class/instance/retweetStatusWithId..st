@@ -1,17 +1,14 @@
 endpoints
-updateStatusWith: aTextString
-	"Also known as tweeting"
-	| url response content |
-	url := STTwitterApi apiUrl, '/1.1/statuses/update.json'.
-	content :=  Dictionary newFromPairs: {'status'. aTextString}.
+retweetStatusWithId: anInteger
+	| url response |
+	url := STTwitterApi apiUrl, '/1.1/statuses/retweet/', anInteger ,'.json'.
 	response := self webClient 
 					httpPost: url
-					content: (WebUtils encodeUrlEncodedForm: content)
-					type: 'application/x-www-form-urlencoded' 
+					content: #()
+					type: nil
 					do: [:req | WebUtils
 						oAuthSign: req
 						url: url
-						extra: content
 						using: self accessTokenParams].
 	response isSuccess 
 		ifTrue: [^ STResult value: (self deserialize: (response content) intoObjectOf: STTweet)] 

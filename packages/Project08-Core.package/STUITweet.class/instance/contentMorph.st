@@ -1,6 +1,6 @@
 as yet unclassified
 contentMorph
-
+	| imageMorph |
 	content := Morph new.
 	content 
 		layoutPolicy: TableLayout new;
@@ -13,8 +13,9 @@ contentMorph
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
-		addMorphBack: self textMorph;
-		addMorphBack: self imageMorph;
-		addMorphBack: self actionsMorph.
+		addMorphBack: self textMorph.
+	imageMorph := self imageMorph.
+	imageMorph ifNotNil:  [content addMorphBack: imageMorph].
+	content addMorphBack: self actionsMorph.
 		
 	^ content

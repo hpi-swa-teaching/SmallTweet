@@ -11,7 +11,7 @@ actionsMorph
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
-		addMorphBack: STUIRetweetButton new render;
-		addMorphBack: STUIHeartButton new render.
+		addMorphBack: self retweetButton render ;
+		addMorphBack: self heartButton render.
 		
 	^ actions

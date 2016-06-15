@@ -1,6 +1,10 @@
 {
 	"class" : {
+		"from:" : "NR 6/14/2016 11:44",
 		"getImageFrom:" : "NR 6/4/2016 12:09",
-		"imageMorphFrom:" : "NR 6/4/2016 12:09" },
+		"imageMorphFrom:" : "NR 6/14/2016 11:44" },
 	"instance" : {
-		 } }
+		"mediaUrl" : "NR 6/14/2016 11:32",
+		"mediaUrl:" : "NR 6/14/2016 11:32",
+		"thumbnailMediaUrl" : "NR 6/14/2016 11:06",
+		"thumbnailMediaUrl:" : "NR 6/14/2016 11:06" } }
