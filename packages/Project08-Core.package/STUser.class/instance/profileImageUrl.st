@@ -1,3 +1,0 @@
-accessing
-profileImageUrl
-	^ profileImageUrl
