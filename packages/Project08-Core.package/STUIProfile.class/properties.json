@@ -1,0 +1,15 @@
+{
+	"category" : "SmallTweet-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NK 5/30/2016 23:28",
+	"instvars" : [
+		"tweets",
+		"user" ],
+	"name" : "STUIProfile",
+	"pools" : [
+		 ],
+	"super" : "STUIView",
+	"type" : "normal" }

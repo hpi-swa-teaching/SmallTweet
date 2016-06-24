@@ -1,4 +1,4 @@
-*Project08-Core
+*smalltweet-core
 tweetMethod
     (Smalltalk includesKey: #currentTwitter)
         ifFalse: [SWTwitterMainWindow new].

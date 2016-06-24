@@ -1,0 +1,14 @@
+{
+	"category" : "SmallTweet-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "STScreenshot",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

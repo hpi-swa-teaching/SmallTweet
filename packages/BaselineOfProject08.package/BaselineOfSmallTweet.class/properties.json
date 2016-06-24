@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfSmallTweet",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfSmallTweet",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

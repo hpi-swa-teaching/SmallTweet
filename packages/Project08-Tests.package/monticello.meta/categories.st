@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Project08-Tests'!
+SystemOrganization addCategory: #'SmallTweet-Tests'!

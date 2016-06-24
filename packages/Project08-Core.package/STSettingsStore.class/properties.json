@@ -1,0 +1,14 @@
+{
+	"category" : "SmallTweet-Core",
+	"classinstvars" : [
+		"default" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "STSettingsStore",
+	"pools" : [
+		 ],
+	"super" : "Dictionary",
+	"type" : "normal" }

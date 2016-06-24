@@ -1,0 +1,20 @@
+{
+	"category" : "SmallTweet-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"consumerKey",
+		"consumerSecret",
+		"accessToken",
+		"accessTokenSecret",
+		"webClient",
+		"userId",
+		"screenName" ],
+	"name" : "STTwitterApi",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

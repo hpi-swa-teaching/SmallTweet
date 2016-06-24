@@ -1,0 +1,14 @@
+{
+	"category" : "SmallTweet-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"errors" ],
+	"name" : "STError",
+	"pools" : [
+		 ],
+	"super" : "STTwitterModel",
+	"type" : "normal" }

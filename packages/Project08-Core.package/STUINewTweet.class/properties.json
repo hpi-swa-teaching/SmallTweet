@@ -1,0 +1,14 @@
+{
+	"category" : "SmallTweet-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tweetTextArea" ],
+	"name" : "STUINewTweet",
+	"pools" : [
+		 ],
+	"super" : "STUIView",
+	"type" : "normal" }

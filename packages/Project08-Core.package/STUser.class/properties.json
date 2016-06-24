@@ -1,0 +1,21 @@
+{
+	"category" : "SmallTweet-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JS 5/31/2016 14:18",
+	"instvars" : [
+		"id",
+		"name",
+		"profileImageUrl",
+		"screenName",
+		"description",
+		"numFollowers",
+		"numFollowing",
+		"numTweets" ],
+	"name" : "STUser",
+	"pools" : [
+		 ],
+	"super" : "STTwitterModel",
+	"type" : "normal" }

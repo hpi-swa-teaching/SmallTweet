@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfProject08!
+SystemOrganization addCategory: #BaselineOfSmallTweet!

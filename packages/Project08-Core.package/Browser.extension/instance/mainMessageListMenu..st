@@ -1,4 +1,4 @@
-*Project08-Core-override
+*smalltweet-core-override
 mainMessageListMenu: aMenu
 	<messageListMenuShifted: false>
 	^ aMenu addList: #(

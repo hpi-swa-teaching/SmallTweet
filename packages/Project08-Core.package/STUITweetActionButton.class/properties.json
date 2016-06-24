@@ -1,0 +1,15 @@
+{
+	"category" : "SmallTweet-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"active",
+		"id" ],
+	"name" : "STUITweetActionButton",
+	"pools" : [
+		 ],
+	"super" : "IconicButton",
+	"type" : "normal" }
