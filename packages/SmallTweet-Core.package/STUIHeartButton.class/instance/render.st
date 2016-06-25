@@ -1,4 +1,4 @@
 as yet unclassified
 render 
 	super render.
-	self labelGraphic: STUIIcons heart.
+	self labelGraphic: STUIIcons star.

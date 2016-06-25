@@ -2,7 +2,7 @@
 	"class" : {
 		"with:" : "NK 6/6/2016 08:58" },
 	"instance" : {
-		"favoriteTweetWithId:fromSender:" : "NR 6/15/2016 20:30",
+		"favoriteTweetWithId:fromSender:" : "NK 6/25/2016 18:18",
 		"initialize" : "JS 6/4/2016 15:17",
 		"render" : "NR 6/15/2016 20:18",
 		"retweetTweetWithId:fromSender:" : "NR 6/15/2016 20:30",
