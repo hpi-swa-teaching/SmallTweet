@@ -1,6 +1,6 @@
 as yet unclassified
 avatarMorph
-	image := STMedia getImageFrom: self tweet user profileImageUrl.
+	image := STMedia imageMorphFrom: self tweet user profileImageUrl.
 	image ifNotNil: [
 	image
 		vResizing: #spaceFill;

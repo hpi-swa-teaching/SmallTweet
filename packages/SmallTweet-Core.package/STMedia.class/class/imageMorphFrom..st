@@ -1,7 +1,8 @@
 as yet unclassified
 imageMorphFrom: anUrl
 |doc form image cachedForm|
-
+	anUrl ifNil: [^nil].
+	
 	cachedForm := STImageCache default imageFormFrom: anUrl.
 	cachedForm ifNotNil: [^ (ImageMorph new) setNewImageFrom: cachedForm].
 
