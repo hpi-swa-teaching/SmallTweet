@@ -2,7 +2,7 @@ as yet unclassified
 relativeTimeString: aTimeStamp 
 	"converts a timestamp into a relative time like '2 hours ago'"
 	| diff dayDiff |
-	diff := TimeStamp now asSeconds - aTimeStamp asSeconds.
+	diff := TimeStamp now asUTC asSeconds - aTimeStamp asSeconds.
 	dayDiff := (diff / 86400) floor.
 	diff = 0
 		ifTrue: [^ 'now'].
