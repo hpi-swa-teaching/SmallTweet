@@ -4,5 +4,3 @@ sudo: false
 # Select compatible Smalltalk image(s)
 smalltalk:
   - Squeak-5.0
-  - Squeak-4.6
-  - Squeak-4.5
