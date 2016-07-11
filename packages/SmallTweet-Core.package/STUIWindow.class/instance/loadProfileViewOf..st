@@ -1,5 +1,6 @@
 as yet unclassified
 loadProfileViewOf: aSTUser
+	"Not yet supported by endlessScroll and refresh"
 	| userTimeline|
 	self twitterApi hasUser 
 		ifFalse: [ self inform: 'Please login first.'. 

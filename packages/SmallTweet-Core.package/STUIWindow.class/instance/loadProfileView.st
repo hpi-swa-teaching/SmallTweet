@@ -5,7 +5,6 @@ loadProfileView
 		ifFalse: [ self inform: 'Please login first.'. 
 				^ false].
 	
-	userTimeline := twitterApi userTimeline.
 	userTimeline := STUIUserTimeline new.
 	
 	userTimeline
