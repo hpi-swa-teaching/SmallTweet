@@ -4,15 +4,21 @@ initialize
 	
 	loadedViews := Dictionary new.
 	menuMorph := STUIMenu new.
-	scrollMorph := STUIScrollPane new.	
+	scrollMorph := ScrollPane new.	
+	
 	
 	self twitterApi: (STTwitterApi 
-						consumerKey: 'D9Tx60HiGBVrBjsQUZ5KR4ZYs'  
-						consumerSecret: 'SmRTpc7YVxForTi89wA0pMVFFEzoYcC4Th6OERAKhWZFZGsAzc').
-	
+						consumerKey: (STSettingsStore default at: #consumerKey ifAbsent: [''] )  
+						consumerSecret: (STSettingsStore default at: #consumerSecret  ifAbsent: [''])
+						accessToken: (STSettingsStore default at: #accessToken ifAbsent: [''])
+						accessTokenSecret: (STSettingsStore default at: #accessTokenSecret ifAbsent: [''])).
+
 	self setLabel: 'SmallTweet';
 		paneColor: Color veryVeryLightGray;
 		addMenuMorph;
-		addScrollMorph;
-		loadSettingsView.
+		addScrollMorph.
+	
+	self twitterApi isAuthenticated 
+		ifTrue: [self loadHomeTimelineView] 
+		ifFalse: [self loadSettingsView]
 	

@@ -3,5 +3,7 @@ verifyPin
 	| pin |
 	pin := pinTextField theText asString.
 	(twitterApi loginWithPin: pin)
-		ifTrue: [resultTextLabel contents: ('<i>Successfully logged in as ', twitterApi screenName, '</i>') asHtmlText]
+		ifTrue: [ STSettingsStore default at: #accessToken put: self twitterApi accessToken.
+				STSettingsStore default at: #accessTokenSecret put: self twitterApi accessTokenSecret.
+				resultTextLabel contents: ('<i>Successfully logged in as ', twitterApi screenName, '</i>') asHtmlText]
 		ifFalse: [resultTextLabel contents: '<i>Login failed. Please try again</i>' asHtmlText].
