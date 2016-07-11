@@ -1,6 +1,9 @@
 as yet unclassified
 render
-	tweets
+	
+	self tweetMorphs do: [:morph | self removeMorph: morph. morph delete].
+
+	self tweets
 		do: [:tweet | 
 			| tweetMorph spacingMorph |
 			tweetMorph := STUITweet for: tweet.
@@ -16,5 +19,7 @@ render
 			spacingMorph 
 				height: 1;
 				hResizing: #spaceFill.
+				
 			self addMorphBack: tweetMorph.
+			self addTweetMorph: tweetMorph.
 			self addMorphBack: spacingMorph]

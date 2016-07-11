@@ -4,7 +4,7 @@ initialize
 	
 	loadedViews := Dictionary new.
 	menuMorph := STUIMenu new.
-	scrollMorph := ScrollPane new.	
+	scrollMorph := STUIScrollPane new.	
 	
 	self twitterApi: (STTwitterApi 
 						consumerKey: 'D9Tx60HiGBVrBjsQUZ5KR4ZYs'  

@@ -1,4 +1,4 @@
 as yet unclassified
 openWindow
 	self openInWorld.
-	^ self openInWorldExtent: 600 @ 650.
+	^ self openInWorldExtent: 650 @ 700.

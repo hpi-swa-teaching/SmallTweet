@@ -1,18 +1,13 @@
 as yet unclassified
 loadMentionsView
-	| mentionsTimeline mentionsTimelineView |
-	self twitterApi hasUser 
-		ifFalse: [self inform: 'Please login first.'. 
-				^ false].
-			
-	mentionsTimeline := twitterApi mentionsTimeline.
-	mentionsTimeline isError  
-		ifTrue: [self inform: 'An error occurred'. 
-				^ false].
+	| mentionsTimelineView |
+	mentionsTimelineView := STUIMentionsTimeline new.
+							
+	mentionsTimelineView 
+		twitterApi: (self twitterApi);
+		loadTweets.
 	
-	mentionsTimelineView := (STUIHomeTimeline with: mentionsTimeline value)
-							twitterApi: (self twitterApi).
 	self 
 		loadView: mentionsTimelineView
-		as: #mentionsView 
+		as: #mentionsView
 		activate: #mentionsButton.

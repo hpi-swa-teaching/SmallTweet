@@ -1,7 +1,7 @@
 as yet unclassified
-with: anOrderedCollectionOfTweets from: aSTUser 		
+with: aTweetList from: aSTUser 		
 	^ (self new)
 		user: aSTUser;
-		tweets: anOrderedCollectionOfTweets;
+		tweetList: aTweetList;
 		addUserInfo;
 		addUserTimeline.

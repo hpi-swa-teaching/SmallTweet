@@ -1,0 +1,14 @@
+{
+	"category" : "SmallTweet-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "STUIMentionsTimeline",
+	"pools" : [
+		 ],
+	"super" : "STUITweetList",
+	"type" : "normal" }

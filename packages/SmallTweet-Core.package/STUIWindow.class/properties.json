@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Instance" ],
+		 ],
 	"commentStamp" : "NK 5/30/2016 23:29",
 	"instvars" : [
 		"menuMorph",

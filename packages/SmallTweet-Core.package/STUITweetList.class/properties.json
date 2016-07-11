@@ -1,12 +1,16 @@
 {
 	"category" : "SmallTweet-Core",
 	"classinstvars" : [
-		 ],
+		"maxID" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "NK 5/30/2016 23:28",
 	"instvars" : [
-		"tweets" ],
+		"name",
+		"tweets",
+		"minID",
+		"maxID",
+		"tweetMorphs" ],
 	"name" : "STUITweetList",
 	"pools" : [
 		 ],

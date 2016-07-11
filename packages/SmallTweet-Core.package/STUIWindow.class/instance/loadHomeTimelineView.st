@@ -1,17 +1,12 @@
 as yet unclassified
 loadHomeTimelineView
-	| homeTimeline homeTimelineView |
-	self twitterApi hasUser 
-		ifFalse: [self inform: 'Please login first.'. 
-				^ false].
-			
-	homeTimeline := twitterApi homeTimeline.
-	homeTimeline isError  
-		ifTrue: [self inform: 'An error occurred'. 
-				^ false].
-			
-	homeTimelineView := (STUIHomeTimeline with: homeTimeline value)
-							twitterApi: (self twitterApi).
+	| homeTimelineView |
+	homeTimelineView := STUIHomeTimeline new.
+							
+	homeTimelineView 
+		twitterApi: (self twitterApi);
+		loadTweets.
+	
 	self 
 		loadView: homeTimelineView
 		as: #homeTimelineView 

@@ -1,3 +1,3 @@
 as yet unclassified
 addUserTimeline
-	self addMorphBack: (STUIUserTimeline with: self tweets)
+	self addMorphBack: (self tweetList)
