@@ -12,7 +12,9 @@
 		"user",
 		"entities",
 		"urls",
-		"media" ],
+		"media",
+		"favorited",
+		"retweeted" ],
 	"name" : "STTweet",
 	"pools" : [
 		 ],

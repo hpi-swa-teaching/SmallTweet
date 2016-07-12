@@ -6,6 +6,8 @@ from: aJsonObject
 	createdAt: (aJsonObject at: 'created_at');
 	user: (STUser from: (aJsonObject at: 'user'));
 	entities: (aJsonObject at: 'entities');
+	favorited:  (aJsonObject at: 'favorited');
+	retweeted:  (aJsonObject at: 'retweeted');
 	media:  (((aJsonObject at: 'entities') at:'media' ifAbsent: [#()]) collect: [:json | STMedia from: json]);
 	urls: (((aJsonObject at: 'entities') at:'urls') collect: [:json | STUrl from: json]);
 	yourself.
