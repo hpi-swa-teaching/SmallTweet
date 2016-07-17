@@ -3,7 +3,7 @@ testHomeTimeline
 	| tweets result |
 	twitterApi webClient mock: '/1.1/statuses/home_timeline.json' with: Fixture homeTimelineJsonResponse.
 	
-	result := twitterApi timeline: 'home' with: STSettingsStore default tweetNum.
+	result := twitterApi homeTimeline.
 	self assert: result isSuccess.
 	
 	tweets := result value.

@@ -24,7 +24,7 @@ updateStatusWithTextResponse
     ]
   },
   "in_reply_to_user_id_str": null,
-  "text": "Maybe hell finally find his keys. #peterfalk",
+  "text": "Testing SmallTweet",
   "contributors": null,
   "retweet_count": 0,
   "id": 243145735212777472,
