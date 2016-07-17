@@ -1,3 +1,3 @@
 accessing
-active: anObject
-	active := anObject
+active: aBool
+	active := aBool

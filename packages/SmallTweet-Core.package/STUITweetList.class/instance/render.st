@@ -10,11 +10,13 @@ render
 			tweetMorph retweetButton
 				target: self;
 				actionSelector: #retweetTweetWithId:fromSender:;
-				arguments: (Array with: (tweet id) with: tweetMorph retweetButton).
+				arguments: (Array with: (tweet id) with: tweetMorph retweetButton);
+				active: tweet retweeted.
 			tweetMorph heartButton
 				target: self;
 				actionSelector: #favoriteTweetWithId:fromSender:;
-				arguments: (Array with: (tweet id) with: tweetMorph heartButton).
+				arguments: (Array with: (tweet id) with: tweetMorph heartButton);
+				active: tweet favorited.
 			spacingMorph := Morph new color: Color veryVeryLightGray.
 			spacingMorph 
 				height: 1;
