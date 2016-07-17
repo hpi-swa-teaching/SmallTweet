@@ -4,4 +4,4 @@ initialize
 	tweet := STTweet new.
 	
 	self retweetButton: STUIRetweetButton new.
-	self heartButton: STUIHeartButton new.
+	self heartButton: STUIStarButton new.
