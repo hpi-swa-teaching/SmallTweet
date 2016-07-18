@@ -4,7 +4,7 @@ textMorph
 	createdAt := STUtils relativeTimeString: (STUtils timestampFromString: self tweet createdAt).
 	text := TextMorph new contentsWrapped: (STUITextFormatter asHtmlText: (
 		'<b>' , self tweet user name , '</b> ',
-		'<font color="#555555">@' , self tweet user screenName , '</font>',
+		 '<a href="smallTweetUser:', self tweet user screenName , '">', '<font color="#555555">@' , self tweet user screenName , '</font>', '</a>' ,
 		'<br>' , (self linkUrls: self tweet text), '<br>' , 
 		'<i><font color="#555555">' , createdAt , '</font></i>')).
 	text 
