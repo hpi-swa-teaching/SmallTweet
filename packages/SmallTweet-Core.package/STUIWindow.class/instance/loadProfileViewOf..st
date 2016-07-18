@@ -1,18 +1,17 @@
 as yet unclassified
 loadProfileViewOf: aSTUser
-	"Not yet supported by endlessScroll and refresh"
 	| userTimeline|
 	self twitterApi hasUser 
 		ifFalse: [ self inform: 'Please login first.'. 
 				^ false].
 	
-	userTimeline := twitterApi userTimelineOf: aSTUser.
+	userTimeline := STUIUserTimeline new.
 	
-	(userTimeline isError)
-		ifTrue: [ self inform: ('An Error occurred, while loading UserTimeline of User with Screenname:', aSTUser screenName) . 
-			     ^ false].
+	userTimeline 
+		twitterApi: self twitterApi;
+		loadTweetsOf: aSTUser.
 	
 	self 
-		loadView: (STUIProfile with: userTimeline value from: aSTUser)
+		loadView: (STUIProfile with: userTimeline from: aSTUser)
 		as: #profileView 
 		activate: #profileButton.
