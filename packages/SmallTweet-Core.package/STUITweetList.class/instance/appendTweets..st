@@ -4,4 +4,5 @@ appendTweets: anOrderedCollection
 	
 	anOrderedCollection notEmpty ifTrue: [
 		self tweets: self tweets , anOrderedCollection.
-		self minID: anOrderedCollection last id]
+		self minID: anOrderedCollection last id.
+		self render.]

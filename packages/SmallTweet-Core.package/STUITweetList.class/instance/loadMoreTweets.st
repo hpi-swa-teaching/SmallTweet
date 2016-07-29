@@ -12,4 +12,3 @@ loadMoreTweets
 				^ false].
 			
 	self appendTweets: newTweets value.
-	self render.

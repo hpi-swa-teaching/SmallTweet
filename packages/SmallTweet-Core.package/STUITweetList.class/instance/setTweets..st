@@ -6,6 +6,5 @@ setTweets: anOrderedCollection
 	
 	self tweets notEmpty ifTrue: [
 		self minID: tweets last id.
-		self maxID: tweets first id].
-	
-	self render.
+		self maxID: tweets first id.
+		self render]

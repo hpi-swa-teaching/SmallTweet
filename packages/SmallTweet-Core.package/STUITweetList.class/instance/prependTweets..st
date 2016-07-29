@@ -4,4 +4,5 @@ prependTweets: anOrderedCollection
 	
 	anOrderedCollection notEmpty ifTrue: [
 		self tweets: anOrderedCollection, self tweets.
-		self maxID: anOrderedCollection first id]
+		self maxID: anOrderedCollection first id.
+		self render]

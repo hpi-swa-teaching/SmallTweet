@@ -12,4 +12,3 @@ refreshTweets
 				^ false].
 			
 	self prependTweets: newTweets value.
-	self render.

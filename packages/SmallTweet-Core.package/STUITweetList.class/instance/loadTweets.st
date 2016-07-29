@@ -11,4 +11,3 @@ loadTweets
 				^ false].
 			
 	self setTweets: tweets value.
-	self render.
