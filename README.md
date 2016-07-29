@@ -62,6 +62,8 @@ The app's architecture is not fully MVC. We decided to stick with this approach 
 
 The app is divided into UI classes (STUI prefix), that are also handling button actions etc, the Twitter API with related models for tweets etc. and some helpers/extentions.
 
+![Class Diagram](architecture.png)
+
 <br>
 <br>
 
