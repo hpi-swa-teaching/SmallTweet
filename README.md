@@ -39,6 +39,8 @@
   STUIWindow open.
   ```
 
+<br>
+
 ### Get Consumer Key and Secret:
 
 1. Open in Internet Browser:
@@ -64,7 +66,6 @@ The app is divided into UI classes (STUI prefix), that are also handling button 
 <br>
 
 ### Twitter API
-
 <br>
 
 **STTwitterApi**<br>
@@ -95,8 +96,8 @@ An STUrl holds different versions of an url that appear in an tweet.
 <br>
 
 ### UI
-
 <br>
+
 
 #### Window
 *The main UI window that will hold the menu and the views.*
