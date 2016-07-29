@@ -2,10 +2,10 @@ as yet unclassified
 setValue: newValue
 
 	(newValue = self getMaximumValue) & (newValue ~= self getValue)
-		ifTrue: [self owner owner viewMorph loadMoreTweets].
+		ifTrue: [STUIWindow instance viewMorph loadMoreTweets].
 	
 	(newValue = 0) & (newValue ~= self getValue)
-		ifTrue: [self owner owner viewMorph refreshTweets].
+		ifTrue: [STUIWindow instance viewMorph refreshTweets].
 			
 	super setValue: newValue.
 	
