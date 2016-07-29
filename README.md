@@ -52,13 +52,21 @@
 
 5. Fill in that credentials in settings menu
 
+<br>
+<br>
+
 ## Architecture
 The app's architecture is not fully MVC. We decided to stick with this approach because of the project's simplicity at that point. With more complexity in the next iterations it is strongly advised to switch.
 
 The app is divided into UI classes (STUI prefix), that are also handling button actions etc, the Twitter API with related models for tweets etc. and some helpers/extentions.
 
+<br>
+<br>
 
 ### Twitter API
+
+<br>
+
 **STTwitterApi**<br>
 The STTwitterApi provides methods for some endpoints of the Twitter API ([Docs](dev.twitter.com/rest/public)), response serialization, error handling and OAuth authentication flow. Have a look at the Unit tests for an example.
 
@@ -83,7 +91,12 @@ STMedia holds image data of a tweet.
 **STUrl**<br>
 An STUrl holds different versions of an url that appear in an tweet.
 
+<br>
+<br>
+
 ### UI
+
+<br>
 
 #### Window
 *The main UI window that will hold the menu and the views.*
