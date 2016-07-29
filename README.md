@@ -22,7 +22,7 @@ It is responsible for:
 **STUIWindow**<br>
 STUIWindow is the main wrapper for all of the views and responsible for connecting them properly.
 
-
+<br>
 
 ### Menu
 *Menu related classes.*
@@ -35,7 +35,7 @@ STUIMenu contains the main navigation in form of SUIMenuButtons.
 **STUIMenuButton**<br>
 STUIMenuButton is an IconicButton which additionally contains an active state and an id. Normally it will be used for loading a new view in the STUIWindow.
 
-
+<br>
 
 ### Views
 *The views that get loaded on the right side of the window.*
@@ -67,7 +67,7 @@ STUIHomeTimeline implements a STUITweetList for the home timeline.
 **- STUIUserTimeline**<br>
 STUIHomeTimeline implements a STUITweetList for the user's timeline.
 
-
+<br>
 
 ### Tweet
 *Tweet related classes.*
@@ -84,7 +84,7 @@ Retweet functionality.
 **- STUIStarButton**<br>
 Favorite functionality.
 
-
+<br>
 
 ### Helpers
 *Helpers that we only use class-side.*
@@ -92,7 +92,7 @@ Favorite functionality.
 **STUIIcons** (class side)<br>
 STUIIcons is an image-form dispenser for the icons we're using so we don't have to reload them every time from the resources folder.
 
-
+<br>
 
 ### Extensions
 *Classes we had to customize.*
