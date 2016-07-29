@@ -4,3 +4,110 @@
 
 
 ## Architektur
+
+
+
+## UI
+
+
+### Window
+*The main UI window that will hold the menu and the views.*
+
+It is responsible for:
+* initializing the menu and its buttons
+* initializing and updating the views
+* connecting the buttons to specific actions (like loading a view)
+* holding the twitterApi object
+
+**STUIWindow**<br>
+STUIWindow is the main wrapper for all of the views and responsible for connecting them properly.
+
+
+
+### Menu
+*Menu related classes.*
+
+The menu is only a wrapper for its buttons. They will be initialized (including their actions) by the STUIWindow. 
+
+**STUIMenu**<br>
+STUIMenu contains the main navigation in form of SUIMenuButtons.
+
+**STUIMenuButton**<br>
+STUIMenuButton is an IconicButton which additionally contains an active state and an id. Normally it will be used for loading a new view in the STUIWindow.
+
+
+
+### Views
+*The views that get loaded on the right side of the window.*
+
+Views will be initialized class side by for example passing a UserObject or a List of Tweets. They should contain as little logic as possible and actually only display the data they got initialized with.
+
+**STUIView** (abstract)<br>
+A STUIView is a morph which is displayed as part of the STUIWindow.
+
+**STUILists**<br>
+STUILists is a view for the Twitter "lists" feature.
+
+**STUINewTweet**<br>
+
+**STUIProfile**<br>
+STUIProfile is a view to display a user profile.
+
+**STUISettings**<br>
+STUISettings is a view to show the possible settings like logged in user accounts.
+
+**STUITweetList** (abstract)<br>
+STUITweetList is a wrapper view to display a list of STUITweets.
+
+**- STUIHomeTimeline**<br>
+STUIHomeTimeline implements a STUITweetList for the home timeline.
+
+**- STUIMentionsTimeline**<br>
+
+**- STUIUserTimeline**<br>
+STUIHomeTimeline implements a STUITweetList for the user's timeline.
+
+
+
+### Tweet
+*Tweet related classes.*
+
+**STUITweet**<br>
+STUITweet is the graphical representation of a STTweet instance and should be used inside a STUITweetList.
+
+**STUITweetActionButton** (abstract)<br>
+STUITweetActionButtons are Retweet, Fav, etc.
+
+**- STUIRetweetButton**<br>
+Retweet functionality.
+
+**- STUIStarButton**<br>
+Favorite functionality.
+
+
+
+### Helpers
+*Helpers that we only use class-side.*
+
+**STUIIcons** (class side)<br>
+STUIIcons is an image-form dispenser for the icons we're using so we don't have to reload them every time from the resources folder.
+
+
+
+### Extensions
+*Classes we had to customize.*
+
+A short comment on what and why we had to customize them is added to each class:
+
+**STUIScrollBar**<br>
+We added the functionality to refresh tweets if you scroll to the top of a STUITweetList and load new tweets if you scroll to the bottom of it.
+
+**STUIScrollPane**<br>
+To use STUIScrollBar we had to customize this class as well.
+
+**STUITextFormatter**<br>
+TextFormatter is responsible for replacing &lt;a>-Tags. So we needed to customize it to use STUITextURL instead of the normal link class.
+
+**STUITextURL**<br>
+Opening a URL didn't work for us on Mac. So we implemented a custom link opening function in "STUtils" and using it in the default link class as well.
+
