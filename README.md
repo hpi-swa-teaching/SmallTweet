@@ -1,7 +1,5 @@
 # SmallTweet 2016 [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-16.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-16)
 
-Simple Twitter Client for Squeak/Smalltalk.
-
 ## Setup
 
 1. Open Sqeak
@@ -14,12 +12,14 @@ Simple Twitter Client for Squeak/Smalltalk.
 	  onConflict: [:ex | ex allow];
 	  load
 	 ```
+	 
 3. Open Terminal in prefered folder
 
 4. Clone git repository:<br>
 	```
   git clone https://github.com/HPI-SWA-Teaching/SWT16-Project-16.git
   ```
+  
 5. Open Monticello Browser
 
 6. Select SmallTweet-Core
