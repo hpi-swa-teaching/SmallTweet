@@ -198,4 +198,4 @@ To use STUIScrollBar we had to customize this class as well.
 TextFormatter is responsible for replacing &lt;a>-Tags. So we needed to customize it to use STUITextURL instead of the normal link class.
 
 **STUITextURL**<br>
-Opening a URL didn't work for us on Mac. So we implemented a custom link opening function in "STUtils" and using it in the default link class as well.
+Opening a URL didn't work for us on Mac. So we implemented a custom link opening function in "STUtils" and using it in the default link class as well. We also defined our costum link with the prefix SmallTweetUser. The example User is represented by the following HTML tag:`<a href="SmallTweetUser:exampleUser> @exampleUser </a>`When the link is clicked, the method STUITextURL>>actOnClickFor: is called and opens the corresponding user profile.
