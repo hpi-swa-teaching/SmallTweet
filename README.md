@@ -3,6 +3,53 @@
 ##System aufsetzen
 
 
+1. Open Sqeak
+
+2. Execute in Squeak:<br>
+	```
+  Metacello new
+    baseline: 'SmallTweet';
+	  repository: 'github://HPI-SWA-Teaching/SWT16-Project-16:master/packages';
+	  onConflict: [:ex | ex allow];
+	  load
+	 ```
+
+3. Open Terminal in prefered folder
+
+4. Clone git repository:<br>
+	``` 
+  git clone https://github.com/HPI-SWA-Teaching/SWT16-Project-16.git 
+  ```
+
+5. Open Monticello Browser
+
+6. Select SmallTweet-Core
+
+7. Click on '+ Repository' and select 'filetree://'
+
+8. Select the package folder of the cloned repository and click 'ok'
+
+9. Select the added repository in the Monticello Browser and click on 'Open'
+
+10. Load the current state of all packages
+
+11. Execute in Squeak: 
+	```
+  STUIWindow open
+  ```
+
+### Get Consumer Key and Secret:
+
+1. Open in Internet Browser:
+	https://apps.twitter.com/app/
+
+2. Click on 'Create New App'
+
+3. Create an App
+
+4. Find the Consumer Key and Secret in the 'Keys and Access Tokens' Tab
+
+
 ## Architektur
 
 
