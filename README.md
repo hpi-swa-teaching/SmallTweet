@@ -7,21 +7,22 @@ A Simple Twitter Client for Squeak/Smalltalk
 
 1. Open Sqeak
 
-2. Execute in Squeak:<br>
-	```
+2. Execute in Squeak:
+
+```
   Metacello new
     baseline: 'SmallTweet';
 	  repository: 'github://HPI-SWA-Teaching/SmallTweet:master/packages';
 	  onConflict: [:ex | ex allow];
 	  load
-	 ```
+```
 	 
 3. Open Terminal in prefered folder
 
-4. Clone git repository:<br>
-	```
+4. Clone git repository:
+```
   git clone https://github.com/HPI-SWA-Teaching/SmallTweet.git
-  ```
+```
   
 5. Open Monticello Browser
 
@@ -35,12 +36,11 @@ A Simple Twitter Client for Squeak/Smalltalk
 
 10. Load the current state of all packages
 
-11. Execute in Squeak:<br>
-	```
-  STUIWindow open.
-  ```
+11. Execute in Squeak:
 
-<br>
+```
+  STUIWindow open.
+```
 
 ### Get Consumer Key and Secret:
 
@@ -55,9 +55,6 @@ A Simple Twitter Client for Squeak/Smalltalk
 
 5. Fill in that credentials in settings menu
 
-<br>
-<br>
-
 ## Architecture
 The app's architecture is not fully MVC. We decided to stick with this approach because of the project's simplicity at that point. With more complexity in the next iterations it is strongly advised to switch.
 
@@ -65,19 +62,15 @@ The app is divided into UI classes (STUI prefix), that are also handling button 
 
 ![Class Diagram](architecture.png)
 
-<br>
-<br>
-
 ### Twitter API
-<br>
 
-**STTwitterApi**<br>
+**STTwitterApi**
 The STTwitterApi provides methods for some endpoints of the Twitter API ([Docs](dev.twitter.com/rest/public)), response serialization, error handling and OAuth authentication flow. Have a look at the Unit tests for an example.
 
-**STResult**<br>
+**STResult**
 STResult wraps the result of a request into a subclass of a STModel (STTweet etc) or an STError and provides an easy interface for handling both cases.
 
-**STError**<br>
+**STError**
 An STError provides a list of errors that happenend in a request to the Twitter API.
 
 **STModel**<br>
