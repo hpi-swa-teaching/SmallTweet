@@ -1,4 +1,4 @@
-# SmallTweet [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/SmallTweet.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/SmallTweet)
+# SmallTweet [![Build Status](https://travis-ci.org/hpi-swa-teaching/SmallTweet.svg?branch=master)](https://travis-ci.org/hpi-swa-teaching/SmallTweet)
 
 A Simple Twitter Client for Squeak/Smalltalk
 <img src="preview.jpg" align="right" width="400" >
@@ -12,7 +12,7 @@ A Simple Twitter Client for Squeak/Smalltalk
 ```
   Metacello new
     baseline: 'SmallTweet';
-	  repository: 'github://HPI-SWA-Teaching/SmallTweet:master/packages';
+	  repository: 'github://hpi-swa-teaching/SmallTweet:master/packages';
 	  onConflict: [:ex | ex allow];
 	  load
 ```
@@ -21,7 +21,7 @@ A Simple Twitter Client for Squeak/Smalltalk
 
 4. Clone git repository:
 ```
-  git clone https://github.com/HPI-SWA-Teaching/SmallTweet.git
+  git clone https://github.com/hpi-swa-teaching/SmallTweet.git
 ```
   
 5. Open Monticello Browser
